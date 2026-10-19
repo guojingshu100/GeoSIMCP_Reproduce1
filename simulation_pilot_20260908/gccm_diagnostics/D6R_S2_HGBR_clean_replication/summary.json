@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "classification": "B",
+  "criteria": {
+    "1_mean_HGBR_coverage_885_925": true,
+    "2_mean_range_lower_than_CP": true,
+    "3_mean_IS_le_CP": false,
+    "4_n400_range_lower_than_CP": true
+  },
+  "D6G_historical_not_used_as_HGBR_evidence": true,
+  "D6H_historical_KNN_deviation_not_used_as_HGBR_evidence": true,
+  "clean_replacement_for_D6G_D6H": true
+}

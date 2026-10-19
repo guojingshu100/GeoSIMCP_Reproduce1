@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "synthetic_n": 64,
+  "direction": "effect_xmap_cause",
+  "runs": [
+    {
+      "returncode": 0,
+      "runtime_seconds": 0.6476315000036266,
+      "hashes": {
+        "smoke_embedding.csv": "95298a5f032def4a028135aa02ba428aba499a9b8af6fed380b9fd35b9e93025",
+        "smoke_raw.csv": "4dc42d5bea97931d0363e20f16729c1e054c902ab689cb83785dff4658ec967b"
+      },
+      "ring_embedding_BFS_match": true
+    },
+    {
+      "returncode": 0,
+      "runtime_seconds": 0.6258773000154179,
+      "hashes": {
+        "smoke_embedding.csv": "95298a5f032def4a028135aa02ba428aba499a9b8af6fed380b9fd35b9e93025",
+        "smoke_raw.csv": "4dc42d5bea97931d0363e20f16729c1e054c902ab689cb83785dff4658ec967b"
+      },
+      "ring_embedding_BFS_match": true
+    }
+  ],
+  "project_sample_data_accessed": false
+}

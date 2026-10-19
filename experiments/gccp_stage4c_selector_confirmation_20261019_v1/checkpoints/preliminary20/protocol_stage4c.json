@@ -1,0 +1,185 @@
+{
+  "protocol_id": "gccp_stage4c_selector_confirmation_20261019_v1",
+  "status": "LOCKED_NEW_SEED_CONFIRMATORY_PROTOCOL",
+  "created_before_generation": "2026-10-19T22:33:21+0800",
+  "new_samples": true,
+  "old_samples_used_for_debug": false,
+  "old_performance_files_read": false,
+  "N": 4000,
+  "roles": {
+    "D_fit": 1600,
+    "D_loc": 800,
+    "D_cal": 800,
+    "D_eval": 800
+  },
+  "scenarios": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "replicates_target": 100,
+  "workers": 6,
+  "generator": "Reuse Stage4 generate() unchanged, private module RNG binding replaced by recorded fresh SeedSequence; no file changes",
+  "point_predictor": "Identical shared Stage4 RF300 leaf5 all22 observed covariates, D_fit only, registered fresh model seed, n_jobs1",
+  "localizer": "Same D_fit standardization/geographic median, p/k sum-square subset, lambda=.5,h1; empty set eta0 ordinary GeoSIM fallback; D_loc .9 step q0; D_cal independent exact rank721 signed Delta, no query atom",
+  "full_parents": {
+    "0": [],
+    "1": [
+      "X1"
+    ],
+    "2": [
+      "X1",
+      "X2"
+    ],
+    "3": [
+      "X1",
+      "Z"
+    ],
+    "4": [
+      "X1",
+      "X2"
+    ],
+    "5": [
+      "X1",
+      "X2"
+    ]
+  },
+  "residual_parents": {
+    "0": [],
+    "1": [],
+    "2": [
+      "X2"
+    ],
+    "3": [
+      "Z"
+    ],
+    "4": [
+      "X2"
+    ],
+    "5": [
+      "X2"
+    ]
+  },
+  "S5_wrong": [
+    "X1",
+    "X3"
+  ],
+  "residual_semantics": "Oracle SCM noise-scale parents, not claimed complete parents of fitted RF residual distribution; no causal discovery",
+  "selector": {
+    "status": "NEW_CANDIDATE_NOT_THE_OLD_UNIMPLEMENTED_FOREST_QUANTILE_SELECTOR",
+    "software_class": "sklearn.ensemble.HistGradientBoostingRegressor",
+    "parameters": {
+      "categorical_features": null,
+      "early_stopping": false,
+      "interaction_cst": null,
+      "l2_regularization": 0.1,
+      "learning_rate": 0.05,
+      "loss": "quantile",
+      "max_bins": 255,
+      "max_depth": null,
+      "max_features": 1.0,
+      "max_iter": 200,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "monotonic_cst": null,
+      "n_iter_no_change": 10,
+      "quantile": 0.9,
+      "random_state": "distinct registered selector uint32 per cell",
+      "scoring": "loss",
+      "tol": 1e-07,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "target": "Observed Y .9 conditional quantile, not absolute RF residual",
+    "inputs": "20 observed attributes plus 2 coordinates",
+    "fit_role": "D_fit",
+    "importance_role": "D_loc",
+    "importance": "mean of ten held-out .9 pinball loss increases per attribute; only 20 non-coordinate columns permuted; each permutation resets original column; no variable filtering even if negative importance",
+    "top_k": "single ranking; exact k_full and k_residual; descending importance, feature-name lexicographic tie break; k0 empty ordinary fallback",
+    "zero_k_skip": "S0 all k0: no unnecessary quantile fit/permutations; reserved streams marked unused",
+    "final_labels": "Never D_cal/D_eval for model, ranking, parameters, selection or retention",
+    "difference_from_Stage2": "User-authorized new D_fit model / D_loc importance workflow, not original 800/400/400 D_fit-internal residual selector",
+    "unsupported_policy": "Stop selector branch and preserve failure; do not install or substitute learner"
+  },
+  "random": {
+    "masks_per_k_per_replicate": 10,
+    "cardinalities": "unique full/residual parent dimensions per scenario; shared family if same k",
+    "rule": "Uniform subset of20 without replacement within mask; independent registered mask streams; duplicates across masks retained, no outcome selection; every mask reported",
+    "inference": "Mean ten metric values within replicate, NOT mean interval endpoints and NOT 10R independent units"
+  },
+  "randomness": {
+    "confirm_root_range": [
+      2026102000,
+      2026102099
+    ],
+    "smoke_root": 2026102999,
+    "namespace": 2026101906,
+    "purposes": {
+      "attributes": 1,
+      "coordinates": 2,
+      "innovation": 3,
+      "proxies": 4,
+      "split": 5,
+      "model": 6,
+      "mask": 7,
+      "permutation": 8,
+      "selector": 9,
+      "bootstrap": 10
+    },
+    "entropy": "[root,namespace,stage,scenario,purpose_id,*child_indices]; permutation children attribute0..19/permutation0..9; mask children k/mask0..9",
+    "scope": [
+      "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4_execution_20261019_v1\\seed_manifest.csv",
+      "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4b_causal_specificity_20261019_v1\\seed_manifest_stage4b.csv"
+    ],
+    "checked_old_unique_keys": 11514,
+    "new_unique_keys": 137158,
+    "no_old_entropy_key_or_root_reuse": true,
+    "model_uint32_checked_unique": true,
+    "global_uniqueness_certified": false
+  },
+  "statistics": {
+    "primary_scenarios": [
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "primary_method": "GCCP-ResidualParent-RC",
+    "primary_comparators": [
+      "RandomMask-k1-RC-Mean10",
+      "SupervisedSelector-k1-RC"
+    ],
+    "primary_metric": "interval_score",
+    "primary_family_size": 6,
+    "alternative": "one-sided paired t: mean(Residual-comparator)<0; Holm FWER .05 over all six",
+    "confidence_intervals": "two-sided paired/replicate t95, df R-1; unadjusted CIs labeled; no bootstrap",
+    "interim": "20-repeat checkpoint descriptive only; planned 100-repeat analysis is sole confirmatory rejection point; no outcome-based stopping or tuning",
+    "secondary": "Other scenarios, full-parent contrasts, selection frequencies, width differences descriptive and not primary-family-confirmed",
+    "invalid": "Nonfinite primary differences: retain rows, set p=1, flag non-estimable; no silent omission",
+    "coverage": "Each method absolute coverage t95 vs .90 separately: CI below flags undercoverage; CI includes .90 is compatible but not proof; coverage difference CI containing0 is not equivalence. One-sided lower>=.89 is secondary practical screen only."
+  },
+  "limitation": "Observed-Y upper-quantile selector may prioritize mean predictors rather than RF residual-scale relevance; beating this candidate does not imply beating all supervised residual selectors.",
+  "software": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "sklearn": "1.6.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "read_only_source_hashes": {
+    "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4_execution_20261019_v1\\scientific.py": "3d484c05759f259a99c84ace837006a367ec489b72cf775fbac7edaf0849d44f",
+    "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4_execution_20261019_v1\\protocol.json": "27830b6e9ce990e14a2721f612fe8cfd2fab7d762a97b2970e1e992da58ab2f2",
+    "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4_execution_20261019_v1\\seed_manifest.csv": "5dc8218b2da65762526c313dfaccf02ae503be9b6deb90dd5564288421d6faad",
+    "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4b_causal_specificity_20261019_v1\\experiment.py": "b5917658aa3a3518784de3b62fd1261abb73e53413cb239ef7e944395c8c6dbc",
+    "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4b_causal_specificity_20261019_v1\\protocol_stage4b.json": "f41035b8b558faf4d30f4cd864cef2dc36bd808d5949ca7bbb6d6217f24679d6",
+    "F:\\GeoSIMCP_Reproduce\\experiments\\gccp_stage4b_causal_specificity_20261019_v1\\seed_manifest_stage4b.csv": "a4e982dad72cf78a6d4b44f250a588da1213b39cb0d925d3b2b4ad3ad7642b24"
+  },
+  "mask_registry_sha256": "0e182faad931f1a250984d2efa41d729473eecd90e6f5fc7e13f95b695da066f",
+  "code_sha256": {
+    "experiment.py": "4ccf76ffe70384111df87d5abc73134cec55c42273397d3fc0c7d3a8ca98c57a",
+    "report.py": "e26460f9aa9319089a077c3bea48e4c758bcc5d40107d6aaa89d84abedd0b33f"
+  }
+}

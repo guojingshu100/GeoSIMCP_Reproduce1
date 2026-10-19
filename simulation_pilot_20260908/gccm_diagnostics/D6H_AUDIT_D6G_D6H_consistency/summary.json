@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "pipeline_consistency": "UNCERTAIN",
+  "m1_model_consistency": "UNCERTAIN",
+  "diagnosis": "C",
+  "pooling": "POOLING_NOT_ALLOWED",
+  "pooling_reason": "D6G does not specify M1 estimator/configuration or artifact identity; D6H explicitly records KNN k=20 distance-weighted refit.",
+  "delta_summaries": {
+    "D6G": {
+      "M1_minus_CP_IS": {
+        "mean": 0.25694953381530283,
+        "median": 0.2753509717359113,
+        "sd": 0.32170422771080737,
+        "min": -0.10404555350435274,
+        "max": 1.3783943536150227,
+        "number_lt_0": 3,
+        "number_gt_0": 17
+      },
+      "Oracle_minus_CP_IS": {
+        "mean": -0.4676338057473961,
+        "median": -0.4671044675768914,
+        "sd": 0.13234053921787328,
+        "min": -0.6678469068979505,
+        "max": -0.2507833636037944,
+        "number_lt_0": 20,
+        "number_gt_0": 0
+      }
+    },
+    "D6H": {
+      "M1_minus_CP_IS": {
+        "mean": -0.20675695057004737,
+        "median": -0.19361150877138344,
+        "sd": 0.07288348669802443,
+        "min": -0.441815271780321,
+        "max": -0.12037780808161269,
+        "number_lt_0": 20,
+        "number_gt_0": 0
+      },
+      "Oracle_minus_CP_IS": {
+        "mean": -0.43332053765783274,
+        "median": -0.42417503399552636,
+        "sd": 0.10167172835616893,
+        "min": -0.6043772624911741,
+        "max": -0.20323775841711011,
+        "number_lt_0": 20,
+        "number_gt_0": 0
+      }
+    }
+  },
+  "conditional_coverage_ranges": {
+    "D6G": {
+      "CP": 0.19874999999999995,
+      "M1-NCP": 0.05074999999999996,
+      "Oracle-NCP": 0.046499999999999965
+    },
+    "D6H": {
+      "CP": 0.18024999999999997,
+      "M1-NCP": 0.12574999999999995,
+      "Oracle-NCP": 0.041999999999999975
+    }
+  }
+}

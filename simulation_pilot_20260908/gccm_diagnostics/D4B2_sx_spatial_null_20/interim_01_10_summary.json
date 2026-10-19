@@ -1,0 +1,13 @@
+{
+  "n": 10,
+  "pass_count": 7,
+  "terminal_rho_ge_real_count": 1,
+  "terminal_rho_median": 0.18124478893063,
+  "terminal_rho_max": 0.330992676593159,
+  "real_sx_terminal_rho": 0.246623560555136,
+  "terminal_rho_range": [
+    0.0542661274074776,
+    0.330992676593159
+  ],
+  "raw_strength_ge_real_count": 1
+}

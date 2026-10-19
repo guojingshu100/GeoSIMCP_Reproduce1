@@ -1,0 +1,16 @@
+{
+  "status": "FINAL_FROZEN_TEST_COMPLETED",
+  "manifest_sha256": "d2090944506e6ca37ead111dae5f508540668fe2ef826ddcd0c8e463f25d7553",
+  "split_sha256": "785436f18bcc08a5a6b94916d3e544af0e0706e959b7c930300f7a91bddf04f3",
+  "n_test": 142,
+  "methods": [
+    "CP",
+    "GeoCP",
+    "GeoSIMCP-EUC",
+    "GeoSIMCP-MND",
+    "Joint-HAV-EUC",
+    "Additive-EUC",
+    "GCCP-B"
+  ],
+  "policy": "All Test intervals were constructed using frozen parameters before Test labels were accessed."
+}

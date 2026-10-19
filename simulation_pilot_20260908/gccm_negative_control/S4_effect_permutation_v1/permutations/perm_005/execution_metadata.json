@@ -1,0 +1,38 @@
+{
+  "returncode": 0,
+  "runtime_seconds": 46.04704849998234,
+  "command": [
+    "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe",
+    "--vanilla",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_negative_control\\S4_effect_permutation_v1\\frozen_sources\\gccm_point_graph_wrapper_v1.R",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_negative_control\\S4_effect_permutation_v1\\permutations\\perm_005\\restricted_input.csv",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_negative_control\\S4_effect_permutation_v1\\permutations\\perm_005\\edges.csv",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_negative_control\\S4_effect_permutation_v1\\permutations\\perm_005\\historical_core.r",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_negative_control\\S4_effect_permutation_v1\\permutations\\perm_005\\parameters.csv",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_negative_control\\S4_effect_permutation_v1\\permutations\\perm_005",
+    "estimate"
+  ],
+  "environment_override": {
+    "LC_ALL": "C"
+  },
+  "inputs": "restricted scale_fit input, fixed edges, parameters and historical core only",
+  "hashes": {
+    "convergence.csv": "e3d14975b94bf783a5bf8ac2c082eb35db49065ad39b09ce3327046a897bf0fc",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+    "embedding.csv": "1894ca03b06c0b6f27206f4a489a1bbf101b60d36cd914eafb3c43dfa5f29ba1",
+    "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+    "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+    "input_check.json": "165afdbefaaef55898f99e51ce6899deb44344f0c97f9241b6a39f435228ff1f",
+    "mean_curves.csv": "4d0cdb61886117e1d0a037bd1ff9512becf60cb46a89006ba80b21dc31f536bb",
+    "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+    "permutation_mapping.csv": "7a28db05fc168984b47a2a5e548414b1d5ed920ed549ebf34d93a3dbc1e53e6c",
+    "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+    "raw_curves.csv": "b17fc3410384c16439c7237473ad3954d24395bf849873347016d80c17345119",
+    "restricted_input.csv": "93d3c2155f97bb3946359bd01515e64057e5595be3b91b203774bed6b5e04767",
+    "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+    "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+    "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+    "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+    "weights.csv": "ffab6eaa10d5044f190890d71eb6ae7ed54c15a97d789300c43f9ea09cf06efb"
+  }
+}

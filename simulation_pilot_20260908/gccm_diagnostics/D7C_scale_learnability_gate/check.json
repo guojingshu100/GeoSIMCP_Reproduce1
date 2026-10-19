@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "total_knn_fits": 10,
+  "oof_rows_per_scenario": 200,
+  "bootstrap_n": 2000,
+  "S1_accessed": false,
+  "S3_accessed": false,
+  "validation_accessed": false,
+  "final_calibration_accessed": false,
+  "test_accessed": false,
+  "conformal_run": false,
+  "gccm_run": false,
+  "tuning": false
+}

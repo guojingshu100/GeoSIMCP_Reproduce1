@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="GCCP技术路线图">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#5C82A5"/>
+    </marker>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", "SimHei", sans-serif; }
+      .title { font-size: 32px; font-weight: 700; fill: #153D64; text-anchor: middle; }
+      .section-title { font-size: 24px; font-weight: 700; fill: #FFFFFF; text-anchor: middle; }
+      .group-title { font-size: 18px; font-weight: 700; fill: #205784; text-anchor: middle; }
+      .node { font-size: 18px; font-weight: 600; fill: #233E58; text-anchor: middle; }
+      .node-sm { font-size: 16px; font-weight: 600; fill: #233E58; text-anchor: middle; }
+      .label { font-size: 16px; font-weight: 700; fill: #366995; text-anchor: middle; }
+      .foot { font-size: 24px; font-weight: 700; fill: #164771; text-anchor: middle; }
+      .panel { fill: #FAFCFE; stroke: #7FA5C5; stroke-width: 2; }
+      .head { fill: #2D679F; }
+      .card { fill: #FFFFFF; stroke: #A8C0D3; stroke-width: 1.6; }
+      .card-soft { fill: #EEF6FC; stroke: #91B2CE; stroke-width: 1.6; }
+      .card-focus { fill: #DEECF8; stroke: #5588B4; stroke-width: 2; }
+      .line { fill: none; stroke: #5C82A5; stroke-width: 2.5; marker-end: url(#arrow); }
+      .rule { fill: none; stroke: #9AB4CA; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF"/>
+  <text class="title" x="960" y="63">GCCP：融合地理邻近与因果信息的空间预测不确定性量化</text>
+
+  <!-- Upper left: local similarity construction -->
+  <rect class="panel" x="36" y="95" width="904" height="540" rx="10"/>
+  <path class="head" d="M46 95 H930 Q940 95 940 105 V153 H36 V105 Q36 95 46 95 Z"/>
+  <text class="section-title" x="488" y="131">① 融合地理邻近与因果信息的局部相似性构建</text>
+  <text class="label" x="245" y="181">地理分支</text>
+  <text class="label" x="723" y="181">变量因果分支</text>
+
+  <rect class="card-soft" x="102" y="196" width="286" height="42" rx="5"/>
+  <text class="node" x="245" y="223">地理位置坐标</text>
+  <path class="line" d="M245 238 V254"/>
+  <rect class="card" x="102" y="258" width="286" height="42" rx="5"/>
+  <text class="node" x="245" y="285">空间距离</text>
+  <path class="line" d="M245 300 V316"/>
+  <rect class="card" x="102" y="320" width="286" height="42" rx="5"/>
+  <text class="node" x="245" y="347">地理邻近性</text>
+
+  <rect class="card-soft" x="580" y="196" width="286" height="42" rx="5"/>
+  <text class="node" x="723" y="223">属性变量＋预测目标</text>
+  <path class="line" d="M723 238 V254"/>
+  <rect class="card" x="580" y="258" width="286" height="42" rx="5"/>
+  <text class="node" x="723" y="285">变量因果信息估计</text>
+  <path class="line" d="M723 300 V316"/>
+  <rect class="card" x="580" y="320" width="286" height="42" rx="5"/>
+  <text class="node-sm" x="723" y="347">因果信息加权的属性距离</text>
+  <path class="line" d="M723 362 V378"/>
+  <rect class="card" x="580" y="382" width="286" height="42" rx="5"/>
+  <text class="node" x="723" y="409">属性机制相似性</text>
+
+  <path class="rule" d="M245 362 V438 H488"/>
+  <path class="rule" d="M723 424 V438 H488"/>
+  <path class="line" d="M488 438 V449"/>
+  <rect class="card-focus" x="170" y="453" width="636" height="46" rx="5"/>
+  <text class="node-sm" x="488" y="482">地理邻近性＋因果信息加权属性相似性</text>
+  <path class="line" d="M488 499 V511"/>
+  <rect class="card" x="260" y="515" width="456" height="42" rx="5"/>
+  <text class="node" x="488" y="542">联合局部相似性</text>
+  <path class="line" d="M488 557 V569"/>
+  <rect class="card-focus" x="260" y="573" width="456" height="42" rx="5"/>
+  <text class="node" x="488" y="600">局部校准权重</text>
+
+  <!-- Transfer between upper panels -->
+  <path class="line" d="M940 481 H970"/>
+
+  <!-- Upper right: local weighted conformal prediction -->
+  <rect class="panel" x="980" y="95" width="904" height="540" rx="10"/>
+  <path class="head" d="M990 95 H1874 Q1884 95 1884 105 V153 H980 V105 Q980 95 990 95 Z"/>
+  <text class="section-title" x="1432" y="131">② 基于局部权重的 GCCP 不确定性量化</text>
+  <rect class="card-soft" x="1006" y="190" width="150" height="43" rx="5"/>
+  <text class="node-sm" x="1081" y="217">数据划分</text>
+  <path class="line" d="M1156 211 H1173"/>
+  <rect class="card-soft" x="1177" y="190" width="150" height="43" rx="5"/>
+  <text class="node-sm" x="1252" y="217">训练集</text>
+  <path class="line" d="M1327 211 H1344"/>
+  <rect class="card-soft" x="1348" y="190" width="150" height="43" rx="5"/>
+  <text class="node-sm" x="1423" y="217">尺度拟合集</text>
+  <path class="line" d="M1498 211 H1515"/>
+  <rect class="card-soft" x="1519" y="190" width="150" height="43" rx="5"/>
+  <text class="node-sm" x="1594" y="217">校准集</text>
+  <path class="line" d="M1669 211 H1686"/>
+  <rect class="card-soft" x="1690" y="190" width="150" height="43" rx="5"/>
+  <text class="node-sm" x="1765" y="217">测试集</text>
+
+  <path class="rule" d="M1432 240 V255"/>
+  <path class="line" d="M1432 255 V263"/>
+  <rect class="card" x="1050" y="267" width="764" height="46" rx="5"/>
+  <text class="node" x="1432" y="297">训练集拟合随机森林预测模型</text>
+  <path class="line" d="M1432 313 V326"/>
+  <rect class="card" x="1050" y="330" width="764" height="46" rx="5"/>
+  <text class="node" x="1432" y="360">使用非测试数据估计因果信息与局部尺度</text>
+  <path class="line" d="M1432 376 V389"/>
+  <rect class="card" x="1050" y="393" width="764" height="46" rx="5"/>
+  <text class="node" x="1432" y="423">校准集计算非一致性分数</text>
+  <path class="line" d="M1432 439 V452"/>
+  <rect class="card" x="1050" y="456" width="764" height="46" rx="5"/>
+  <text class="node" x="1432" y="486">根据测试样本计算局部校准权重</text>
+  <path class="line" d="M1432 502 V515"/>
+  <rect class="card" x="1050" y="519" width="764" height="42" rx="5"/>
+  <text class="node" x="1432" y="546">加权分位数</text>
+  <path class="line" d="M1432 561 V574"/>
+  <rect class="card-focus" x="1050" y="578" width="764" height="42" rx="5"/>
+  <text class="node" x="1432" y="605">GCCP 局部预测区间</text>
+
+  <!-- Downward progression -->
+  <path class="line" d="M1432 635 V656 H960 V669"/>
+
+  <!-- Lower full-width panel: evaluation and diagnosis -->
+  <rect class="panel" x="36" y="673" width="1848" height="309" rx="10"/>
+  <path class="head" d="M46 673 H1874 Q1884 673 1884 683 V731 H36 V683 Q36 673 46 673 Z"/>
+  <text class="section-title" x="960" y="709">③ GCCP 方法验证与问题诊断</text>
+
+  <rect class="card" x="76" y="750" width="540" height="92" rx="5"/>
+  <text class="group-title" x="346" y="773">方法对比</text>
+  <text class="node-sm" x="218" y="800">共形预测（CP）</text>
+  <text class="node-sm" x="478" y="800">地理共形预测（GeoCP）</text>
+  <text class="node-sm" x="218" y="826">地理相似共形预测（GeoSIMCP）</text>
+  <text class="node-sm" x="478" y="826">GCCP</text>
+
+  <rect class="card" x="690" y="750" width="540" height="92" rx="5"/>
+  <text class="group-title" x="960" y="773">实验验证</text>
+  <text class="node-sm" x="810" y="800">参数实验</text>
+  <text class="node-sm" x="1100" y="800">消融实验</text>
+  <text class="node-sm" x="810" y="826">多随机种子重复实验</text>
+  <text class="node-sm" x="1100" y="826">模拟实验／PM2.5 实验</text>
+
+  <rect class="card" x="1304" y="750" width="540" height="92" rx="5"/>
+  <text class="group-title" x="1574" y="773">评价指标</text>
+  <text class="node-sm" x="1400" y="812">覆盖率</text>
+  <text class="node-sm" x="1574" y="812">区间宽度</text>
+  <text class="node-sm" x="1748" y="812">区间评分</text>
+
+  <path class="rule" d="M346 842 V853 H960"/>
+  <path class="rule" d="M960 842 V853"/>
+  <path class="rule" d="M1574 842 V853 H960"/>
+  <path class="line" d="M960 853 V862"/>
+  <rect class="card-focus" x="322" y="866" width="1276" height="41" rx="5"/>
+  <text class="node" x="960" y="893">验证因果信息是否真正改善局部预测不确定性量化</text>
+
+  <text class="label" x="115" y="952">异常结果</text>
+  <path class="line" d="M188 946 H207"/>
+  <rect class="card" x="211" y="925" width="210" height="39" rx="4"/>
+  <text class="node-sm" x="316" y="950">检查数据</text>
+  <path class="line" d="M421 946 H438"/>
+  <rect class="card" x="442" y="925" width="210" height="39" rx="4"/>
+  <text class="node-sm" x="547" y="950">检查权重</text>
+  <path class="line" d="M652 946 H669"/>
+  <rect class="card" x="673" y="925" width="210" height="39" rx="4"/>
+  <text class="node-sm" x="778" y="950">检查参数</text>
+  <path class="line" d="M883 946 H900"/>
+  <rect class="card" x="904" y="925" width="210" height="39" rx="4"/>
+  <text class="node-sm" x="1009" y="950">检查代码实现</text>
+  <path class="line" d="M1114 946 H1131"/>
+  <rect class="card" x="1135" y="925" width="210" height="39" rx="4"/>
+  <text class="node-sm" x="1240" y="950">检查实验设置</text>
+  <path class="line" d="M1345 946 H1362"/>
+  <rect class="card-focus" x="1366" y="925" width="210" height="39" rx="4"/>
+  <text class="node-sm" x="1471" y="950">重复验证</text>
+
+  <path class="line" d="M960 982 V997"/>
+  <rect class="card-focus" x="240" y="1001" width="1440" height="56" rx="7"/>
+  <text class="foot" x="960" y="1038">融合地理邻近与因果信息的空间预测不确定性量化与验证</text>
+</svg>

@@ -1,0 +1,59 @@
+{
+  "correlations": {
+    "M0": {
+      "pearson_Z_x2": 0.2093082203169807,
+      "spearman_Z_x2": 0.19026475661891548,
+      "pearson_Z_true_sigma": 0.21134560421054993,
+      "spearman_Z_true_sigma": 0.19026475661891548
+    },
+    "M1": {
+      "pearson_Z_x2": -0.07551386702127952,
+      "spearman_Z_x2": -0.0570374259356484,
+      "pearson_Z_true_sigma": -0.07831701667398469,
+      "spearman_Z_true_sigma": -0.0570374259356484
+    },
+    "M2": {
+      "pearson_Z_x2": 0.15617375040716439,
+      "spearman_Z_x2": 0.14940073501837547,
+      "pearson_Z_true_sigma": 0.15583338072920194,
+      "spearman_Z_true_sigma": 0.14940073501837547
+    }
+  },
+  "minimum_scale": {
+    "M0": 0.847230504597362,
+    "M1": 0.23361004343049604,
+    "M2": 0.16278623908565873
+  },
+  "heterogeneity": {
+    "M0": {
+      "mean_ratio": 1.7565398099164382,
+      "median_ratio": 2.0665213310153994,
+      "q90_ratio": 1.8883574899939681,
+      "cv_mean_Z": 0.18742295775406376,
+      "cv_q90_Z": 0.20757242884361654
+    },
+    "M1": {
+      "mean_ratio": 0.8989739620664691,
+      "median_ratio": 1.1238089438062948,
+      "q90_ratio": 1.0749643124321988,
+      "cv_mean_Z": 0.06308183699333456,
+      "cv_q90_Z": 0.10274666536676456
+    },
+    "M2": {
+      "mean_ratio": 1.616737553246795,
+      "median_ratio": 1.7772705828287994,
+      "q90_ratio": 1.5772038604143797,
+      "cv_mean_Z": 0.17002239872098376,
+      "cv_q90_Z": 0.19822930595058066
+    }
+  },
+  "criteria": {
+    "criterion_1": true,
+    "criterion_2": true,
+    "criterion_3": true,
+    "criterion_4": true
+  },
+  "classification": "NORMALIZATION-VIABLE",
+  "new_model_fits": 0,
+  "blinded_data_accessed": false
+}

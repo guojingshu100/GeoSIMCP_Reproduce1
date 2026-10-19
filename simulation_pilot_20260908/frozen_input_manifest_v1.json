@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-09-08T20:43:26+08:00",
+  "generator_check_sha256": "6dd905abf8b0dbd70d3d41c48d8d9206a1c0c5c6ac2e7b27d323644ed97ba867",
+  "generator_config_sha256": "fb35d5ff4e9310cae5407a1fa272dac7e3c9102a11ad136a2e04dab23b8d9e41",
+  "generator_status_observed": "PASS",
+  "generator_status_required": "PASS",
+  "generator_version": "gccp_sim_s1_s4_v1",
+  "hash_verification": "PASS",
+  "input_file_hashes": {
+    "data/S1_observed.csv": "dd6c88d611a95de6aeaa107c22d65c289f1a9fa5011a9f94a77244ca2180dff9",
+    "data/S1_truth.csv": "a8da31ea28173737c5aab448a44470c6e5b9d383dd8b51774bc4ade8c7ef73b1",
+    "data/S2_observed.csv": "9abe6271f7812bc83093a2af13d541d5aa18c0b65b2ff776332508c360ad293f",
+    "data/S2_truth.csv": "b3cd07deb85aa703b2fde53cca8f60d84785c250e2d2b575bffc763d3d8d25dc",
+    "data/S3_observed.csv": "406562c668675536665608b9bff2650f83b10ddf988e962eb8eed7f1f8998048",
+    "data/S3_truth.csv": "a016a51f285c27cffb4480d373470df697828638c09595d7cbb92018cecfb56c",
+    "data/S4_observed.csv": "1e0819fcbc6d639d2b7c13c17cf3b748e50746f6a5719057293886b3511f9b32",
+    "data/S4_truth.csv": "893cd7849cc8624ebdb1e6e7bc133f3dbbb36f64d76689026aaeb6174e25ead8"
+  },
+  "manifest_version": "frozen_input_manifest_v1",
+  "predictor_stage_version": "gccp_rf_predictor_v1",
+  "truth_files_hashed_but_not_parsed": true
+}

@@ -1,0 +1,2 @@
+﻿protocol,selection_data,cv,scoring,best_n_estimators,best_max_depth,best_cv_rmse
+pm25_formal_v1,train_only,3,neg_mean_squared_error,300,None,7.825127510685215

@@ -1,0 +1,159 @@
+{
+  "n": 200,
+  "source_files": {
+    "scale_fit_preparation": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\scale_outputs\\S4_scale_fit_preparation.csv",
+    "authorized_residuals": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\predictor_outputs\\S4_authorized_residuals.csv",
+    "restricted_input": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4\\restricted_input.csv",
+    "edges": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4\\edges.csv"
+  },
+  "pearson_spearman": [
+    {
+      "response": "abs_residual",
+      "statistic": "pearson_r",
+      "term": "s_x",
+      "value": 0.12564117807299588
+    },
+    {
+      "response": "abs_residual",
+      "statistic": "pearson_p",
+      "term": "s_x",
+      "value": 0.07627367909697735
+    },
+    {
+      "response": "abs_residual",
+      "statistic": "spearman_rho",
+      "term": "s_x",
+      "value": 0.10390159753993851
+    },
+    {
+      "response": "abs_residual",
+      "statistic": "spearman_p",
+      "term": "s_x",
+      "value": 0.14315406035268716
+    },
+    {
+      "response": "abs_residual",
+      "statistic": "pearson_r",
+      "term": "s_y",
+      "value": 0.06554471210799945
+    },
+    {
+      "response": "abs_residual",
+      "statistic": "pearson_p",
+      "term": "s_y",
+      "value": 0.35646383417476774
+    },
+    {
+      "response": "abs_residual",
+      "statistic": "spearman_rho",
+      "term": "s_y",
+      "value": 0.06906922673066827
+    },
+    {
+      "response": "abs_residual",
+      "statistic": "spearman_p",
+      "term": "s_y",
+      "value": 0.3311376375164422
+    },
+    {
+      "response": "residual",
+      "statistic": "pearson_r",
+      "term": "s_x",
+      "value": 0.014834782529579392
+    },
+    {
+      "response": "residual",
+      "statistic": "pearson_p",
+      "term": "s_x",
+      "value": 0.8348448506811273
+    },
+    {
+      "response": "residual",
+      "statistic": "spearman_rho",
+      "term": "s_x",
+      "value": -0.011499287482187055
+    },
+    {
+      "response": "residual",
+      "statistic": "spearman_p",
+      "term": "s_x",
+      "value": 0.8716125977849626
+    },
+    {
+      "response": "residual",
+      "statistic": "pearson_r",
+      "term": "s_y",
+      "value": 0.1181175918017582
+    },
+    {
+      "response": "residual",
+      "statistic": "pearson_p",
+      "term": "s_y",
+      "value": 0.09575303480363216
+    },
+    {
+      "response": "residual",
+      "statistic": "spearman_rho",
+      "term": "s_y",
+      "value": 0.10816770419260482
+    },
+    {
+      "response": "residual",
+      "statistic": "spearman_p",
+      "term": "s_y",
+      "value": 0.12735621880273648
+    }
+  ],
+  "models": {
+    "abs_residual_base": {
+      "r_squared": 0.02105275662270678,
+      "adjusted_r_squared": 0.011114205928521081,
+      "coefficients": {
+        "const": 0.816346837796431,
+        "s_x": 0.3990837070160934,
+        "s_y": 0.22305340283952302
+      },
+      "standard_errors": {
+        "const": 0.1736865146966199,
+        "s_x": 0.217328640706657,
+        "s_y": 0.21665644977131157
+      }
+    },
+    "residual": {
+      "r_squared": 0.014408547325143406,
+      "adjusted_r_squared": 0.004402542729459502,
+      "coefficients": {
+        "const": -0.17852690387172615,
+        "s_x": 0.10558232032012943,
+        "s_y": 0.5866233328782613
+      },
+      "standard_errors": {
+        "const": 0.27925520644684476,
+        "s_x": 0.3494235262499095,
+        "s_y": 0.34834276981496426
+      }
+    }
+  },
+  "moran": {
+    "abs_residual": {
+      "morans_I": 0.01881179508115868,
+      "expected_I": -0.005025125628140704,
+      "z_normal_approx": 0.5760092590018793,
+      "p_normal_approx": 0.5646089232577163,
+      "weight_convention": "binary Delaunay, row-standardized",
+      "permutations": 0
+    },
+    "residual": {
+      "morans_I": 0.0066879289859394925,
+      "expected_I": -0.005025125628140704,
+      "z_normal_approx": 0.2830410853476041,
+      "p_normal_approx": 0.7771453425988075,
+      "weight_convention": "binary Delaunay, row-standardized",
+      "permutations": 0
+    }
+  },
+  "classification": {
+    "abs_residual": "negligible",
+    "residual": "negligible"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "diagnostic": "D2_rho_clipping",
+  "purpose": "post-processing only; no GCCM execution",
+  "input": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4\\raw_curves.csv",
+  "features": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "library_sizes": [
+    10,
+    18,
+    33,
+    60,
+    109,
+    198
+  ],
+  "historical_rule": "max(0, mean_rho_raw)",
+  "comparison_rule": "mean_rho_raw",
+  "same_scoring_rules": {
+    "gain_gt": 0,
+    "spearman_gte": 0.6,
+    "terminal_p_lt": 0.05,
+    "fisher_lower_gt": 0,
+    "n_terminal": 198
+  },
+  "source_hashes": {
+    "raw_curves.csv": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+    "convergence.csv": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+    "weights.csv": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab"
+  }
+}

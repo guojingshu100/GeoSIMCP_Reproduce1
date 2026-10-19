@@ -1,0 +1,17 @@
+{
+  "datasets": [
+    {
+      "scenario": "S2",
+      "path": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\scale_outputs\\S2_scale_fit_preparation.csv",
+      "n": 200,
+      "sha256": "15fae73d0402eff0117bc8afc508462254d27e2e85e43fc051a68325bace2311"
+    },
+    {
+      "scenario": "S4",
+      "path": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\scale_outputs\\S4_scale_fit_preparation.csv",
+      "n": 200,
+      "sha256": "b6b89b8128e3957873e516c930a554835a88a60add9b4752bff0b66dd8935fbc"
+    }
+  ],
+  "only_scale_fit_rows_used": true
+}

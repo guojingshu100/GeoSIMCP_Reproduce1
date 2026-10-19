@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "files_complete": true,
+  "replicates": 20,
+  "new_m1_fits": 1,
+  "final_calibration_accessed": false,
+  "test_accessed": false,
+  "gccm_run": false
+}

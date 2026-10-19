@@ -1,0 +1,10 @@
+{
+  "generator_version": "gccp_sim_s1_s4_v1",
+  "scenario": "S2",
+  "mean_driver": "2*x1",
+  "scale_driver": "x2",
+  "sigma_function": "h(x2)=0.6+1.4/(1+exp(-1.2*x2))",
+  "n_scale_fit": 200,
+  "formula_match_confirmed": true,
+  "blinded_data_accessed": false
+}

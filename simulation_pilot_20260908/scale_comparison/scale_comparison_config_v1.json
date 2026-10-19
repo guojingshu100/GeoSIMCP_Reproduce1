@@ -1,0 +1,139 @@
+{
+  "scale_stage_version": "gccp_residual_scale_v1_blocked",
+  "created_at": "2026-09-09T00:40:15+08:00",
+  "generator_version": "gccp_sim_s1_s4_v1",
+  "predictor_stage_version": "gccp_rf_predictor_v1",
+  "stage_scope": "shared non-GCCM preparation only; primary validation comparison is blocked",
+  "alpha": 0.1,
+  "authorized_features": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "prohibited_columns": [
+    "y",
+    "mu_true",
+    "sigma_true",
+    "epsilon",
+    "g_true",
+    "eta"
+  ],
+  "data_roles": {
+    "scale_fit": "fit preprocessing, GCCM weights, and local-scale estimators",
+    "tuning_calibration": "later provisional normalized-score calibration; not accessed in blocked preparation",
+    "validation": "later parameter selection; labels not accessed in blocked preparation",
+    "final_calibration": "forbidden",
+    "test": "forbidden"
+  },
+  "preprocessing": {
+    "class": "sklearn.preprocessing.StandardScaler",
+    "with_mean": true,
+    "with_std": true,
+    "fit_subset": "scale_fit",
+    "branch_specific_preprocessing": false
+  },
+  "residual_target": {
+    "column": "abs_residual",
+    "transform": "identity",
+    "fit_subset": "scale_fit"
+  },
+  "local_scale_estimator": {
+    "type": "K-nearest-neighbour unweighted arithmetic mean",
+    "candidate_k": [10, 20, 30, 50, 75, 100],
+    "scale_fit_diagnostic": "leave one out by sample_id",
+    "distance_tie_rule": "sort by squared distance ascending, then reference sample_id ascending",
+    "neighbour_weighting": "uniform",
+    "actual_neighbour_count": "exactly k",
+    "scale_floor": {
+      "rule": "max(machine_epsilon_float64, linear_quantile(abs_residual_scale_fit, 0.05))",
+      "quantile": 0.05,
+      "fit_subset": "scale_fit"
+    }
+  },
+  "methods": {
+    "Raw-CP": {
+      "candidate_count": 1,
+      "scale": 1.0,
+      "score": "abs_residual"
+    },
+    "Normalized-Global": {
+      "candidate_count": 1,
+      "scale": "mean(abs_residual on scale_fit)",
+      "score": "abs_residual/global_scale"
+    },
+    "Normalized-EUC": {
+      "candidate_count": 6,
+      "distance": "ordinary Euclidean distance on the shared standardized features",
+      "candidate_k": [10, 20, 30, 50, 75, 100]
+    },
+    "Normalized-GCCM": {
+      "candidate_count": 6,
+      "distance": "sqrt(sum_j gamma_j*(z_j-z'_j)^2), gamma_j=p*w_j",
+      "candidate_k": [10, 20, 30, 50, 75, 100],
+      "execution_status": "BLOCKED"
+    }
+  },
+  "search_budget": {
+    "Raw-CP": 1,
+    "Normalized-Global": 1,
+    "Normalized-EUC": 6,
+    "Normalized-GCCM": 6,
+    "euc_gccm_local_scale_budget_identical": true
+  },
+  "gccm": {
+    "execution_status": "BLOCKED",
+    "cause_field": "one standardized observed feature X_j on scale_fit",
+    "effect_field": "abs_residual on scale_fit",
+    "mapping_direction": "effect_xmap_cause: abs_residual manifold reconstructs X_j",
+    "historical_core": "geoconformal-main/GCCP_Seattle/02_gccm/GCCM_updated 2/R/GCCM/GCCM4Lattice.r",
+    "point_graph_adaptation": "Delaunay adjacency on scale_fit s_x,s_y; proposed from PM2.5/Seattle history but not executed",
+    "E": 3,
+    "tau": 1,
+    "b": 4,
+    "library_sizes": null,
+    "library_size_status": "BLOCKED: no preregistered n=200 grid",
+    "convergence_rule": {
+      "terminal_gain_gt": 0.0,
+      "spearman_L_rho_gte": 0.6,
+      "terminal_pearson_two_sided_p_lt": 0.05,
+      "terminal_fisher_z_95_ci_lower_gt": 0.0,
+      "failed_feature_strength": 0.0,
+      "passed_feature_strength": "terminal rho",
+      "normalization": "positive strengths sum to one; gamma_j=p*w_j"
+    },
+    "runtime": {
+      "Rscript_available": false,
+      "R_packages_verified": false
+    }
+  },
+  "provisional_conformal": {
+    "calibration_subset": "tuning_calibration",
+    "calibration_n": 100,
+    "quantile_rule": "rank=ceil((n+1)*(1-alpha)); select the 1-based rank-th sorted score",
+    "expected_rank_at_alpha_0_10": 91,
+    "interval": "[y_pred-q*estimated_scale, y_pred+q*estimated_scale]"
+  },
+  "validation_selection": {
+    "target_coverage": 0.9,
+    "absolute_coverage_tolerance": 0.02,
+    "eligible_interval": [0.88, 0.92],
+    "primary_rule": "among eligible candidates, minimize mean Interval Score; then mean width; then prefer larger k",
+    "fallback_rule": "minimize absolute coverage deviation from 0.90; then mean Interval Score; then mean width; then prefer larger k",
+    "validation_changes_model_configuration": false
+  },
+  "random_seeds": {
+    "non_gccm_preparation": null,
+    "historical_gccm_runner_if_unblocked": 42
+  },
+  "blocked_actions": [
+    "GCCM weight fitting",
+    "Normalized-GCCM execution",
+    "validation candidate evaluation",
+    "final-calibration label access",
+    "test label access",
+    "oracle diagnostics"
+  ]
+}

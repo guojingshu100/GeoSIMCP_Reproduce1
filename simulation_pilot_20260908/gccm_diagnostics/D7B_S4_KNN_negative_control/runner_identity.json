@@ -1,0 +1,7 @@
+{
+  "runner_path": "F:\\GeoSIMCP_Reproduce\\d7b_runner.py",
+  "runner_sha256": "f185b6595333ad77276bccfe34d070caec2694b790d89bcb139fd06327ed28fc",
+  "point_predictor_artifact": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\predictor_outputs\\S4_model.joblib",
+  "point_predictor_config": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\predictor\\predictor_config_v1.json",
+  "knn_fit_count": 1
+}

@@ -1,0 +1,2 @@
+comparison,mean_delta_IS,median_delta_IS,sd_delta_IS,n_KNN_IS_lt_CP,n_KNN_IS_gt_CP,mean_pct_IS_diff,mean_delta_width,mean_pct_width_diff,mean_delta_coverage
+KNN-CP,0.18180530567144534,0.19059181073090237,0.05941260716683068,0,20,3.196092062706805,0.08923746443869363,2.154891735204253,-0.0021999999999999962

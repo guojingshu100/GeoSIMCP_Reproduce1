@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "n": 200,
+  "permutation_id": 59,
+  "permutation_seed": 2026090959,
+  "same_effect_multiset": true,
+  "effect_only_change": true,
+  "features_unchanged": true,
+  "coordinates_unchanged": true,
+  "graph_unchanged": true,
+  "settings_unchanged": true,
+  "fixed_points": 1,
+  "input_sha256": "921abeea6135bbd577079826933fb8f86d6ea49120d4988c14bd19645c10de08"
+}

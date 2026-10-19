@@ -1,0 +1,3 @@
+candidate_group,mean_morans_I,mean_pass_rate,variables
+spatially_structured,0.91846861298371207,0.64646464646464652,s_x;s_y;g_proxy
+approximately_nonspatial_random,-0.031679089842865778,0.063973063973063973,x1;x2;x_noise

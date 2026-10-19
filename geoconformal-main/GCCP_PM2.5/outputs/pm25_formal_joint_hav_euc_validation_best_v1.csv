@@ -1,0 +1,2 @@
+﻿lambda,bandwidth,coverage,mean_half_width,mean_width,interval_score,median_n_eff,p10_n_eff,p90_n_eff,coverage_constraint_feasible,selection_rule,geo_distance,feature_distance,fusion
+0.0,1.6382459437843868,0.823943661971831,8.586770315301266,17.173540630602524,32.01661622151158,84.67401342662876,46.01466961036213,97.6496927748098,False,fallback_global_min_interval_score,Haversine_km,standardized_Euclidean,joint_distance_shared_bandwidth

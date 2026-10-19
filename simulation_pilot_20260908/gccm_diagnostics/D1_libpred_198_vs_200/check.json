@@ -1,0 +1,30 @@
+{
+  "overall_status": "PASS",
+  "historical_198_reproduces_frozen_S4": true,
+  "historical_raw_max_abs_difference": 0.0,
+  "same_200_row_input_before_membership_selection": true,
+  "shared_embedding_generated_once": true,
+  "identical_graph_edge_hash": true,
+  "identical_feature_and_effect_values": true,
+  "only_lib_pred_membership_differs": true,
+  "permutation_experiment_rerun": false,
+  "tuning_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "oracle_files_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false,
+  "forbidden_columns_in_restricted_input": [],
+  "pass_flag_changes": [],
+  "max_abs_raw_rho_difference": 0.018276112267434697,
+  "source_hashes_after": {
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+    "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+    "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+    "raw_curves.csv": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+    "mean_curves.csv": "4a28aa51d85c284a947fe1753144502d9537501ec6dd94b6092e34fc49ae8d04",
+    "convergence.csv": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+    "weights.csv": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab"
+  },
+  "source_hashes_unchanged": true
+}

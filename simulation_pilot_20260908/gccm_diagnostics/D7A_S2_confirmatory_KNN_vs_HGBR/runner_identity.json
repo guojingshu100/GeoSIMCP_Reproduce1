@@ -1,0 +1,7 @@
+{
+  "runner_path": "F:\\GeoSIMCP_Reproduce\\d7a_runner.py",
+  "runner_sha256": "f0404d59c120cadf12228299894c5757fb7dbc96bdc84efbad91198805eaeee6",
+  "point_predictor_artifact": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\predictor_outputs\\S2_model.joblib",
+  "point_predictor_config": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\predictor\\predictor_config_v1.json",
+  "new_scale_model_fits": 2
+}

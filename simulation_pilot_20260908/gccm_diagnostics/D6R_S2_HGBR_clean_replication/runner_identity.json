@@ -1,0 +1,8 @@
+{
+  "runner_path": "F:\\GeoSIMCP_Reproduce\\d6r_runner.py",
+  "runner_sha256": "724fa08cfb1af2fe9bc602eee469d0ef9361e52554381428bd604d511ad19be8",
+  "random_state": "HGBR default None; replicate NumPy Generator seeds",
+  "point_predictor_artifact": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\predictor_outputs\\S2_model.joblib",
+  "point_predictor_config": "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\predictor\\predictor_config_v1.json",
+  "model_fit_count": 1
+}

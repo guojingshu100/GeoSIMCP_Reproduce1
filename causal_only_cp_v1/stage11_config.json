@@ -1,0 +1,69 @@
+{
+  "stage": "Stage 11 CausalOnly-CMI normalized split conformal prediction",
+  "version": "v1",
+  "created_date": "2026-09-17",
+  "scenarios": ["S2", "S4"],
+  "replicates": 20,
+  "seed_sequence": {
+    "first": 20270908,
+    "last": 20270927,
+    "source": "causal_strength_diagnostic_v1/stage8_frozen_replicates_v1/manifest.json"
+  },
+  "split_roles": {
+    "train": 1000,
+    "local_calibration": 300,
+    "validation": 200,
+    "final_calibration": 200,
+    "test": 300,
+    "scale_fit": 200,
+    "tuning_calibration": 100
+  },
+  "cmi": {
+    "source": "causal_strength_diagnostic_v1/stage9_feature_recovery_results.csv",
+    "condition": "Mspace",
+    "candidate_features": ["x1", "x2", "g_proxy", "x_noise"],
+    "coordinates_prohibited_from_causal_distance": ["s_x", "s_y"],
+    "estimator_provenance": "Tigramite CMIknn; k=20; 99 surrogates; conditioned on s_x,s_y; scale_fit labels only",
+    "weight_transform": "BH-gated positive CMI",
+    "eligibility": "bh_q < 0.05 and raw_cmi > 0",
+    "normalization": "w_j = raw_cmi_j / sum(raw_cmi over eligible features)",
+    "no_signal": "all feature weights zero"
+  },
+  "standardization": {
+    "source_rows": "scale_fit only",
+    "sd_definition": "sample standard deviation (ddof=1)",
+    "zero_sd_tolerance": 1e-12
+  },
+  "distance": {
+    "causal": "sqrt(sum_j w_j * (z_aj-z_bj)^2) over eligible causal attributes only",
+    "geography": "Euclidean distance over scale_fit-standardized s_x,s_y",
+    "tie_break": "ascending distance, then lexicographic sample_id",
+    "kernel": null
+  },
+  "scale_estimator": {
+    "reference": "scale_fit",
+    "residual": "abs(y-y_pred_frozen)",
+    "aggregation": "unweighted mean over k nearest neighbors",
+    "floor": 1e-12,
+    "k_candidates": [20, 40, 60, 80],
+    "selection": "minimum tuning_calibration residual-scale MAE",
+    "tie_rule": "largest k among MAEs equal within 1e-12",
+    "no_signal_fallback": "sigma_global = mean scale_fit absolute residual, constant downstream"
+  },
+  "conformal": {
+    "alpha": 0.1,
+    "final_calibration_rows": 200,
+    "rank_rule": "ceil((n_cal+1)*(1-alpha))",
+    "expected_rank": 181,
+    "methods": ["Raw-CP", "CausalOnly-CMI-NormCP", "GeoOnly-NormCP", "Oracle-NormCP"],
+    "interval_score": "(U-L)+(2/alpha)(L-y)I(y<L)+(2/alpha)(y-U)I(y>U)"
+  },
+  "label_access_order": [
+    "scale_fit: residual reference and feature standardization",
+    "tuning_calibration: k selection only",
+    "final_calibration: conformal quantile only after weights and k are frozen",
+    "test: evaluation only after the conformal quantile is frozen"
+  ],
+  "material_undercoverage": "mean coverage < 0.89 or more than 0.01 below Raw-CP",
+  "paired_ci": "two-sided 95% Student-t confidence interval for the mean paired replicate difference"
+}

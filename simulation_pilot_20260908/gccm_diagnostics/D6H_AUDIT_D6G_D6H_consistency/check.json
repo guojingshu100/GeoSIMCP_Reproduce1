@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "read_only_existing_inputs": true,
+  "simulations_run": false,
+  "models_fit": false,
+  "data_generated": false,
+  "final_calibration_accessed": false,
+  "test_accessed": false
+}

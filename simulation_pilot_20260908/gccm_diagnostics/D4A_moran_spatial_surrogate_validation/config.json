@@ -1,0 +1,19 @@
+{
+  "diagnostic": "D4A_moran_spatial_surrogate_validation",
+  "upstream_reference": "MICA-MNI/BrainSpace brainspace/null_models/moran.py",
+  "brainspace_installed": false,
+  "adapter_scope": "BrainSpace compute_mem spectrum=nonzero plus moran_randomization procedure=singleton, joint=False",
+  "seed": 20260910,
+  "n_surrogates_per_variable": 5,
+  "variables": [
+    "s_x",
+    "s_y",
+    "g_proxy"
+  ],
+  "msr_weight_matrix": "same frozen Delaunay binary symmetric adjacency; supplied unstandardized because BrainSpace compute_mem expects/symmetrizes affinity",
+  "validation_moran_weight_matrix": "same graph, binary row-standardized, identical to D3A/D3B",
+  "input_hashes": {
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5"
+  }
+}

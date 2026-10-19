@@ -1,0 +1,5 @@
+stage,evidence_location,finding
+D6A,config.json; summary.json; check.json,HGBR explicitly named; 10 fits
+D6C,config.json; check.json,HGBR explicitly named; one new scale-model fit
+D6G,config.json; summary.json; check.json,estimator and artifact identity absent
+D6H,config.json,m1_refit explicitly states KNN k=20 distance-weighted

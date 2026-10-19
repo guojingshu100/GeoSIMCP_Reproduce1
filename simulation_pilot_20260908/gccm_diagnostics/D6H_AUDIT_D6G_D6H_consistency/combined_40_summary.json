@@ -1,0 +1,4 @@
+{
+  "status": "POOLING_NOT_ALLOWED",
+  "reason": "D6G does not specify M1 estimator/configuration or artifact identity; D6H explicitly records KNN k=20 distance-weighted refit."
+}

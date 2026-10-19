@@ -1,0 +1,9 @@
+{
+  "overall_status": "PASS",
+  "new_model_fits": 0,
+  "rows": 300,
+  "identity_verified": true,
+  "final_calibration_accessed": false,
+  "test_accessed": false,
+  "conformal_rerun": false
+}

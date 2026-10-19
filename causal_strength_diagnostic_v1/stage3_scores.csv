@@ -1,0 +1,5 @@
+scenario,target_name,conditioning_set,n,knn_fraction,actual_k,seed,raw_score,status
+S2,A_model_abs_residual,M0,200,0.1,20,20260911,0.023956675413649986,PASS
+S2,A_model_abs_residual,Mspace,200,0.1,20,20260912,-0.000780776461271504,PASS
+S4,A_model_abs_residual,M0,200,0.1,20,20260913,-0.019399178685329588,PASS
+S4,A_model_abs_residual,Mspace,200,0.1,20,20260914,-0.009572552096052789,PASS

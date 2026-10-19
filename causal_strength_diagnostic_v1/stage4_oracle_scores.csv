@@ -1,0 +1,5 @@
+scenario,target_name,conditioning_set,n,knn_fraction,actual_k,seed,raw_score,status
+S2,A_oracle_abs_y_minus_mu_true,M0,200,0.1,20,20261011,0.023813441594899842,PASS
+S2,A_oracle_abs_y_minus_mu_true,Mspace,200,0.1,20,20261012,0.01667487441708282,PASS
+S4,A_oracle_abs_y_minus_mu_true,M0,200,0.1,20,20261013,-0.023663634632765884,PASS
+S4,A_oracle_abs_y_minus_mu_true,Mspace,200,0.1,20,20261014,-0.007067114935099816,PASS

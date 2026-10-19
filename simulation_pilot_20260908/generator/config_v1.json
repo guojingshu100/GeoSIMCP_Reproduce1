@@ -1,0 +1,92 @@
+{
+  "generator_version": "gccp_sim_s1_s4_v1",
+  "generation_timestamp": "2026-09-08T20:22:19+08:00",
+  "n": 2000,
+  "alpha": 0.1,
+  "random_seeds": {
+    "base_variables": 20260907,
+    "outer_split": 620907,
+    "local_calibration_role": 620908
+  },
+  "base_random_variables": {
+    "s_x": "Uniform(0, 1)",
+    "s_y": "Uniform(0, 1)",
+    "x1": "Normal(0, 1)",
+    "x2": "Normal(0, 1)",
+    "eta": "Normal(0, 1)",
+    "x_noise": "Normal(0, 1)",
+    "epsilon": "Normal(0, 1)",
+    "independence": "All seven base random variables are mutually independent and generated once with numpy.random.default_rng(base_variables)."
+  },
+  "equations": {
+    "g_true": "sin(2*pi*s_x) + cos(2*pi*s_y)",
+    "g_proxy": "g_true + 0.35*eta",
+    "scale_function": "h(z) = 0.6 + 1.4/(1 + exp(-1.2*z))",
+    "S1": {
+      "description": "aligned mean and noise drivers",
+      "mu_true": "2*x1",
+      "sigma_true": "h(x1)",
+      "y": "mu_true + sigma_true*epsilon"
+    },
+    "S2": {
+      "description": "separated mean and noise drivers",
+      "mu_true": "2*x1",
+      "sigma_true": "h(x2)",
+      "y": "mu_true + sigma_true*epsilon"
+    },
+    "S3": {
+      "description": "spatial common driver with a noisy observed proxy",
+      "mu_true": "2*x1 + 1.5*g_true",
+      "sigma_true": "h(g_true)",
+      "y": "mu_true + sigma_true*epsilon"
+    },
+    "S4": {
+      "description": "homoscedastic control",
+      "mu_true": "2*x1",
+      "sigma_true": "1.3",
+      "y": "mu_true + sigma_true*epsilon"
+    }
+  },
+  "split_sizes": {
+    "train": 1000,
+    "local_calibration": 300,
+    "validation": 200,
+    "final_calibration": 200,
+    "test": 300
+  },
+  "local_calibration_internal_roles": {
+    "scale_fit": 200,
+    "tuning_calibration": 100
+  },
+  "observed_columns": [
+    "sample_id",
+    "scenario",
+    "split",
+    "local_calibration_role",
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise",
+    "y"
+  ],
+  "truth_columns": [
+    "sample_id",
+    "scenario",
+    "split",
+    "local_calibration_role",
+    "mu_true",
+    "sigma_true",
+    "epsilon",
+    "g_true",
+    "eta"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "sklearn": "1.6.1"
+  }
+}

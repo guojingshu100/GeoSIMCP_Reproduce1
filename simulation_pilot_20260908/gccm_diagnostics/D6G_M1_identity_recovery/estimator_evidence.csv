@@ -1,0 +1,5 @@
+stage,evidence,identity
+D6A,config.json explicitly names HistGradientBoostingRegressor loss=quantile quantile=0.5 early_stopping=False,HGBR confirmed
+D6C,config.json explicitly names same estimator; check.json new_scale_model_fits=1,HGBR confirmed separate fit
+D6G,config.json/check.json record new_m1_fits=1 but no estimator or artifact,D6G unresolved
+D6H,config.json m1_refit explicitly states KNN k=20 distance-weighted,KNN confirmed by metadata

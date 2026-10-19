@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "knn_fits": 1,
+  "completed_replicates": 20,
+  "positivity_check": true,
+  "final_calibration_accessed": false,
+  "test_accessed": false,
+  "gccm_run": false,
+  "hgbr_run": false,
+  "tuning": false
+}

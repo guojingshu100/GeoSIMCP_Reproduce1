@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "sklearn_version": "1.6.1",
+  "estimator_available": true,
+  "model_fits": 10,
+  "metrics": {
+    "M0": {
+      "pinball_loss": 0.36169306921753885,
+      "mae_abs_residual": 0.7233861384350777
+    },
+    "M1": {
+      "pinball_loss": 0.3631472413384944,
+      "mae_abs_residual": 0.7262944826769888,
+      "pearson_pred_true_sigma": 0.636547351107221,
+      "spearman_pred_true_sigma": 0.6378969474236856,
+      "pearson_pred_x2": 0.631056461458284,
+      "spearman_pred_x2": 0.6378969474236856
+    },
+    "M2": {
+      "pinball_loss": 0.3597003289899509,
+      "mae_abs_residual": 0.7194006579799018,
+      "pearson_pred_true_sigma": 0.07005071465980145,
+      "spearman_pred_true_sigma": 0.06809270231755794,
+      "pearson_pred_x2": 0.06759793675332312,
+      "spearman_pred_x2": 0.06809270231755794
+    }
+  },
+  "relative_improvement_M1_vs_M0": -0.004020458904842737,
+  "relative_improvement_M1_vs_M2": -0.009582733377593864,
+  "quintiles": [
+    {
+      "x2_quintile": 1,
+      "n": 40,
+      "M1_mean_predicted_scale": 0.6986809766598929,
+      "M2_mean_predicted_scale": 0.9189279972345039
+    },
+    {
+      "x2_quintile": 2,
+      "n": 40,
+      "M1_mean_predicted_scale": 0.8999739872863776,
+      "M2_mean_predicted_scale": 1.0067538907332423
+    },
+    {
+      "x2_quintile": 3,
+      "n": 40,
+      "M1_mean_predicted_scale": 0.9875004522519941,
+      "M2_mean_predicted_scale": 1.0371608950218956
+    },
+    {
+      "x2_quintile": 4,
+      "n": 40,
+      "M1_mean_predicted_scale": 1.2308595349175202,
+      "M2_mean_predicted_scale": 0.9942935425123475
+    },
+    {
+      "x2_quintile": 5,
+      "n": 40,
+      "M1_mean_predicted_scale": 1.3703046052386898,
+      "M2_mean_predicted_scale": 1.0241004197494616
+    }
+  ],
+  "criteria": {
+    "criterion_1_M1_at_least_5pct_better_M0": false,
+    "criterion_2_M1_better_M2": false,
+    "criterion_3_M1_spearman_sigma_ge_030": true,
+    "criterion_4_M1_high_quintile_gt_low": true
+  },
+  "classification": "NOT YET VIABLE",
+  "blinded_data_accessed": false
+}

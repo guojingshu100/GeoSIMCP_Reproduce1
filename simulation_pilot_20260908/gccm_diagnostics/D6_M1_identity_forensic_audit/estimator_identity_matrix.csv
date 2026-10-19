@@ -1,0 +1,5 @@
+stage,estimator_class,hyperparameters,feature_set,target,training_rows,fit_status,artifact_identity
+D6A,HistGradientBoostingRegressor,"loss=quantile;quantile=0.5;early_stopping=False","s_x;s_y;x1;x2;g_proxy;x_noise",abs_residual,n=200,"new fits=10",not available
+D6C,HistGradientBoostingRegressor,"loss=quantile;quantile=0.5;early_stopping=False","s_x;s_y;x1;x2;g_proxy;x_noise",abs_residual,200,"new fit=1",not available
+D6G,UNCERTAIN,not specified,not specified,not specified,not specified,"new_m1_fits=1",not available
+D6H,KNeighborsRegressor,"n_neighbors=20;weights=distance",not specified,not specified,"200 authorized preparation referenced","new fit=1",not available

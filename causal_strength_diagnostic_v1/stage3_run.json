@@ -1,0 +1,254 @@
+{
+  "stage": "Stage 3",
+  "execution_status": "PASS",
+  "master_seed": 20260910,
+  "interpreter": "F:\\GeoSIMCP_Reproduce\\causal_strength_diagnostic_v1\\.venv_cmi_v1\\Scripts\\python.exe",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "tigramite": "5.2.10.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0"
+  },
+  "data_route": "audited load_scale_fit_features and load_scale_fit_target; no experiment pipeline invoked",
+  "input_paths_and_sha256": {
+    "simulation_pilot_20260908/data/S2_observed.csv": "9abe6271f7812bc83093a2af13d541d5aa18c0b65b2ff776332508c360ad293f",
+    "simulation_pilot_20260908/predictor_outputs/S2_predictions.csv": "37d892ac9c7f4b0896370744664b107d3d22b14bbf18a16cd26598b40791b1aa",
+    "simulation_pilot_20260908/predictor_outputs/S2_authorized_residuals.csv": "9d07f68c55689fe185c37f8091aa7072c7f4b4eaafb7d1fb772134481e734ade",
+    "simulation_pilot_20260908/data/S4_observed.csv": "1e0819fcbc6d639d2b7c13c17cf3b748e50746f6a5719057293886b3511f9b32",
+    "simulation_pilot_20260908/predictor_outputs/S4_predictions.csv": "d5f0ce193e673807add5b448f3dd516ff5bab243b23c972a8cc2d3b68b3b73bd",
+    "simulation_pilot_20260908/predictor_outputs/S4_authorized_residuals.csv": "e4ba363e066953bccf60a912ebe87d65596f6b753ca936749b293f83a4938afc"
+  },
+  "configuration": {
+    "estimator": "CMIknn",
+    "knn_fraction": 0.1,
+    "transform": false,
+    "workers": 1,
+    "constructor_kwargs": {
+      "knn": 0.1,
+      "transform": false,
+      "workers": 1,
+      "seed": 20260910
+    },
+    "array_convention": "(variables, samples)",
+    "xyz": {
+      "M0": [
+        0,
+        1
+      ],
+      "Mspace": [
+        0,
+        1,
+        2,
+        2
+      ]
+    }
+  },
+  "preprocessing": {
+    "S2": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "abs_residual"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.1346435591475088
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.9129245540515648
+      ]
+    },
+    "S4": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "abs_residual"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.1348990345978323
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.8950737251756561
+      ]
+    }
+  },
+  "access_logs": {
+    "feature": [
+      {
+        "source": "S2_observed.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "s_x",
+          "s_y",
+          "x1",
+          "x2",
+          "g_proxy",
+          "x_noise"
+        ],
+        "label_columns_loaded": [],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      },
+      {
+        "source": "S4_observed.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "s_x",
+          "s_y",
+          "x1",
+          "x2",
+          "g_proxy",
+          "x_noise"
+        ],
+        "label_columns_loaded": [],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      }
+    ],
+    "target": [
+      {
+        "source": "S2_authorized_residuals.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "abs_residual"
+        ],
+        "label_derived_columns_loaded": [
+          "abs_residual"
+        ],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "tuning_calibration_rows_loaded": 0,
+        "validation_rows_loaded": 0,
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      },
+      {
+        "source": "S4_authorized_residuals.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "abs_residual"
+        ],
+        "label_derived_columns_loaded": [
+          "abs_residual"
+        ],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "tuning_calibration_rows_loaded": 0,
+        "validation_rows_loaded": 0,
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      }
+    ]
+  },
+  "verification_results": {
+    "synthetic_shape": [
+      2,
+      32
+    ],
+    "synthetic_xyz": [
+      0,
+      1
+    ],
+    "adapter_direct_official_agreement": true,
+    "identical_seed_reproducibility": true,
+    "project_metadata_alignment": true
+  },
+  "scores": [
+    {
+      "scenario": "S2",
+      "target_name": "A_model_abs_residual",
+      "conditioning_set": "M0",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20260911,
+      "raw_score": 0.023956675413649986,
+      "status": "PASS"
+    },
+    {
+      "scenario": "S2",
+      "target_name": "A_model_abs_residual",
+      "conditioning_set": "Mspace",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20260912,
+      "raw_score": -0.000780776461271504,
+      "status": "PASS"
+    },
+    {
+      "scenario": "S4",
+      "target_name": "A_model_abs_residual",
+      "conditioning_set": "M0",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20260913,
+      "raw_score": -0.019399178685329588,
+      "status": "PASS"
+    },
+    {
+      "scenario": "S4",
+      "target_name": "A_model_abs_residual",
+      "conditioning_set": "Mspace",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20260914,
+      "raw_score": -0.009572552096052789,
+      "status": "PASS"
+    }
+  ],
+  "elapsed_time_seconds": 3.3438403999898583
+}

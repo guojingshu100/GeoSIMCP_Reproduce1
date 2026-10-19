@@ -1,0 +1,9 @@
+{
+  "overall_status": "PASS",
+  "generator_match": true,
+  "rows": 200,
+  "authorized_scale_fit_only": true,
+  "blinded_data_accessed": false,
+  "gccm_run": false,
+  "surrogates_generated": false
+}

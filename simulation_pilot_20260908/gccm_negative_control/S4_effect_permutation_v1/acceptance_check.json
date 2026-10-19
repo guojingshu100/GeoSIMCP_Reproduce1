@@ -1,0 +1,17 @@
+{
+  "overall_status": "PASS",
+  "returncode": 0,
+  "command": [
+    "D:\\conda\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_negative_control\\S4_effect_permutation_v1\\test_negative_control.py"
+  ],
+  "tests": 8,
+  "mode": "read-only existing outputs; no R executions",
+  "permutations_completed": 99,
+  "additional_permutations_run": 0,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false
+}

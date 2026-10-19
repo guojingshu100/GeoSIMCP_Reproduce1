@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "split_sizes": {
+    "scale_fit": 200,
+    "pilot_calibration": 100,
+    "validation": 200
+  },
+  "k": 91,
+  "q_CP": 1.9945010619233532,
+  "q_NCP": 2.4118506974706007,
+  "overall": {
+    "CP": {
+      "n": 200,
+      "covered": 174,
+      "uncovered": 26,
+      "coverage": 0.87,
+      "mean_width": 3.989002123846705,
+      "median_width": 3.9890021238467064,
+      "interval_score": 6.313654985558613
+    },
+    "NCP": {
+      "n": 200,
+      "covered": 168,
+      "uncovered": 32,
+      "coverage": 0.84,
+      "mean_width": 4.761785260843009,
+      "median_width": 4.67028502775873,
+      "interval_score": 6.476320126192297
+    }
+  },
+  "quintile_summary": {
+    "CP": {
+      "coverage_range": 0.25,
+      "mean_abs_coverage_dev": 0.07000000000000002,
+      "high_low_mean_width_ratio": 1.0
+    },
+    "NCP": {
+      "coverage_range": 0.125,
+      "mean_abs_coverage_dev": 0.06000000000000001,
+      "high_low_mean_width_ratio": 2.0779729940159837
+    }
+  },
+  "criteria": {
+    "criterion_1_NCP_coverage_ge_087": false,
+    "criterion_2_NCP_coverage_range_lower": true,
+    "criterion_3_NCP_mean_abs_dev_lower": true,
+    "criterion_4_NCP_IS_le_105_CP": true
+  },
+  "classification": "NOT INTERVAL-VIABLE",
+  "new_scale_model_fits": 1,
+  "blinded_data_accessed": false
+}

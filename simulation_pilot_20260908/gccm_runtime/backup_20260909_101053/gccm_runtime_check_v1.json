@@ -1,0 +1,82 @@
+{
+  "runtime_stage_version": "gccp_gccm_runtime_v1",
+  "created_at": "2026-09-09T09:53:16.165229+08:00",
+  "overall_status": "BLOCKED_ENVIRONMENT",
+  "rscript_status": "NOT_FOUND_IN_SEARCHED_LOCATIONS",
+  "package_status": "NOT_CHECKED_NO_INTERPRETER",
+  "historical_core_status": "SOURCE_FOUND_STATICALLY_AUDITED_NOT_LOADED",
+  "point_graph_wrapper_status": "NOT_IMPLEMENTED_ENVIRONMENT_STOP",
+  "causal_direction_status": "CONFIRMED_FROM_HISTORICAL_SOURCE",
+  "library_grid_frozen_before_execution": false,
+  "library_grid_derivation_status": "DERIVED_CONDITIONAL_NOT_EXECUTION_FROZEN",
+  "candidate_library_sizes": [
+    10,
+    18,
+    33,
+    60,
+    109,
+    198
+  ],
+  "smoke_test_status": "NOT_RUN_ENVIRONMENT_BLOCKED",
+  "smoke_tests": {
+    "Rscript": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "R_packages": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "source_loading": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "foreach_doParallel": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "determinism": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "graph_node_ordering": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "embedding_dimensions": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "simplex_projection": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "library_loop": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "output_schema": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "python_R_roundtrip": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "restricted_file_access": "NOT_RUN_ENVIRONMENT_BLOCKED"
+  },
+  "deterministic_reproduction_status": "NOT_RUN_ENVIRONMENT_BLOCKED",
+  "scale_fit_only_status": "NO_DATA_EXECUTION_NO_SAMPLE_VALUES_ACCESSED",
+  "tuning_calibration_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false,
+  "oracle_files_read_or_hashed": false,
+  "simulation_label_bearing_files_read_or_hashed": false,
+  "data_access_log": [],
+  "access_flag_scope": "this gccm_runtime turn only; does not erase earlier authorized predictor diagnostics",
+  "per_scenario_GCCM_execution_status": {
+    "S1": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "S2": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "S3": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "S4": "NOT_RUN_ENVIRONMENT_BLOCKED"
+  },
+  "primary_validation_comparison_executed": false,
+  "historical_source_sha256": {
+    "geoconformal-main/GCCP_Seattle/02_gccm/GCCM_updated 2/R/GCCM/GCCM4Lattice.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+    "geoconformal-main/GCCP_Seattle/02_gccm/GCCM_updated 2/R/GCCM/GCCM.r": "7134a658233638a7c8c10d58c6e7fb20f72bc303696ce5787638aa154c19bd52",
+    "geoconformal-main/GCCP_Seattle/02_gccm/GCCM_updated 2/R/GCCM/basic.r": "f2f1f7f31166d55409a17539a356c8097b4147aac16c0fce88b31308371282af",
+    "geoconformal-main/GCCP_PM2.5/03_gccm/run_pm25_gccm_train_only_v1.R": "0120b4ca82bba97887d9cb772f0dbc610346fe4daca7066e40e933575d1a1039",
+    "geoconformal-main/GCCP_Seattle/outputs/gccm_author_aligned/run_seattle_logprice_gccm_v1_fix1.R": "3dc60f9f0bcbbef254970d5ea27adf2dfea41671b2fd34cfe9fc7a737715e75b",
+    "geoconformal-main/GCCP_PM2.5/03_gccm/pm25_gccm_causal.ipynb": "4be87b47e525a317a112e7b542df0f85f0c470581b67bbd5b2f411f5f05a9259"
+  },
+  "new_artifact_sha256": {
+    "gccm_runtime/01_r_environment_audit.md": "f486441d12d6ee1d217e7fda9b88fecb2950b05f4efa4c69822f09a4fe33a104",
+    "gccm_runtime/02_historical_gccm_source_audit.md": "e57ec76ed14a46e14cb54875ce0add88412566f492c1cbb01fbcf36d5b8fa6ab",
+    "gccm_runtime/03_library_size_preregistration.md": "2a6446fdcf93cad42299111a7d3fe074a657772621719c2fe8e71b65eb9dcf80",
+    "gccm_runtime/gccm_runtime_config_v1.json": "f8a030e3e605579a4155d90f2aeed17c73f0840403af4d60ad98c1fc16927122",
+    "gccm_runtime/README.md": "aaafbea0141065b212ae33a3b1aac45ed92f63e5bf7aabe52843f16b61a1d3fe",
+    "05_gccm_runtime_and_weights_report.md": "c74a52566d29e512f312d5a28d9f2148b58ea763cb1f1f49ff368450d88e9724"
+  },
+  "installation_performed": false,
+  "omitted_due_to_stop": [
+    "gccm_point_graph_wrapper_v1.R",
+    "run_gccm_scale_fit_v1.py",
+    "test_gccm_runtime_stage.py",
+    "S1-S4 restricted inputs and GCCM results"
+  ],
+  "recovery_plan": "Locate an existing Rscript or obtain approval for R installation, then audit session/packages and run synthetic smoke tests before execution config and scale-fit weights.",
+  "warnings": [
+    "No usable R runtime found within the authorized search scope.",
+    "R packages unavailable for inspection; no claim they are missing.",
+    "Static graph compatibility does not establish causal-identification validity.",
+    "No measured embedding count, smoke-test PASS, weights, or validation results exist for this stage."
+  ]
+}

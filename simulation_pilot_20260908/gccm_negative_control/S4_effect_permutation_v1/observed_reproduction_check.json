@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "hash_matches": {
+    "raw_curves.csv": true,
+    "mean_curves.csv": true,
+    "convergence.csv": true,
+    "weights.csv": true,
+    "embedding.csv": true,
+    "ring_counts.csv": true,
+    "preflight.csv": true
+  }
+}

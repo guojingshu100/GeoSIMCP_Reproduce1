@@ -1,0 +1,16 @@
+{
+  "overall_status": "PASS",
+  "clipped_reproduces_frozen_pass_flags": true,
+  "clipped_reproduces_frozen_weights": true,
+  "raw_input_hash": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+  "frozen_convergence_hash": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+  "frozen_weights_hash": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab",
+  "no_gccm_rerun": true,
+  "no_permutation_rerun": true,
+  "blinded_labels_accessed": false,
+  "pass_flag_changes": [],
+  "s_x_pass_change": false,
+  "s_y_pass_change": false,
+  "max_abs_gain_change": 0.21537073176625868,
+  "max_abs_spearman_change": 0.05887605188567979
+}

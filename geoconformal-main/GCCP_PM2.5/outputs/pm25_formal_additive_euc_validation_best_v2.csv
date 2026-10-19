@@ -1,0 +1,2 @@
+﻿method,h_geo_km,h_feat,lambda,coverage,mean_width,interval_score,median_n_eff,coverage_constraint_feasible,selection_rule,boundary_note
+Additive-EUC,,1.6382459437843868,0.2,0.823943661971831,17.02788839591849,31.899938464728415,84.67401342662878,False,fallback_global_min_interval_score,lambda=0; geographic kernel inactive; h_geo not identifiable

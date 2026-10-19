@@ -1,0 +1,2 @@
+﻿split,model,best_n_estimators,best_max_depth,cv,validation_rmse,validation_mae,validation_r2,test_rmse,test_mae,test_r2
+author_80_10_10_random_state42,RandomForestRegressor,300,None,3,7.621596998538432,4.683720725829,0.7872640901625589,4.7114878137644,3.647601106864661,0.8020918472162993

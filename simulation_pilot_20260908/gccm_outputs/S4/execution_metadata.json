@@ -1,0 +1,37 @@
+{
+  "mode": "estimate",
+  "returncode": 0,
+  "runtime_seconds": 37.3722456000105,
+  "command": [
+    "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe",
+    "--vanilla",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_runtime\\gccm_point_graph_wrapper_v1.R",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4\\restricted_input.csv",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4\\edges.csv",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4\\historical_core.r",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4\\parameters.csv",
+    "F:\\GeoSIMCP_Reproduce\\simulation_pilot_20260908\\gccm_outputs\\S4",
+    "estimate"
+  ],
+  "environment_override": {
+    "LC_ALL": "C"
+  },
+  "hashes": {
+    "convergence.csv": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+    "embedding.csv": "1e58d1a74e053da47719defe1c1b651911a003cb8343c007e6085b7ddd8bec86",
+    "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+    "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+    "mean_curves.csv": "4a28aa51d85c284a947fe1753144502d9537501ec6dd94b6092e34fc49ae8d04",
+    "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+    "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+    "raw_curves.csv": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+    "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+    "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+    "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+    "weights.csv": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab"
+  },
+  "source_access": "restricted scale-fit input, graph, parameters and copied historical core only"
+}

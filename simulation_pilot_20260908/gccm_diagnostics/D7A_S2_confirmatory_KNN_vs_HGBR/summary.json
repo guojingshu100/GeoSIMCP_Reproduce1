@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "classification": "CONFIRMED",
+  "criteria": {
+    "1_coverage": "True",
+    "2_range_lower": "True",
+    "3_IS_le_CP": "True",
+    "4_IS_lt_HGBR": "True"
+  },
+  "D6H_excluded": true
+}

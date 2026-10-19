@@ -1,0 +1,19 @@
+{
+  "diagnostic": "D4C_gproxy_spatial_null_smoke",
+  "surrogates": 5,
+  "candidate": "g_proxy",
+  "effect": "abs_residual",
+  "library_sizes": [
+    10,
+    18,
+    33,
+    60,
+    109,
+    198
+  ],
+  "E": 3,
+  "tau": 1,
+  "b": 4,
+  "seed": 20260910,
+  "settings": "frozen D4B adapter"
+}

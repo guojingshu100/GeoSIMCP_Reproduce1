@@ -1,0 +1,23 @@
+{
+  "overall_status": "PASS",
+  "brainspace_installed": false,
+  "implementation": "thin local adapter based on BrainSpace compute_mem and moran_randomization singleton semantics",
+  "frozen_graph_identical": true,
+  "n_nodes": 200,
+  "surrogates_per_variable": 5,
+  "all_surrogate_arrays_finite": true,
+  "all_surrogate_arrays_length_200": true,
+  "all_surrogates_nonidentical": true,
+  "same_seed_reproduces_identical_arrays": true,
+  "gccm_run": false,
+  "blinded_labels_accessed": false,
+  "tuning_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "oracle_files_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false,
+  "input_hashes": {
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5"
+  }
+}

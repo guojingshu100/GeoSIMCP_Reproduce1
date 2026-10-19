@@ -1,0 +1,2 @@
+﻿h_geo_km,h_causal,lambda,coverage,mean_half_width,mean_width,interval_score,median_n_eff,p10_n_eff,p90_n_eff,coverage_constraint_feasible,selection_rule,geo_distance,causal_distance,fusion,gccm_source
+690.7945369945043,1.233068680242374,0.1,0.852112676056338,8.63892912975766,17.27785825951532,31.307392563795265,68.07467307551251,36.937588607551874,84.49856647064617,False,fallback_global_min_interval_score,Haversine_km,GCCM_weighted_standardized_Euclidean,lambda*K_geo+(1-lambda)*K_causal,Train_only

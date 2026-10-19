@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "valid_embeddings": 200,
+  "raw_rows": 5946,
+  "independent_scoring_check": true,
+  "weights_available": true
+}

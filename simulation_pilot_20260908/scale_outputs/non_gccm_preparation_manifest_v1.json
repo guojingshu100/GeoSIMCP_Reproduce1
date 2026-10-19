@@ -1,0 +1,222 @@
+{
+  "feature_access_log": [
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "s_x",
+        "s_y",
+        "x1",
+        "x2",
+        "g_proxy",
+        "x_noise"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_columns_loaded": [],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S1_observed.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0
+    },
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "s_x",
+        "s_y",
+        "x1",
+        "x2",
+        "g_proxy",
+        "x_noise"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_columns_loaded": [],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S2_observed.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0
+    },
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "s_x",
+        "s_y",
+        "x1",
+        "x2",
+        "g_proxy",
+        "x_noise"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_columns_loaded": [],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S3_observed.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0
+    },
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "s_x",
+        "s_y",
+        "x1",
+        "x2",
+        "g_proxy",
+        "x_noise"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_columns_loaded": [],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S4_observed.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0
+    }
+  ],
+  "final_calibration_labels_accessed": false,
+  "manifest_version": "non_gccm_preparation_manifest_v1",
+  "oracle_files_read_or_hashed": false,
+  "output_hashes": {
+    "S1_scale_fit_preparation.csv": "529c9d82330a3a7cbec3b58a4fd298978606b58065a34269c59df69d0d0be347",
+    "S2_scale_fit_preparation.csv": "f0154d477631bfbe42c9e8f052f5640009d5bea059d792448ab56c69c7645360",
+    "S3_scale_fit_preparation.csv": "767d1d44ca6412ab4e3018968561a87ae830863fed7a536049b7e2c7e2a05163",
+    "S4_scale_fit_preparation.csv": "5269d84a6ea06893e95b2557eb8c3176536a2751b94352e52ce9a869a4dd13a3"
+  },
+  "primary_comparison_status": "BLOCKED",
+  "scale_stage_version": "gccp_residual_scale_v1_blocked",
+  "scaler_hashes": {
+    "S1_standard_scaler.joblib": "5654e4ca8ef5766a923eed886762d2ccc7160a8a8041f4c4036e779fcd389a1e",
+    "S2_standard_scaler.joblib": "5654e4ca8ef5766a923eed886762d2ccc7160a8a8041f4c4036e779fcd389a1e",
+    "S3_standard_scaler.joblib": "5654e4ca8ef5766a923eed886762d2ccc7160a8a8041f4c4036e779fcd389a1e",
+    "S4_standard_scaler.joblib": "5654e4ca8ef5766a923eed886762d2ccc7160a8a8041f4c4036e779fcd389a1e"
+  },
+  "status": "PASS",
+  "target_access_log": [
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "abs_residual"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_derived_columns_loaded": [
+        "abs_residual"
+      ],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S1_authorized_residuals.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0,
+      "tuning_calibration_rows_loaded": 0,
+      "validation_rows_loaded": 0
+    },
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "abs_residual"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_derived_columns_loaded": [
+        "abs_residual"
+      ],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S2_authorized_residuals.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0,
+      "tuning_calibration_rows_loaded": 0,
+      "validation_rows_loaded": 0
+    },
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "abs_residual"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_derived_columns_loaded": [
+        "abs_residual"
+      ],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S3_authorized_residuals.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0,
+      "tuning_calibration_rows_loaded": 0,
+      "validation_rows_loaded": 0
+    },
+    {
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "abs_residual"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "label_derived_columns_loaded": [
+        "abs_residual"
+      ],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "rows_loaded": 200,
+      "source": "S4_authorized_residuals.csv",
+      "split_values": [
+        "local_calibration"
+      ],
+      "test_rows_loaded": 0,
+      "tuning_calibration_rows_loaded": 0,
+      "validation_rows_loaded": 0
+    }
+  ],
+  "test_labels_accessed": false,
+  "validation_labels_accessed": false
+}

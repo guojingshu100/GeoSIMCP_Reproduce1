@@ -1,0 +1,13 @@
+{
+  "diagnostic": "D7C",
+  "scenarios": [
+    "S2",
+    "S4"
+  ],
+  "scale_learner": "StandardScaler -> KNeighborsRegressor(n_neighbors=20,weights=distance)",
+  "folds": 5,
+  "fold_random_state": 20260914,
+  "bootstrap_n": 2000,
+  "bootstrap_seed": 20260915,
+  "total_knn_fits": 10
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "classification": "NEGATIVE-CONTROL FAILURE",
+  "criteria": {
+    "1_coverage": true,
+    "2_range": false,
+    "3_IS": false,
+    "4_width": true,
+    "5_oracle_invariant": true
+  },
+  "confirmed_sigma_true": 1.3,
+  "D6H_used_as_evidence": false
+}

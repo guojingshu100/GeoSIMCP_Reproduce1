@@ -1,0 +1,14 @@
+{
+  "seed": 20260910,
+  "generator": "sklearn.utils.check_random_state (BrainSpace semantics)",
+  "variables": [
+    "s_x",
+    "s_y",
+    "g_proxy"
+  ],
+  "n_rep": 5,
+  "procedure": "singleton",
+  "joint": false,
+  "spectrum": "nonzero",
+  "reproducibility_rerun_identical": true
+}

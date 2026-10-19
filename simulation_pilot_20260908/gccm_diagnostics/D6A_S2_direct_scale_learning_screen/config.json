@@ -1,0 +1,24 @@
+{
+  "diagnostic": "D6A_S2_direct_scale_learning_screen",
+  "n": 200,
+  "features_all": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "features_without_x2": [
+    "s_x",
+    "s_y",
+    "x1",
+    "g_proxy",
+    "x_noise"
+  ],
+  "response": "abs_residual",
+  "estimator": "HistGradientBoostingRegressor(loss=quantile,quantile=0.5,early_stopping=False)",
+  "cv": "KFold(n_splits=5,shuffle=True,random_state=20260909)",
+  "fits": 10,
+  "blinded_splits_accessed": false
+}

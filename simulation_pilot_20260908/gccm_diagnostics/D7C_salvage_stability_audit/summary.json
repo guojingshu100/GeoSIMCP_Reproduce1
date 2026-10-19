@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "retry_provenance": "CLEAN TECHNICAL RETRY",
+  "scientific_results_before_retry": false,
+  "configuration": "IDENTICAL",
+  "fold_identity": "IDENTICAL",
+  "salvage_classification": "A",
+  "S2_row_level": {
+    "scenario": "S2",
+    "n": 200,
+    "mean_d": 0.007995760974756324,
+    "median_d": 0.004377382157271015,
+    "sd_d": 0.13828677411046816,
+    "fraction_d_gt_0": 0.52,
+    "fraction_d_lt_0": 0.48
+  },
+  "S4_row_level": {
+    "scenario": "S4",
+    "n": 200,
+    "mean_d": -0.0017317167326755545,
+    "median_d": 0.005339476928989742,
+    "sd_d": 0.11122579266467242,
+    "fraction_d_gt_0": 0.525,
+    "fraction_d_lt_0": 0.475
+  },
+  "fold_level": "NOT AVAILABLE",
+  "S2_bootstrap": {
+    "scenario": "S2",
+    "bootstrap_n": 2000,
+    "seed": 20260915,
+    "mean_d_p2_5": -0.0120930849051756,
+    "mean_d_p97_5": 0.0275011988594783
+  },
+  "S4_bootstrap": {
+    "scenario": "S4",
+    "bootstrap_n": 2000,
+    "seed": 20260915,
+    "mean_d_p2_5": -0.0175966681170735,
+    "mean_d_p97_5": 0.0137337780653555
+  },
+  "S2_stability_interpretation": "C",
+  "original_classifications_unchanged": true
+}

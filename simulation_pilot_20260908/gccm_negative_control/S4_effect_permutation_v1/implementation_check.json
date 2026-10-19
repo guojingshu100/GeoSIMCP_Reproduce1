@@ -1,0 +1,41 @@
+{
+  "overall_status": "PASS",
+  "permutations_completed": 99,
+  "observed_reproduction": {
+    "raw_curves.csv": true,
+    "mean_curves.csv": true,
+    "convergence.csv": true,
+    "weights.csv": true,
+    "embedding.csv": true,
+    "ring_counts.csv": true,
+    "preflight.csv": true
+  },
+  "all_99_effect_multiset_checks": "PASS",
+  "features_coordinates_ids_unchanged": "PASS",
+  "graph_settings_unchanged": "PASS",
+  "independent_scoring_checks": "PASS",
+  "selected_repeat": {
+    "restricted_input.csv": true,
+    "edges.csv": true,
+    "parameters.csv": true,
+    "execution_config.json": true,
+    "raw_curves.csv": true,
+    "mean_curves.csv": true,
+    "convergence.csv": true,
+    "weights.csv": true,
+    "embedding.csv": true,
+    "ring_counts.csv": true,
+    "preflight.csv": true
+  },
+  "existing_outputs_unchanged": "PASS",
+  "configuration_and_seeds_frozen_before_execution": true,
+  "tuning_calibration_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false,
+  "oracle_files_read_or_hashed": false,
+  "predictor_retrained": false,
+  "primary_validation_comparison_executed": false,
+  "access_scope": "Existing S4 scale-fit preparation and GCCM artifacts/config/source only; explicit file paths, no OS sandbox claim.",
+  "no_converged_feature_n": 3
+}

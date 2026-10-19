@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "classification": "D",
+  "new_m1_fits": 1,
+  "completed_replicates": 20,
+  "efficiency_comparison": [
+    {
+      "n_cal": 50,
+      "M1_minus_CP_IS": -0.27497554218846965,
+      "Oracle_minus_CP_IS": -0.48567046528945834,
+      "M1_minus_Oracle_IS": 0.2106949231009887,
+      "M1_pct_diff_vs_CP": -4.585374702754355
+    },
+    {
+      "n_cal": 100,
+      "M1_minus_CP_IS": -0.20675695057004706,
+      "Oracle_minus_CP_IS": -0.4333205376578322,
+      "M1_minus_Oracle_IS": 0.22656358708778512,
+      "M1_pct_diff_vs_CP": -3.5233805223239116
+    },
+    {
+      "n_cal": 200,
+      "M1_minus_CP_IS": -0.21048130065948012,
+      "Oracle_minus_CP_IS": -0.43830276905088983,
+      "M1_minus_Oracle_IS": 0.2278214683914097,
+      "M1_pct_diff_vs_CP": -3.615608375463445
+    },
+    {
+      "n_cal": 400,
+      "M1_minus_CP_IS": -0.21391454614017746,
+      "Oracle_minus_CP_IS": -0.4380337020049865,
+      "M1_minus_Oracle_IS": 0.22411915586480902,
+      "M1_pct_diff_vs_CP": -3.694545238342039
+    }
+  ],
+  "diagnostic_ratios": {
+    "coverage_SD_400_over_100": 0.5416295382975816,
+    "q_CV_400_over_100": 0.48048727879754793,
+    "coverage_error_400_over_100": 0.4794520547945207,
+    "IS_gap_100": -0.20675695057004706,
+    "IS_gap_400": -0.21391454614017746
+  },
+  "original_final_calibration_test_accessed": false
+}

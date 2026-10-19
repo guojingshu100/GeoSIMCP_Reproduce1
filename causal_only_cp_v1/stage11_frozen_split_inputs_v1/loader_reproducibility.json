@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "loader": "causal_only_cp_v1/stage11_frozen_split_inputs_v1/loader.py",
+  "tested_in_fresh_processes": 2,
+  "replicate": 1,
+  "seed": 20270908,
+  "scenarios": ["S2", "S4"],
+  "splits": {
+    "scale_fit": 200,
+    "tuning_calibration": 100,
+    "final_calibration": 200,
+    "test": 300
+  },
+  "test_sealing": "loader rejects test unless allow_test=True; test files are under test_sealed.csv",
+  "hashes": {
+    "S2/scale_fit": "c56337a7dc0db3c17c10a6a5a8cfe8fd5c4719e343d7ea4cf08ccee0d9855839",
+    "S2/tuning_calibration": "803134a40554f609554d3f196a273a4918a9e08d84573dae50b4300a45027eea",
+    "S2/final_calibration": "314242808890638836a2abf821b3c32dc6627c96190f48bff7a0f87813a9fb57",
+    "S2/test": "25e2891dc7a495d1a1fc43d25e7d6b9fc8619d475b4f1508a765261659bc6096",
+    "S4/scale_fit": "cf6bfbc6ce13253f1a3efc09f6a7b1cdbcb6a5cd9d13c349cf9753401a21d7d9",
+    "S4/tuning_calibration": "c7cd4e5a04c56a2689e9a51541bc2b30666093bbb17989658b328f298c89ff93",
+    "S4/final_calibration": "2a8438761459e93c61aac1ecfda4ea1d770717211a5659fa0efc0df7c96583f0",
+    "S4/test": "554b7bbcaba0957bc810b52ecd98c63a3e2289c7c443b265deed1c72273c3eef"
+  },
+  "all_first_second_hashes_equal": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "new_m1_fits": 1,
+  "replicates": 20,
+  "means": {
+    "CP": 0.8965500000000001,
+    "M1-NCP": 0.9120999999999999,
+    "Oracle-NCP": 0.9089499999999999
+  },
+  "diagnosis": "A",
+  "mean_M1_minus_Oracle_coverage": 0.003149999999999986,
+  "median_M1_minus_Oracle_coverage": 0.0010000000000000009,
+  "M1_coverage_below_Oracle_count": 9,
+  "mean_M1_minus_Oracle_IS": 0.7245833395626989,
+  "original_final_calibration_test_accessed": false
+}

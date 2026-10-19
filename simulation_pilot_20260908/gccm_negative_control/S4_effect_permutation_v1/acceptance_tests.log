@@ -1,0 +1,13 @@
+test_01_preregistered_seed_list_and_settings (__main__.NegativeControlAcceptance.test_01_preregistered_seed_list_and_settings) ... ok
+test_02_original_reproduces_and_sources_unchanged (__main__.NegativeControlAcceptance.test_02_original_reproduces_and_sources_unchanged) ... ok
+test_03_all_99_inputs_are_effect_only_permutations (__main__.NegativeControlAcceptance.test_03_all_99_inputs_are_effect_only_permutations) ... ok
+test_04_diagnostics_recomputed_from_raw_curves (__main__.NegativeControlAcceptance.test_04_diagnostics_recomputed_from_raw_curves) ... ok
+test_05_exact_repeat (__main__.NegativeControlAcceptance.test_05_exact_repeat) ... ok
+test_06_aggregate_counts_and_tail_formula (__main__.NegativeControlAcceptance.test_06_aggregate_counts_and_tail_formula) ... ok
+test_07_label_boundary_and_no_comparison (__main__.NegativeControlAcceptance.test_07_label_boundary_and_no_comparison) ... ok
+test_08_manifest_integrity (__main__.NegativeControlAcceptance.test_08_manifest_integrity) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 4.114s
+
+OK

@@ -1,0 +1,217 @@
+{
+  "stage": "Stage 4",
+  "execution_status": "PASS",
+  "master_seed": 20260910,
+  "interpreter": "F:\\GeoSIMCP_Reproduce\\causal_strength_diagnostic_v1\\.venv_cmi_v1\\Scripts\\python.exe",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "tigramite": "5.2.10.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0"
+  },
+  "input_paths_and_sha256": {
+    "simulation_pilot_20260908/data/S2_observed.csv": "9abe6271f7812bc83093a2af13d541d5aa18c0b65b2ff776332508c360ad293f",
+    "simulation_pilot_20260908/data/S2_truth.csv": "b3cd07deb85aa703b2fde53cca8f60d84785c250e2d2b575bffc763d3d8d25dc",
+    "simulation_pilot_20260908/predictor_outputs/S2_predictions.csv": "37d892ac9c7f4b0896370744664b107d3d22b14bbf18a16cd26598b40791b1aa",
+    "selected_id_source": "load_scale_fit_features(observed,predictions): local_calibration + scale_fit",
+    "simulation_pilot_20260908/data/S4_observed.csv": "1e0819fcbc6d639d2b7c13c17cf3b748e50746f6a5719057293886b3511f9b32",
+    "simulation_pilot_20260908/data/S4_truth.csv": "893cd7849cc8624ebdb1e6e7bc133f3dbbb36f64d76689026aaeb6174e25ead8",
+    "simulation_pilot_20260908/predictor_outputs/S4_predictions.csv": "d5f0ce193e673807add5b448f3dd516ff5bab243b23c972a8cc2d3b68b3b73bd"
+  },
+  "selected_id_source": "audited load_scale_fit_features; its filter is split=local_calibration and local_calibration_role=scale_fit",
+  "target_definition": "A_oracle = abs(y - mu_true)",
+  "identity_validation": {
+    "S2": {
+      "n": 200,
+      "tolerance_atol_rtol": 1e-12,
+      "status": "PASS",
+      "max_abs_discrepancy": 1.3322676295501878e-15
+    },
+    "S4": {
+      "n": 200,
+      "tolerance_atol_rtol": 1e-12,
+      "status": "PASS",
+      "max_abs_discrepancy": 8.881784197001252e-16
+    }
+  },
+  "configuration": {
+    "estimator": "tigramite.independence_tests.cmiknn.CMIknn",
+    "knn_fraction": 0.1,
+    "actual_k": 20,
+    "transform": false,
+    "workers": 1,
+    "direct_method": "get_dependence_measure(array, xyz)",
+    "xyz": {
+      "M0": [
+        0,
+        1
+      ],
+      "Mspace": [
+        0,
+        1,
+        2,
+        2
+      ]
+    }
+  },
+  "preprocessing": {
+    "S2": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "A_oracle"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.0937500607251296
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.8732036507238348
+      ]
+    },
+    "S4": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "A_oracle"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.0982406576011128
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.840267119553304
+      ]
+    }
+  },
+  "feature_loader_access_log": [
+    {
+      "source": "S2_observed.csv",
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "s_x",
+        "s_y",
+        "x1",
+        "x2",
+        "g_proxy",
+        "x_noise"
+      ],
+      "label_columns_loaded": [],
+      "rows_loaded": 200,
+      "split_values": [
+        "local_calibration"
+      ],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "test_rows_loaded": 0
+    },
+    {
+      "source": "S4_observed.csv",
+      "columns_loaded": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "s_x",
+        "s_y",
+        "x1",
+        "x2",
+        "g_proxy",
+        "x_noise"
+      ],
+      "label_columns_loaded": [],
+      "rows_loaded": 200,
+      "split_values": [
+        "local_calibration"
+      ],
+      "local_role_values": [
+        "scale_fit"
+      ],
+      "final_calibration_rows_loaded": 0,
+      "test_rows_loaded": 0
+    }
+  ],
+  "reproducibility_checks": {
+    "identical_seed_reproducibility": true,
+    "synthetic_shape": [
+      2,
+      32
+    ],
+    "synthetic_xyz": [
+      0,
+      1
+    ],
+    "constructor_kwargs": {
+      "knn": 0.1,
+      "transform": false,
+      "workers": 1,
+      "seed": 20260910
+    }
+  },
+  "scores": [
+    {
+      "scenario": "S2",
+      "target_name": "A_oracle_abs_y_minus_mu_true",
+      "conditioning_set": "M0",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20261011,
+      "raw_score": 0.023813441594899842,
+      "status": "PASS"
+    },
+    {
+      "scenario": "S2",
+      "target_name": "A_oracle_abs_y_minus_mu_true",
+      "conditioning_set": "Mspace",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20261012,
+      "raw_score": 0.01667487441708282,
+      "status": "PASS"
+    },
+    {
+      "scenario": "S4",
+      "target_name": "A_oracle_abs_y_minus_mu_true",
+      "conditioning_set": "M0",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20261013,
+      "raw_score": -0.023663634632765884,
+      "status": "PASS"
+    },
+    {
+      "scenario": "S4",
+      "target_name": "A_oracle_abs_y_minus_mu_true",
+      "conditioning_set": "Mspace",
+      "n": 200,
+      "knn_fraction": 0.1,
+      "actual_k": 20,
+      "seed": 20261014,
+      "raw_score": -0.007067114935099816,
+      "status": "PASS"
+    }
+  ],
+  "elapsed_time_seconds": 5.077577800024301
+}

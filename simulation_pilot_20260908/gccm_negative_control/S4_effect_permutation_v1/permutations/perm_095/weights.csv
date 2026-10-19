@@ -1,0 +1,7 @@
+"feature","strength","weight","converged","gamma","status"
+"s_x",0,0,FALSE,0,"WEIGHTS_AVAILABLE"
+"s_y",0.310701796210262,1,TRUE,6,"WEIGHTS_AVAILABLE"
+"x1",0,0,FALSE,0,"WEIGHTS_AVAILABLE"
+"x2",0,0,FALSE,0,"WEIGHTS_AVAILABLE"
+"g_proxy",0,0,FALSE,0,"WEIGHTS_AVAILABLE"
+"x_noise",0,0,FALSE,0,"WEIGHTS_AVAILABLE"

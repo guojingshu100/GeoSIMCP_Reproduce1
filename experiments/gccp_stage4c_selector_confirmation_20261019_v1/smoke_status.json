@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "complete_six_scenarios": true,
+  "selector_support": "quantile0.9 HGB fitted successfully",
+  "old_samples_used": false,
+  "kernel_parity": true,
+  "label_gates": true
+}

@@ -1,0 +1,28 @@
+{
+  "protocol_version": "pm25_formal_v1",
+  "random_seed": 42,
+  "n_total": 1415,
+  "n_train": 990,
+  "n_calibration": 141,
+  "n_validation": 142,
+  "n_frozen_test": 142,
+  "features": [
+    "dem",
+    "sp",
+    "tp",
+    "blh",
+    "r",
+    "aod_sat",
+    "ndvi"
+  ],
+  "target": "PM2.5",
+  "predictor": {
+    "name": "RandomForestRegressor",
+    "n_estimators": 300,
+    "max_depth": null,
+    "random_state": 42
+  },
+  "alpha": 0.1,
+  "test_policy": "Frozen test labels must not be used for parameter selection.",
+  "split_sha256": "785436f18bcc08a5a6b94916d3e544af0e0706e959b7c930300f7a91bddf04f3"
+}

@@ -1,0 +1,46 @@
+{
+  "class": "Pipeline",
+  "module": "sklearn.pipeline",
+  "get_params": {
+    "memory": null,
+    "steps": [
+      [
+        "standard_scaler",
+        "StandardScaler()"
+      ],
+      [
+        "knn",
+        "KNeighborsRegressor(n_neighbors=20, weights='distance')"
+      ]
+    ],
+    "transform_input": null,
+    "verbose": false,
+    "standard_scaler": "StandardScaler()",
+    "knn": "KNeighborsRegressor(n_neighbors=20, weights='distance')",
+    "standard_scaler__copy": true,
+    "standard_scaler__with_mean": true,
+    "standard_scaler__with_std": true,
+    "knn__algorithm": "auto",
+    "knn__leaf_size": 30,
+    "knn__metric": "minkowski",
+    "knn__metric_params": null,
+    "knn__n_jobs": null,
+    "knn__n_neighbors": 20,
+    "knn__p": 2,
+    "knn__weights": "distance"
+  },
+  "steps": [
+    "StandardScaler",
+    "KNeighborsRegressor"
+  ],
+  "sklearn_version": "1.6.1",
+  "features": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "target": "abs_residual"
+}

@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "new_model_fits": 0,
+  "B": 2000,
+  "seed": 20260909,
+  "k": 91,
+  "original_q": {
+    "CP": 1.9945010619233532,
+    "M1": 2.4118506974706007,
+    "Oracle": 1.6967935519818456
+  },
+  "bootstrap_q_95_ranges": {
+    "CP": [
+      1.789121677621119,
+      2.9324019849813103
+    ],
+    "M1": [
+      2.053055566669993,
+      2.781981477356197
+    ],
+    "Oracle": [
+      1.3786917005488983,
+      1.8899476760191494
+    ]
+  },
+  "bootstrap_coverage_95_ranges": {
+    "CP": [
+      0.815,
+      0.955
+    ],
+    "M1": [
+      0.82,
+      0.91
+    ],
+    "Oracle": [
+      0.775,
+      0.915
+    ]
+  },
+  "required_quantile_gap": [
+    {
+      "method": "CP",
+      "q_original_calibration": 1.9945010619233532,
+      "q_required_87": 1.9773614986799881,
+      "q_required_90": 2.109409849515527,
+      "q_required_87_over_original": 0.9914065910665212,
+      "q_required_90_over_original": 1.0576127984015031
+    },
+    {
+      "method": "M1",
+      "q_original_calibration": 2.4118506974706007,
+      "q_required_87": 2.515743853616719,
+      "q_required_90": 2.7460447050905086,
+      "q_required_87_over_original": 1.043076114228412,
+      "q_required_90_over_original": 1.138563306580457
+    },
+    {
+      "method": "Oracle",
+      "q_original_calibration": 1.6967935519818456,
+      "q_required_87": 1.661322244809328,
+      "q_required_90": 1.8383810716055051,
+      "q_required_87_over_original": 0.9790950954928564,
+      "q_required_90_over_original": 1.0834441641166577
+    }
+  ],
+  "score_shift": [
+    {
+      "method": "CP",
+      "ks_statistic": 0.105,
+      "ks_pvalue_descriptive": 0.4454636734169503,
+      "median_validation_over_calibration": 1.1808822451769116,
+      "q90_validation_over_calibration": 1.096078905739563,
+      "q95_validation_over_calibration": 1.08242424703738
+    },
+    {
+      "method": "M1",
+      "ks_statistic": 0.085,
+      "ks_pvalue_descriptive": 0.7118733808662896,
+      "median_validation_over_calibration": 1.0246566086393145,
+      "q90_validation_over_calibration": 1.165247191926533,
+      "q95_validation_over_calibration": 1.2038618373825074
+    },
+    {
+      "method": "Oracle",
+      "ks_statistic": 0.07,
+      "ks_pvalue_descriptive": 0.8933338427537486,
+      "median_validation_over_calibration": 0.988249961906568,
+      "q90_validation_over_calibration": 1.0981402999461336,
+      "q95_validation_over_calibration": 1.1996993586293072
+    }
+  ],
+  "diagnosis": "C_MIXED",
+  "blinded_data_accessed": false
+}

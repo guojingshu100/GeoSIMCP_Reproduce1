@@ -1,0 +1,15 @@
+{
+  "n": 20,
+  "pass_count": 17,
+  "terminal_rho_ge_real_count": 5,
+  "raw_strength_ge_real_count": 5,
+  "terminal_rho_median": 0.1885837812102435,
+  "terminal_rho_min": 0.0542661274074776,
+  "terminal_rho_max": 0.439804437480281,
+  "terminal_rho_percentile_25": 0.15154199009285724,
+  "terminal_rho_percentile_75": 0.248064748219621,
+  "real_sx_terminal_rho": 0.246623560555136,
+  "descriptive_spatial_null_tail_probability": 0.2857142857142857,
+  "real_rank_among_null_ascending": 16,
+  "real_percentile_among_null": 75.0
+}

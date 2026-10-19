@@ -1,0 +1,7 @@
+"L","rho","feature","direction","condition","comparison_role"
+200,0.265351522565646,"s_x","effect_xmap_cause","full_200","supplementary_L200"
+200,0.30034096971353,"s_y","effect_xmap_cause","full_200","supplementary_L200"
+200,-0.232123915518802,"x1","effect_xmap_cause","full_200","supplementary_L200"
+200,-0.244004884349424,"x2","effect_xmap_cause","full_200","supplementary_L200"
+200,0.0855975179744993,"g_proxy","effect_xmap_cause","full_200","supplementary_L200"
+200,-0.0903726010191063,"x_noise","effect_xmap_cause","full_200","supplementary_L200"

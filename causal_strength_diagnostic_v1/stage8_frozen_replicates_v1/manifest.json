@@ -1,0 +1,1543 @@
+{
+  "stage": "Stage 8 frozen replicate preparation",
+  "version": "v1",
+  "base_artifacts": {
+    "S2": {
+      "path": "simulation_pilot_20260908\\predictor_outputs\\S2_predictions.csv",
+      "sha256": "37d892ac9c7f4b0896370744664b107d3d22b14bbf18a16cd26598b40791b1aa",
+      "rows": 2000,
+      "columns": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "y_pred"
+      ]
+    },
+    "S4": {
+      "path": "simulation_pilot_20260908\\predictor_outputs\\S4_predictions.csv",
+      "sha256": "d5f0ce193e673807add5b448f3dd516ff5bab243b23c972a8cc2d3b68b3b73bd",
+      "rows": 2000,
+      "columns": [
+        "sample_id",
+        "scenario",
+        "split",
+        "local_calibration_role",
+        "y_pred"
+      ]
+    }
+  },
+  "generator_config_sha256": "fb35d5ff4e9310cae5407a1fa272dac7e3c9102a11ad136a2e04dab23b8d9e41",
+  "predictor_config_sha256": "a2fc8022fdbd04c997004f16416f38ce2b4ba398e25a89144559eceba4251457",
+  "predictor_source_sha256": "2d4989c4565df5f5120e43aa174832ea6dbab2f435bf5c7e66b0b497629e05aa",
+  "feature_columns": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "predictor_configuration": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 5,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 300,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 420907,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "replicates": [
+    {
+      "replicate_index": 1,
+      "generation_seed": 20270908,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S2_predictor_inputs.csv",
+            "sha256": "62bb7d54b5cf72f531abb94cc2be5bb3e90aa2e33389cff0bee980a72486357c",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S2_train_labels.csv",
+            "sha256": "fdd00f027c6e0a16cd0be8bbecfc36dcd798ecb977be30e85d8f7576f3ab18e4",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S2_scale_fit_labels.csv",
+            "sha256": "571d5260e8d413f1d77879b88537de2c51ad22e26dbff5b35fda8bff14246fa9",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S2_predictions.csv",
+            "sha256": "40ecd9d269e69c6ed5074ae11ed0960a6267d0d81beb12240718119306fe205c",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.012254703861291183,
+            "A_model_median": 0.9277918865214583,
+            "A_model_mean": 1.0549970586438522,
+            "A_model_max": 4.832504102320003
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S4_predictor_inputs.csv",
+            "sha256": "610ac3dfd2b320ac24397ce676647bb14f033c9155751b6a28888ff3cf7fef22",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S4_train_labels.csv",
+            "sha256": "b44004a9f01b396a51438e8dabeec8fa90807e025321dc64cbf9ea630b368a61",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S4_scale_fit_labels.csv",
+            "sha256": "634cea3d0a403ed2a46780fd6f1cc21fd24398b17c430dc4daecde91f1d825eb",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_01_seed_20270908\\S4_predictions.csv",
+            "sha256": "578fddeffe9cccc80e6f9a3765d2cbc8ce4d716e74937bf8bc2b46f26a4231c7",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.005625396172317276,
+            "A_model_median": 0.9854770669059205,
+            "A_model_mean": 1.0548551435578846,
+            "A_model_max": 3.8786778304841016
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 2,
+      "generation_seed": 20270909,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S2_predictor_inputs.csv",
+            "sha256": "937fa8809db498b63a701cf295310f230c05ef0d4ce65b208015ba32b16d98cd",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S2_train_labels.csv",
+            "sha256": "9555fc92cbd827f87ea15a13229a095bf7e3cd8fbe8ffa62bd871193f4d76ae7",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S2_scale_fit_labels.csv",
+            "sha256": "c6a7897d85e50a038bdcb96a4fce1f12315ae0c586aec1866fc13ae5075b1424",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S2_predictions.csv",
+            "sha256": "a9b8d84b124898c4637583ae8c662c03f3d290026057ecd3a9d9fe9eeddb8b3c",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.00032799633895241875,
+            "A_model_median": 0.9063738133959351,
+            "A_model_mean": 1.100906649168262,
+            "A_model_max": 4.261591250566928
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S4_predictor_inputs.csv",
+            "sha256": "860e6f337a6a6df68a3220892e769c091f077cc2537a986d08db57c8549703a1",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S4_train_labels.csv",
+            "sha256": "a6446319c42f74bbb3196ceaa0aa7879a943760fd7667fc277b1353becc17b7d",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S4_scale_fit_labels.csv",
+            "sha256": "55f853907674aac794c6c86f8fa8d6ff2e85f98c0661c922fe26b7e1868e7650",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_02_seed_20270909\\S4_predictions.csv",
+            "sha256": "2beae72d0b891fa61836d6a1c4fe587c1b2af7bb99950ecb35447f1e5aee6fc7",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.007212484905116057,
+            "A_model_median": 0.885306808504057,
+            "A_model_mean": 1.0891773855421567,
+            "A_model_max": 3.5515880686785377
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 3,
+      "generation_seed": 20270910,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S2_predictor_inputs.csv",
+            "sha256": "1c2546daf63478b31971d292f4dad80d4e31c9f633f8ba1440dc13f14ad977fd",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S2_train_labels.csv",
+            "sha256": "3ab85624a5fa9cce3730a9525e7bc4fd49603df94ca4d28ce14d81b1b8e8e81f",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S2_scale_fit_labels.csv",
+            "sha256": "f100452ab0d5316253e98c65d0ab90d936e050d5a1cca9559795caa85a6a0703",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S2_predictions.csv",
+            "sha256": "06d1125a1f7a5fc947fc64892b2e9aa591ea6ceb11d47fce4be4f317db0430a0",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.00018163232515799876,
+            "A_model_median": 0.9420723367036131,
+            "A_model_mean": 1.147002352412994,
+            "A_model_max": 5.440031502740283
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S4_predictor_inputs.csv",
+            "sha256": "a152a2b7f1230c298ad3b4e3d619372fe770168bcca6cf1c8b48636d3f4926f6",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S4_train_labels.csv",
+            "sha256": "025e13b2bcd40b4d029e76aa57b07528b819dd61f8a03d681086c90c3750b2a7",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S4_scale_fit_labels.csv",
+            "sha256": "56b2cc3f36748ca268e36aba020a5aebe8bdf653004ba42fef7e1837ece1fdf8",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_03_seed_20270910\\S4_predictions.csv",
+            "sha256": "1bed021156d666309ba8289c13d04495dde69c5bead71f478bd2fb6990cc9b0b",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0078063442970933705,
+            "A_model_median": 0.8828070150222207,
+            "A_model_mean": 1.1012113626384918,
+            "A_model_max": 5.3996231428351
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 4,
+      "generation_seed": 20270911,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S2_predictor_inputs.csv",
+            "sha256": "bb025bdad0cb37882c44334d6a9630da7fb2fac3d4c0fb7583137c9395977c6c",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S2_train_labels.csv",
+            "sha256": "1e100858ad00052a586fac4a2e4fde76723bd3f6b99e241c0f2822d6c9e240d1",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S2_scale_fit_labels.csv",
+            "sha256": "2c1ada7b02c917fb3098b7ad4b788c3c2e09447af575662c0dbaaf126dd7d10a",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S2_predictions.csv",
+            "sha256": "135b760136d1a15d655d5b8f5b61ff861a922d7184afd9b636d61f92c056f8a8",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.005541523879382115,
+            "A_model_median": 0.8847527969486224,
+            "A_model_mean": 1.0537691094039148,
+            "A_model_max": 4.510516411420114
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S4_predictor_inputs.csv",
+            "sha256": "30abadae40898a335f471fb09101dc9202af7818d2393e7931bf5b5ac08fe3eb",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S4_train_labels.csv",
+            "sha256": "4d458a95a9881b555df015555353d705a930a6ef0bb9bfbd7e7eb2e95d7194bd",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S4_scale_fit_labels.csv",
+            "sha256": "de3beb8605cc309ab4495d2d839afa8eaed43df8efdf98cc29f2a1dd11814aec",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_04_seed_20270911\\S4_predictions.csv",
+            "sha256": "cea39ca8041aaa3c98bf4b15bec3ed41e46360a7c6e9e412b88690330812bb32",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.004169540678436334,
+            "A_model_median": 0.8561714193376869,
+            "A_model_mean": 1.0283607683750844,
+            "A_model_max": 4.151132486534084
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 5,
+      "generation_seed": 20270912,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S2_predictor_inputs.csv",
+            "sha256": "0abb7301ed187272591f855391da2a801980b8b09ad396cc815f0ef1bbbccfc3",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S2_train_labels.csv",
+            "sha256": "f265c0e81463b6c007f439816b8e026ddb738595c9aae7d412845da60fbd01c2",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S2_scale_fit_labels.csv",
+            "sha256": "49ca3f2b375fcaee3a5f8e552e69cd1cadca2c7fea99ec96f304fe1fcc72e50f",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S2_predictions.csv",
+            "sha256": "45e3f0b8fa8c2f1a48a2ce83d5bec9e5d65bda1918ca44c69cbcc6f32a9aabf7",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.004923956996867318,
+            "A_model_median": 0.8492662969387491,
+            "A_model_mean": 1.0910993046852133,
+            "A_model_max": 4.945353240593697
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S4_predictor_inputs.csv",
+            "sha256": "df3f3c78b33fc331da450b558831cf3e166f5e952adab3efc0c71ebd6ed2cc9d",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S4_train_labels.csv",
+            "sha256": "e4d124aed60fcb748002fe215ed3c86beb40d2bf33d18d4669e691aa7352e50e",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S4_scale_fit_labels.csv",
+            "sha256": "c48e76e9c210581a9f326fa49cd251a742f1615b438ddae4955097f561f2eb91",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_05_seed_20270912\\S4_predictions.csv",
+            "sha256": "e65b0f956c020d659cec415cf65ce654d55a97b3226fa09eb165b7cd317e698d",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0012910543392936624,
+            "A_model_median": 0.9658603566552609,
+            "A_model_mean": 1.0797543178890117,
+            "A_model_max": 4.525165635922933
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 6,
+      "generation_seed": 20270913,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S2_predictor_inputs.csv",
+            "sha256": "5656d488f432c28098e24fbc4ca3bdba9773d1834c7f9a0416c4fb91ccb182db",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S2_train_labels.csv",
+            "sha256": "b092703d54126a5d4a03b16b540e78d4f20649ee5c52ed326b3644b03b0c382d",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S2_scale_fit_labels.csv",
+            "sha256": "3f9b61f999d0168c6891fd44fdd5c202c1cebe42780d0f8042383238a3e5a3d7",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S2_predictions.csv",
+            "sha256": "7526a8d58685a970b3b184cc06b0516d37015672a9b24e569d349cba0e477818",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.012936332212140411,
+            "A_model_median": 0.8267573219671311,
+            "A_model_mean": 1.015577684811066,
+            "A_model_max": 3.998113700182521
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S4_predictor_inputs.csv",
+            "sha256": "755f68fe41871c2daf5097f14f75fdd51f517dd51df90437de207c0037bd1976",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S4_train_labels.csv",
+            "sha256": "82ae1b76837cf5f40e1f61e0239ce73c0e746c652654044d38f1950e2c9a7d2c",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S4_scale_fit_labels.csv",
+            "sha256": "fe22f40f5a671416b121c8ad5f4c8b4193830577ad20d11c10bb49d7e57f0920",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_06_seed_20270913\\S4_predictions.csv",
+            "sha256": "4dc7279f67d317edf6436fcd03dac736d98d2fe0aa67ae355b40963ab524d69c",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0002034106561357163,
+            "A_model_median": 0.8735554898503043,
+            "A_model_mean": 1.0566166257071776,
+            "A_model_max": 4.368176137051237
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 7,
+      "generation_seed": 20270914,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S2_predictor_inputs.csv",
+            "sha256": "31626266ad29a29a8aaaa1e704236ba2c11910b6bfed226dfbb54a4b3721bdef",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S2_train_labels.csv",
+            "sha256": "f9c2fd931cf54af1864f1f8ac04b8da966ac1ceb54a61d832070b7221c615425",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S2_scale_fit_labels.csv",
+            "sha256": "724e053c2b400bf738b4ef5774ad16991b8841a065cff973f3e2dc058efe4911",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S2_predictions.csv",
+            "sha256": "5b1a3c8dfaf26e5dbff6b4c98dfa6044c1ec260243311ccdd33df95eec72082a",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.01889652352448934,
+            "A_model_median": 0.8805705786276607,
+            "A_model_mean": 1.0361706294954538,
+            "A_model_max": 4.078453645427029
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S4_predictor_inputs.csv",
+            "sha256": "08875ab136d9d645528824e80c404fad50d278aeb3b864c7b0ee276f96fbc5f6",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S4_train_labels.csv",
+            "sha256": "3a9f40a352626fa9990b8fcd488cef3dac072a2ae0e93a82615aec3c27e7281d",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S4_scale_fit_labels.csv",
+            "sha256": "3f69f0838d376b7def57a7621991b74db641bcbde11c55977b621ab272704e30",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_07_seed_20270914\\S4_predictions.csv",
+            "sha256": "91a1066fe2858ccc31529d73e78d3487d7bee86b7a77979cbbfb9a64b9d458e6",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.020835217780824866,
+            "A_model_median": 0.941802100024468,
+            "A_model_mean": 1.044144008795231,
+            "A_model_max": 3.878565570260264
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 8,
+      "generation_seed": 20270915,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S2_predictor_inputs.csv",
+            "sha256": "32a2eff343bc4cd899fcc006fc785b04cca1e62a842b0b17fd30c8b4c0fc76c9",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S2_train_labels.csv",
+            "sha256": "63a6d28e4725d26d03b16cd978ce62eb154a6f8782dc62d6e87f019e7a573245",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S2_scale_fit_labels.csv",
+            "sha256": "c797bddb8807898a71c8e9f3554548334f1792ffbc9838d8443fb355a4387219",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S2_predictions.csv",
+            "sha256": "aa83dbfe50aca6301c9128e0d5c7e586af78aba55914de4ca835860e2e1759b3",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.003285549101144092,
+            "A_model_median": 0.9744173758030411,
+            "A_model_mean": 1.1037801376454814,
+            "A_model_max": 5.104863742387864
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S4_predictor_inputs.csv",
+            "sha256": "140079e05a5081c29ea8a1c1419de4fe7192dbf61d1024dc2fc6e07be48609a3",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S4_train_labels.csv",
+            "sha256": "e1a988c38acfde1aa77aabbe6aeeb32052910ffe1b738d3357ebdc28da9e91f3",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S4_scale_fit_labels.csv",
+            "sha256": "1d3b659fea622a9ee3183c597ba19472e35c38e5fdb9420759b2dbb818ae25c8",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_08_seed_20270915\\S4_predictions.csv",
+            "sha256": "95ce8179c846fed54b0cf16542bdaa7f0c0bb82a27c403d58618aae2f364cb80",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.019759641262740324,
+            "A_model_median": 0.9445196445921045,
+            "A_model_mean": 1.097733711023472,
+            "A_model_max": 4.31311095320249
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 9,
+      "generation_seed": 20270916,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S2_predictor_inputs.csv",
+            "sha256": "9b7fe34d45bfede0333f548345341f8563c2b3781563ead450e4ea38512dbc4c",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S2_train_labels.csv",
+            "sha256": "07e5064337d8b5b6529648968af22ed373190d27590dde16bd94a69ea5da97ad",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S2_scale_fit_labels.csv",
+            "sha256": "856ab68066fce1521ec8357e5e7540883951c2c2e8463122c75a5f8ae1d72fdb",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S2_predictions.csv",
+            "sha256": "fccab3831792181e3226fbb877cd7ba6c18816dad9c6a19830045f1ec5b02a7f",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.005433719879868626,
+            "A_model_median": 0.9269710671401721,
+            "A_model_mean": 1.1277236846033065,
+            "A_model_max": 5.371558870928391
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S4_predictor_inputs.csv",
+            "sha256": "97569175ad62c0949adacfbb93e200f4a88aec3202f3ff4cda221bf8fd568072",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S4_train_labels.csv",
+            "sha256": "a849fba27d40092595fc480deaa8080644ca2de3649a7c3dd200d5cd9a4dd2d3",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S4_scale_fit_labels.csv",
+            "sha256": "0be68e1e733925c287b67c98688d791c29d6c5bf79170f6b7b13b803fe8d0d82",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_09_seed_20270916\\S4_predictions.csv",
+            "sha256": "ceb6d7e26785e7ca2b97a60acbf73de2417e1b36d7268a5d0820b9863a936e85",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.003756051808186278,
+            "A_model_median": 0.9835016760895334,
+            "A_model_mean": 1.132654367707738,
+            "A_model_max": 4.4104491335317615
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 10,
+      "generation_seed": 20270917,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S2_predictor_inputs.csv",
+            "sha256": "8697c225ec87b57141acf22fe2a61ab91ecba965366eb6366639a96c1e0319dd",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S2_train_labels.csv",
+            "sha256": "1d80c691158540d404d989497e97472bb0583fa6c26ba43d806c2e2522e3a343",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S2_scale_fit_labels.csv",
+            "sha256": "fd6960f338040d046b6075948a011d75e5305ed5ba3eb7c00ebe1b4ee25346ed",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S2_predictions.csv",
+            "sha256": "54544f68cdb636bc04599cad96de271e0650a86bf3a6a7ed9aa9cd170506c657",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0066017186167919295,
+            "A_model_median": 0.8317635240855605,
+            "A_model_mean": 1.107918654355171,
+            "A_model_max": 4.009440762800403
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S4_predictor_inputs.csv",
+            "sha256": "b73ebfeb7a7809fa37fe29e949483c755b870321f279cc126c7dc62e2421e696",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S4_train_labels.csv",
+            "sha256": "dac3e4a1ed3292219e1a54d699dad4ec87e7c10214e550e13be420ab35322923",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S4_scale_fit_labels.csv",
+            "sha256": "ba6c093814e4a856d9eb06beefeff78be9298f19593b654066149837e5f6bf08",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_10_seed_20270917\\S4_predictions.csv",
+            "sha256": "652024e282b37a1550dc85f0126d9bdc252378359418d373f37bcadeedb22230",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.021903757260573142,
+            "A_model_median": 0.8912759468843265,
+            "A_model_mean": 1.0705343260442666,
+            "A_model_max": 3.2284471293145156
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 11,
+      "generation_seed": 20270918,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S2_predictor_inputs.csv",
+            "sha256": "1b1b6400cd3f68917439f8fb84d18b81adf8e40cdbff3eb1517558987a1decb7",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S2_train_labels.csv",
+            "sha256": "6107a7e709f4e170f34ea6313a2a55fc9aa6c087adc283d6ef19674a9a8fbba3",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S2_scale_fit_labels.csv",
+            "sha256": "d1a336c71330031d5258e41074e1c54107203a1f0b757c264f71384668301e97",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S2_predictions.csv",
+            "sha256": "1ecb38300799393c6ba894150e159358462446ec25a861acf548ef82591e1981",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.01258612267272996,
+            "A_model_median": 1.0849451064690037,
+            "A_model_mean": 1.185622389217463,
+            "A_model_max": 4.7984262067126435
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S4_predictor_inputs.csv",
+            "sha256": "c108aa82912c3b46e03b99d8be74eb7fecfd6c6c29c7b7f667acbd145f3ab237",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S4_train_labels.csv",
+            "sha256": "2d1b499c0718e60435042bed5102895fc4e58fc8596b766d88d149ac321160f0",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S4_scale_fit_labels.csv",
+            "sha256": "3346d2296d4fdcc4320bb96590c32ab6a50488bac8662a771bac3bcb04047a91",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_11_seed_20270918\\S4_predictions.csv",
+            "sha256": "8f8c440cbd46dc1986023afbe924822a31db05fcff3fdbeb1f5b8ca13f61a5d4",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.024644110969896493,
+            "A_model_median": 1.1019067890674794,
+            "A_model_mean": 1.211525356357111,
+            "A_model_max": 3.992493253058117
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 12,
+      "generation_seed": 20270919,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S2_predictor_inputs.csv",
+            "sha256": "88f8db97c0b72704b03781ecdd1c0075bb0d4caabc9326758c43705e4e817fe9",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S2_train_labels.csv",
+            "sha256": "8e73cd0a18936f0388dff97ab0a0588fa14fa62a1a6bc98bd7eb599dbc09b768",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S2_scale_fit_labels.csv",
+            "sha256": "3b0e034efabb104b3b83ce2e1aa50be619bd6bd3030cb96f44d864aecebf6eb3",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S2_predictions.csv",
+            "sha256": "b7aee701324439e9da55f55891318e12c9e16462e349ab9b8aefed968a2d4ec7",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.009580843729763755,
+            "A_model_median": 0.8111795293620299,
+            "A_model_mean": 1.0182639952063939,
+            "A_model_max": 4.353428466087768
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S4_predictor_inputs.csv",
+            "sha256": "0524f85ab0a58ca55b4702c3f17b54b196849c8466896399855d6a5948052395",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S4_train_labels.csv",
+            "sha256": "e641c37fd6ccce808a351834bf4b85bed0d82704e4c65758465a619ffb061f93",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S4_scale_fit_labels.csv",
+            "sha256": "7b4cd88289006872d1fde9b1d9a91104152dac602e414f07278c4ca7917e757c",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_12_seed_20270919\\S4_predictions.csv",
+            "sha256": "73953ec19db1e6e2563afecd387f83828f61c2e5790d80f2c23bda9cdf58fa32",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.007125640517869902,
+            "A_model_median": 0.8608569427410319,
+            "A_model_mean": 1.001200130795599,
+            "A_model_max": 3.494640472986581
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 13,
+      "generation_seed": 20270920,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S2_predictor_inputs.csv",
+            "sha256": "9e30789dda0a0585083c5e3ad1db90a3fa8b344cb552ff82ab348a9ad9080814",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S2_train_labels.csv",
+            "sha256": "9ae2f155aceaee5bc5cb092fcadb8a2b4b8a182996b860fe813c2f9d00650762",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S2_scale_fit_labels.csv",
+            "sha256": "775ed8113786b81d6cba4ecd580d9861a7d8bea84da64d99f8db5db4d1eee2eb",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S2_predictions.csv",
+            "sha256": "b6c7dffa1aabc2413eacc26039e53d925254c4127e10a94f534f5d207213f85d",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0053018244963594086,
+            "A_model_median": 1.0021117910346216,
+            "A_model_mean": 1.1197113562963938,
+            "A_model_max": 4.390454512153296
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S4_predictor_inputs.csv",
+            "sha256": "2977469b4b7edb9d6fa1f6f7983aaca8da38b72af4e3e270072fa00000e4bcbd",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S4_train_labels.csv",
+            "sha256": "1c110225f50c17461619ddbb15931234b6c2a039076af019c048ea802767c876",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S4_scale_fit_labels.csv",
+            "sha256": "98c3a6b2de950514e5700e64649cf1d575bfcfde7b1e8cbaa378f3fbb0a7cba5",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_13_seed_20270920\\S4_predictions.csv",
+            "sha256": "df62f28f3719158fa311bd44021e5b254a0bc228c42d45f307ad60cb7ec7309c",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.000435053188915846,
+            "A_model_median": 0.941727697302915,
+            "A_model_mean": 1.103251052829865,
+            "A_model_max": 3.8180059973635627
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 14,
+      "generation_seed": 20270921,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S2_predictor_inputs.csv",
+            "sha256": "6175c6be94d5d0171859a737238987b77c74700f49232f3796c1057760fb5b1e",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S2_train_labels.csv",
+            "sha256": "6d52bc9bc07a61e2ffa97ab9d8b0f5154cbd96c0107649e7631df33711a83b9f",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S2_scale_fit_labels.csv",
+            "sha256": "5c5ad1ee4a807f71ccbdb5fabf3a6a6d6562f5f956d916bc2ca0aba7bf214d2b",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S2_predictions.csv",
+            "sha256": "965a3d2c73db1e2f69d3af368a6d3bc2757c44d05acba32abdfad84bda092648",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.010721346501258777,
+            "A_model_median": 0.9044443061408662,
+            "A_model_mean": 1.0781309211207428,
+            "A_model_max": 5.251174121804084
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S4_predictor_inputs.csv",
+            "sha256": "d3acad3ce7f995d8dec1d0b3d8b8d5676d529680924a464232d58a685183950a",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S4_train_labels.csv",
+            "sha256": "c5e503283f0f0f95cd7184beb2d5410e502379726596218809b427ce76c0c4a0",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S4_scale_fit_labels.csv",
+            "sha256": "abfcf1e19610aa811ecbce94a266d82f7afaf101ca28d7ee716ad09d77b41bd1",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_14_seed_20270921\\S4_predictions.csv",
+            "sha256": "d853a39943c6b900ada9da42afaeb288ca883057dcc393383a201a03fac3317e",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.003555820809664323,
+            "A_model_median": 0.969060479970278,
+            "A_model_mean": 1.0834813919530175,
+            "A_model_max": 5.251561525066652
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 15,
+      "generation_seed": 20270922,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S2_predictor_inputs.csv",
+            "sha256": "8199e59d0f38c77e7ff068bec1588871d3dcf103b75b871d3d17bbe1b4920b9a",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S2_train_labels.csv",
+            "sha256": "786e3f7996ff78e3420492560b8a7a9ceca270a02dfb9b079f7e8ec10efb4508",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S2_scale_fit_labels.csv",
+            "sha256": "f429d54fc6d740c5efd630697ab52901a9f1cbc61507ea7bba8954127a1e3532",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S2_predictions.csv",
+            "sha256": "d79c91cc0843fec248ae4a3aabf88add2d7e7ad8551e2116a6c69dcde9b0330c",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0010484482450369148,
+            "A_model_median": 0.8389871915485357,
+            "A_model_mean": 1.1071911405871944,
+            "A_model_max": 5.726995493950542
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S4_predictor_inputs.csv",
+            "sha256": "dc3a899ef45aeee1f393a7d9caec869358d8b07f880c50cfb6a5cebd813b8a35",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S4_train_labels.csv",
+            "sha256": "256da8b63e3a3283e104a68bbb109aefeb2189df6a0dfaca6fc9e2bf851604fb",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S4_scale_fit_labels.csv",
+            "sha256": "95930f9a7071f01b47b63643912ed80c2e85fdf5e42dd150cafe077ce1603f53",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_15_seed_20270922\\S4_predictions.csv",
+            "sha256": "04fee59ef337ae98be044a490940eba393d4bd909fb034ae3fe9a2ead2a158f7",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.005895985556324312,
+            "A_model_median": 0.939074456856933,
+            "A_model_mean": 1.082090467745182,
+            "A_model_max": 4.415025350771124
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 16,
+      "generation_seed": 20270923,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S2_predictor_inputs.csv",
+            "sha256": "b8af3a220a9776eacb99fd3eba2e6b2bb5ca36eb33845aaee6822e651bf5d090",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S2_train_labels.csv",
+            "sha256": "22701e7c60da4223423c4cdadb2b6468c72139bd998f6150576c8fce3863b52e",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S2_scale_fit_labels.csv",
+            "sha256": "34d872358397b3d01392924b863f3121444c007a9eb78621c27a2b505492337b",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S2_predictions.csv",
+            "sha256": "86c0182db2a5424a3a17e5f30d1d808db7d2418105cdebac3b57ae7180102253",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.026063816945390617,
+            "A_model_median": 0.8407070115999831,
+            "A_model_mean": 1.0530216495623024,
+            "A_model_max": 5.219142998638262
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S4_predictor_inputs.csv",
+            "sha256": "2b3b91d6d5fc3400ddeafa80b8dcfdc2f5ee949854bc870c20048567a2c9358e",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S4_train_labels.csv",
+            "sha256": "1525bc748c89a1025459eec94b559ab4360d86d7917df75387c3725fac8e0970",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S4_scale_fit_labels.csv",
+            "sha256": "da05a98963d1289b277c033bcce8ee5072765ad92cd38c8da1c64f6cb5df5126",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_16_seed_20270923\\S4_predictions.csv",
+            "sha256": "4e9c7084af65ca48babd6ccdb2638f831b4a19c42c5f887213ac9cf998c19352",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.020689980656142914,
+            "A_model_median": 0.8570363976890139,
+            "A_model_mean": 1.0557775324033352,
+            "A_model_max": 4.396350027293016
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 17,
+      "generation_seed": 20270924,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S2_predictor_inputs.csv",
+            "sha256": "6fdd8cd208ea5f0b9d048f37fe9aa3b307d7e9f8b8f16cdabe36efae2ab8e5e4",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S2_train_labels.csv",
+            "sha256": "3c3eefd40ed7a1a41ab4124532d1a60b4852ffa4245de43e48a293f24becac32",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S2_scale_fit_labels.csv",
+            "sha256": "984b5159aed58fe5624d32e13fa0c27c34cd55ca08cc9c9d1807e822b62be8ff",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S2_predictions.csv",
+            "sha256": "745d2d66ff66c5b44a7a3bbe7282d6da088368f9fe9f55b4a5ffce2bf3fac374",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0010636219638968658,
+            "A_model_median": 0.8320175321176959,
+            "A_model_mean": 1.0993088999888976,
+            "A_model_max": 4.665674857060175
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S4_predictor_inputs.csv",
+            "sha256": "a187a4cab087f6ff40c24718771e7368b05d949d40d758bbbeba1eca712a6a2b",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S4_train_labels.csv",
+            "sha256": "f828e2fd1b50fbc1b5b995cf8e38483b14e19ba90aa12f102739a2af7e596ebd",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S4_scale_fit_labels.csv",
+            "sha256": "5d9d332f6d10f1fdedef27bd2353481ea274fbad21ed2f445a708cf242662f66",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_17_seed_20270924\\S4_predictions.csv",
+            "sha256": "09a4f99d0cc0d5153ab7b612e38cb26d31fb70641d4012285f7e2fe233d220df",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.039949231389790896,
+            "A_model_median": 0.8509839221732654,
+            "A_model_mean": 1.1026981169781722,
+            "A_model_max": 3.8696915984264946
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 18,
+      "generation_seed": 20270925,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S2_predictor_inputs.csv",
+            "sha256": "ee7053a61d2180429d0f64eecc27c28c20bc84cc284cba8b3e14dd5923602021",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S2_train_labels.csv",
+            "sha256": "0112b4a61defbaec6ae4c8baccdbc400677e3955dc2a7d6d867ed6dd98893aba",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S2_scale_fit_labels.csv",
+            "sha256": "bbfcc8196b9891944d204804e8bef5f7f6b199349558b6e2ed10f0c4c12078b7",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S2_predictions.csv",
+            "sha256": "6a78a9ee05053e5311482ec1e2ee0f99907e697cbd893e354a016ed97e6bc480",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.0012113151108475995,
+            "A_model_median": 0.8836223014449228,
+            "A_model_mean": 1.0690108575321045,
+            "A_model_max": 3.7262616230753056
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S4_predictor_inputs.csv",
+            "sha256": "ea8b5f7864ed15f6b19777cfeb1a8a819bcb67fcdac8a7a0c7926f168648074a",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S4_train_labels.csv",
+            "sha256": "678b6e588a5a1d64b585139b70487210637e7eedf52ca41c603ec8ab433e5dad",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S4_scale_fit_labels.csv",
+            "sha256": "a5040827ffed1fe6378a112e4e84bcd58ebe7c74a6cc77a5a029ab192a337746",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_18_seed_20270925\\S4_predictions.csv",
+            "sha256": "0c44013626fddb3055723700c8903ba618dc7e17cac8da3ba3d8b240ceac0249",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.01603344051652722,
+            "A_model_median": 0.8871077760536642,
+            "A_model_mean": 1.0805770328563997,
+            "A_model_max": 3.5582734554356668
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 19,
+      "generation_seed": 20270926,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S2_predictor_inputs.csv",
+            "sha256": "175c8813d56d1d291464ab00dd1bd104095b3e5ad9b811f3c12add881e3be512",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S2_train_labels.csv",
+            "sha256": "99a83d8b88044560cc4bbc4cc7314852b097677f2f1d16cddf645b4c3de348f1",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S2_scale_fit_labels.csv",
+            "sha256": "b05a81f61e0dcdaf4d2de0c2c0f2d15e5ef0eb23c1bf170eeac4fd1dcff6e1ed",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S2_predictions.csv",
+            "sha256": "610b0b25e90a01e3f9324910fbd7fa598d8f37c1cbdb1c3de12b0e02f3b8a5cf",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.014783121939508481,
+            "A_model_median": 1.0246855198535685,
+            "A_model_mean": 1.1386219854929127,
+            "A_model_max": 5.015143197223956
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S4_predictor_inputs.csv",
+            "sha256": "60db803b6a303cdc4457ffddefdd336401ceca44ee834ffdc53367ccbb873a45",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S4_train_labels.csv",
+            "sha256": "79da66580c96201a6cbf04ca2e200c029ba788d737219593f37bd140352efa1e",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S4_scale_fit_labels.csv",
+            "sha256": "0266e02daad09a6fc0f607127e3c1b5d3d487a9b09b26e5cec04d28fb51747d6",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_19_seed_20270926\\S4_predictions.csv",
+            "sha256": "fbb4cd028a13320c52a0292284fccec4775413c411d427bb0f2c74b4e40ee91b",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.010309145306020895,
+            "A_model_median": 1.0651113477790408,
+            "A_model_mean": 1.1465086778440212,
+            "A_model_max": 3.7880574206468447
+          }
+        }
+      }
+    },
+    {
+      "replicate_index": 20,
+      "generation_seed": 20270927,
+      "scenarios": {
+        "S2": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S2_predictor_inputs.csv",
+            "sha256": "049a809744845ade2c7c5a977a72a3e6bca76e187a786406f10092de9a3d08fc",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S2_train_labels.csv",
+            "sha256": "361e8ab8e8e389dbf6fe13656b557374ed7cef624e3c51c33d5ca1fae9d73c70",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S2_scale_fit_labels.csv",
+            "sha256": "93e93f94e7f140fdaa84bbb23a0aa02ba25b756859e9d1d3a881ef9f097bbd2f",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S2_predictions.csv",
+            "sha256": "482e024f2aebf8fa1c9f7e006ce0f4d101f4d0994aeed4d7db7e7d1db46eff5c",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.02269868920908724,
+            "A_model_median": 0.9207029159515675,
+            "A_model_mean": 1.166931149033233,
+            "A_model_max": 4.963425734672617
+          }
+        },
+        "S4": {
+          "predictor_inputs": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S4_predictor_inputs.csv",
+            "sha256": "41162a101713360932091f89ec1f36511e67d1a7b5561e32a5ae83458637c57f",
+            "rows": 2000
+          },
+          "train_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S4_train_labels.csv",
+            "sha256": "b8c44e88775a11bdd7c0fc3b0ede865b35d326bc64dee4cca10164f7fab603af",
+            "rows": 1000
+          },
+          "scale_fit_labels": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S4_scale_fit_labels.csv",
+            "sha256": "13859381740f3aa62e9fdb5d21ad4112f6e33f22c7d14ae99036e46e19b8dfc5",
+            "rows": 200
+          },
+          "predictions": {
+            "path": "causal_strength_diagnostic_v1\\stage8_frozen_replicates_v1\\replicate_20_seed_20270927\\S4_predictions.csv",
+            "sha256": "cce9b2359611c58455ebaf2559a9c046b847ac94991455f607ce850613d8d884",
+            "rows": 2000
+          },
+          "preflight": {
+            "matched_predictions": 200,
+            "missing_sample_ids": [],
+            "duplicate_sample_ids": 0,
+            "finite_y": 200,
+            "finite_y_pred": 200,
+            "finite_A_model": 200,
+            "A_model_min": 0.005663888365389003,
+            "A_model_median": 1.0550245678673038,
+            "A_model_mean": 1.1540275551350543,
+            "A_model_max": 4.245531612761786
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "runtime_stage_version": "gccp_gccm_runtime_v1",
+  "created_at": "2026-09-09T09:53:16.165229+08:00",
+  "overall_status": "BLOCKED_ENVIRONMENT",
+  "rscript_absolute_path": null,
+  "R_version": null,
+  "architecture": null,
+  "library_paths": null,
+  "locale": null,
+  "sessionInfo": null,
+  "python_executable": "D:\\conda\\python.exe",
+  "rscript_minimal_script_status": "NOT_RUN_NO_INTERPRETER",
+  "package_availability": {
+    "parallel": "NOT_CHECKED_NO_INTERPRETER",
+    "foreach": "NOT_CHECKED_NO_INTERPRETER",
+    "doParallel": "NOT_CHECKED_NO_INTERPRETER"
+  },
+  "features": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "cause_field": "one standardized observed X_j",
+  "effect_field": "abs_residual",
+  "manifold": "graph-ring embedding of abs_residual",
+  "reconstruction_target": "standardized observed X_j",
+  "direction": "effect_xmap_cause",
+  "fit_role": "scale_fit",
+  "prohibited_fields": [
+    "y",
+    "mu_true",
+    "sigma_true",
+    "epsilon",
+    "g_true",
+    "eta"
+  ],
+  "historical_source_sha256": {
+    "geoconformal-main/GCCP_Seattle/02_gccm/GCCM_updated 2/R/GCCM/GCCM4Lattice.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+    "geoconformal-main/GCCP_Seattle/02_gccm/GCCM_updated 2/R/GCCM/GCCM.r": "7134a658233638a7c8c10d58c6e7fb20f72bc303696ce5787638aa154c19bd52",
+    "geoconformal-main/GCCP_Seattle/02_gccm/GCCM_updated 2/R/GCCM/basic.r": "f2f1f7f31166d55409a17539a356c8097b4147aac16c0fce88b31308371282af",
+    "geoconformal-main/GCCP_PM2.5/03_gccm/run_pm25_gccm_train_only_v1.R": "0120b4ca82bba97887d9cb772f0dbc610346fe4daca7066e40e933575d1a1039",
+    "geoconformal-main/GCCP_Seattle/outputs/gccm_author_aligned/run_seattle_logprice_gccm_v1_fix1.R": "3dc60f9f0bcbbef254970d5ea27adf2dfea41671b2fd34cfe9fc7a737715e75b",
+    "geoconformal-main/GCCP_PM2.5/03_gccm/pm25_gccm_causal.ipynb": "4be87b47e525a317a112e7b542df0f85f0c470581b67bbd5b2f411f5f05a9259"
+  },
+  "historical_core_load_status": "NOT_RUN_NO_INTERPRETER",
+  "point_graph_verification": "STATIC_HISTORICAL_ADAPTATION_FOUND_RUNTIME_UNVERIFIED",
+  "candidate_protocol": {
+    "status": "DERIVED_CONDITIONAL_NOT_EXECUTION_FROZEN",
+    "n_scale_fit": 200,
+    "E": 3,
+    "tau": 1,
+    "b": 4,
+    "min_valid_embeddings": 200,
+    "actual_valid_embedding_count": null,
+    "conditional_max_library": 198,
+    "library_sizes": [
+      10,
+      18,
+      33,
+      60,
+      109,
+      198
+    ],
+    "grid_formula": "L_i=floor(10*(198/10)^(i/5)+0.5), i=0..5",
+    "grid_basis": "six levels and minimum 10 from historical convention; upper bound n-(E-1)*tau; equal log spacing fixed without performance data",
+    "failure_if_grid_duplicate": true,
+    "random_library_draws_per_size": 0,
+    "library_scheme": "historical deterministic cyclic windows, fixed sample_id lexicographic order",
+    "cyclic_window_count_per_size": {
+      "10": 198,
+      "18": 198,
+      "33": 198,
+      "60": 198,
+      "109": 198,
+      "198": 1
+    },
+    "expected_raw_rows_per_feature_conditional": 991,
+    "seed": 42,
+    "backend": "sequential",
+    "cores": null,
+    "convergence": {
+      "mean_curve": "max(0,mean(raw rho))",
+      "gain_gt": 0,
+      "spearman_gte": 0.6,
+      "pearson_two_sided_p_lt": 0.05,
+      "fisher_z_95_ci_lower_gt": 0
+    },
+    "strength_rule": "terminal rho iff all four historical conditions pass; otherwise zero",
+    "weights_rule": "strength/sum(strength), gamma=6*weight, only when sum is strictly positive",
+    "all_zero_fallback": "NO_CONVERGED_FEATURES; weights unavailable; never uniform substitution",
+    "invalid_embedding_policy": "stop if any of 200 embeddings is nonfinite or any required ring is empty",
+    "zero_variance_policy": "stop and record invalid field; do not manufacture rho",
+    "failed_simplex_policy": "stop on missing/nonfinite reconstruction or unexpected prediction count",
+    "full_execution_config_frozen": false
+  },
+  "environment_search": {
+    "PATH_match": null,
+    "missing_roots": [
+      "C:/Program Files/R",
+      "C:/Program Files (x86)/R",
+      "C:/Users/12068/AppData/Local/Programs/R",
+      "C:/Users/12068/AppData/Local/R"
+    ],
+    "recursive_roots_without_match": [
+      "D:/conda",
+      "C:/Users/12068/.conda/envs/python - practice",
+      "F:/GeoSIMCP_Reproduce"
+    ],
+    "registered_conda_prefixes": [
+      "D:/conda",
+      "D:/conda/envs/ai",
+      "D:/conda/envs/djenv",
+      "C:/Users/12068/.conda/envs/python - practice"
+    ],
+    "r_base_conda_metadata_matches": [],
+    "r_core_registry_matches": [],
+    "R_uninstall_registry_matches": [],
+    "configured_R_environment_variables": {},
+    "extra_condarc_envs_dirs": [],
+    "historical_rscript_path": "C:/Program Files/R/R-4.6.1/bin/Rscript.exe",
+    "historical_rscript_path_exists": false,
+    "scope_limitation": "No entire-disk search; inaccessible recursive entries skipped; absence applies to checked locations."
+  },
+  "installations_performed": false,
+  "global_PATH_modified": false
+}

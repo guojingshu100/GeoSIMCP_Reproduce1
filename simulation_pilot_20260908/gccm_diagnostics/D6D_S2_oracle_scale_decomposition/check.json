@@ -1,0 +1,10 @@
+{
+  "overall_status": "PASS",
+  "new_model_fits": 0,
+  "calibration_n": 100,
+  "validation_n": 200,
+  "oracle_formula_from_x2": true,
+  "final_calibration_accessed": false,
+  "test_accessed": false,
+  "gccm_run": false
+}

@@ -1,0 +1,458 @@
+{
+  "stage": "Stage 5",
+  "execution_status": "PASS",
+  "interpreter": "F:\\GeoSIMCP_Reproduce\\causal_strength_diagnostic_v1\\.venv_cmi_v1\\Scripts\\python.exe",
+  "packages": {
+    "tigramite": "5.2.10.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0"
+  },
+  "input_paths_and_sha256": {
+    "causal_strength_diagnostic_v1/stage3_scores.csv": "d68e8e7b8895364293334d7c5d1d6be4cbce3be16d48b70713a3b991f6003643",
+    "causal_strength_diagnostic_v1/stage4_oracle_scores.csv": "22761b80e489fe09233b06f2545b561feef641f4b2b0ec91c7f438b359f69624",
+    "simulation_pilot_20260908/data/S2_observed.csv": "9abe6271f7812bc83093a2af13d541d5aa18c0b65b2ff776332508c360ad293f",
+    "simulation_pilot_20260908/data/S2_truth.csv": "b3cd07deb85aa703b2fde53cca8f60d84785c250e2d2b575bffc763d3d8d25dc",
+    "simulation_pilot_20260908/predictor_outputs/S2_predictions.csv": "37d892ac9c7f4b0896370744664b107d3d22b14bbf18a16cd26598b40791b1aa",
+    "simulation_pilot_20260908/data/S4_observed.csv": "1e0819fcbc6d639d2b7c13c17cf3b748e50746f6a5719057293886b3511f9b32",
+    "simulation_pilot_20260908/data/S4_truth.csv": "893cd7849cc8624ebdb1e6e7bc133f3dbbb36f64d76689026aaeb6174e25ead8",
+    "simulation_pilot_20260908/predictor_outputs/S4_predictions.csv": "d5f0ce193e673807add5b448f3dd516ff5bab243b23c972a8cc2d3b68b3b73bd"
+  },
+  "selected_id_source": "audited Stage 3 scale-fit loaders; Stage 4 selected oracle rows use the same feature-loader IDs",
+  "configuration": {
+    "knn_fraction": 0.1,
+    "actual_k": 20,
+    "transform": false,
+    "workers": 1,
+    "significance": "shuffle_test",
+    "sig_samples": 199,
+    "shuffle_neighbors": 5,
+    "sig_blocklength": 1,
+    "seed": 3,
+    "p_value": "one-sided empirical (count(null >= raw)+1)/(199+1)"
+  },
+  "verified_tigramite_behavior": {
+    "nonempty_Z": "CMIknn restricted nearest-neighbor shuffle of Y",
+    "empty_Z": "parent block shuffle of X",
+    "blocklength_1": "single-point blocks randomly permuted"
+  },
+  "oracle_identity": {
+    "S2": {
+      "n": 200,
+      "max_abs_discrepancy": 1.3322676295501878e-15
+    },
+    "S4": {
+      "n": 200,
+      "max_abs_discrepancy": 8.881784197001252e-16
+    }
+  },
+  "preprocessing": {
+    "A_model/S2": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "A_model"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.1346435591475088
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.9129245540515648
+      ]
+    },
+    "A_model/S4": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "A_model"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.1348990345978323
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.8950737251756561
+      ]
+    },
+    "A_oracle/S2": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "A_oracle"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.0937500607251296
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.8732036507238348
+      ]
+    },
+    "A_oracle/S4": {
+      "columns": [
+        "x2",
+        "s_x",
+        "s_y",
+        "A_oracle"
+      ],
+      "mean": [
+        0.038154736395912714,
+        0.5086416346738654,
+        0.5180894181478647,
+        1.0982406576011128
+      ],
+      "scale": [
+        0.964313715212385,
+        0.2907689453285941,
+        0.29167107517303786,
+        0.840267119553304
+      ]
+    }
+  },
+  "access_logs": {
+    "feature": [
+      {
+        "source": "S2_observed.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "s_x",
+          "s_y",
+          "x1",
+          "x2",
+          "g_proxy",
+          "x_noise"
+        ],
+        "label_columns_loaded": [],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      },
+      {
+        "source": "S2_observed.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "s_x",
+          "s_y",
+          "x1",
+          "x2",
+          "g_proxy",
+          "x_noise"
+        ],
+        "label_columns_loaded": [],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      },
+      {
+        "source": "S4_observed.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "s_x",
+          "s_y",
+          "x1",
+          "x2",
+          "g_proxy",
+          "x_noise"
+        ],
+        "label_columns_loaded": [],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      },
+      {
+        "source": "S4_observed.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "s_x",
+          "s_y",
+          "x1",
+          "x2",
+          "g_proxy",
+          "x_noise"
+        ],
+        "label_columns_loaded": [],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      }
+    ],
+    "A_model_target": [
+      {
+        "source": "S2_authorized_residuals.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "abs_residual"
+        ],
+        "label_derived_columns_loaded": [
+          "abs_residual"
+        ],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "tuning_calibration_rows_loaded": 0,
+        "validation_rows_loaded": 0,
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      },
+      {
+        "source": "S4_authorized_residuals.csv",
+        "columns_loaded": [
+          "sample_id",
+          "scenario",
+          "split",
+          "local_calibration_role",
+          "abs_residual"
+        ],
+        "label_derived_columns_loaded": [
+          "abs_residual"
+        ],
+        "rows_loaded": 200,
+        "split_values": [
+          "local_calibration"
+        ],
+        "local_role_values": [
+          "scale_fit"
+        ],
+        "tuning_calibration_rows_loaded": 0,
+        "validation_rows_loaded": 0,
+        "final_calibration_rows_loaded": 0,
+        "test_rows_loaded": 0
+      }
+    ]
+  },
+  "integration": {
+    "all_eight_n_200_and_metadata_aligned": true,
+    "all_recomputed_scores_match_frozen_within": 1e-12,
+    "representative_fresh_object_reproducibility": {
+      "M0": {
+        "raw_score": 0.023813441594899842,
+        "p_value": 0.05,
+        "null_distribution_exact_match": true
+      },
+      "Mspace": {
+        "raw_score": 0.01667487441708282,
+        "p_value": 0.055,
+        "null_distribution_exact_match": true
+      }
+    }
+  },
+  "bh_adjustment": "scipy.stats.false_discovery_control(method='bh')",
+  "results": [
+    {
+      "target": "A_model",
+      "scenario": "S2",
+      "conditioning": "M0",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": 0.023956675413649986,
+      "null_mean": -0.0008398143695201614,
+      "null_q95": 0.02502866668126637,
+      "p_value": 0.065,
+      "bh_q_value": 0.17333333333333334,
+      "significant_raw_0_05": false,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": "BORDERLINE_MONTE_CARLO"
+    },
+    {
+      "target": "A_model",
+      "scenario": "S2",
+      "conditioning": "Mspace",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": -0.000780776461271504,
+      "null_mean": -0.0008253882283333748,
+      "null_q95": 0.013247791782010543,
+      "p_value": 0.49,
+      "bh_q_value": 0.975,
+      "significant_raw_0_05": false,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": ""
+    },
+    {
+      "target": "A_model",
+      "scenario": "S4",
+      "conditioning": "M0",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": -0.019399178685329588,
+      "null_mean": -0.002533102537364471,
+      "null_q95": 0.025542694429384834,
+      "p_value": 0.915,
+      "bh_q_value": 0.975,
+      "significant_raw_0_05": false,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": ""
+    },
+    {
+      "target": "A_model",
+      "scenario": "S4",
+      "conditioning": "Mspace",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": -0.009572552096052789,
+      "null_mean": -0.0022953357671460037,
+      "null_q95": 0.009798231189340133,
+      "p_value": 0.84,
+      "bh_q_value": 0.975,
+      "significant_raw_0_05": false,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": ""
+    },
+    {
+      "target": "A_oracle",
+      "scenario": "S2",
+      "conditioning": "M0",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": 0.023813441594899842,
+      "null_mean": 8.119700755891962e-05,
+      "null_q95": 0.022498306153920296,
+      "p_value": 0.05,
+      "bh_q_value": 0.17333333333333334,
+      "significant_raw_0_05": true,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": "BORDERLINE_MONTE_CARLO"
+    },
+    {
+      "target": "A_oracle",
+      "scenario": "S2",
+      "conditioning": "Mspace",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": 0.01667487441708282,
+      "null_mean": 0.0009244268996499112,
+      "null_q95": 0.01607351052845027,
+      "p_value": 0.055,
+      "bh_q_value": 0.17333333333333334,
+      "significant_raw_0_05": false,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": "BORDERLINE_MONTE_CARLO"
+    },
+    {
+      "target": "A_oracle",
+      "scenario": "S4",
+      "conditioning": "M0",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": -0.023663634632765884,
+      "null_mean": -0.0006475027347298799,
+      "null_q95": 0.022122497589205897,
+      "p_value": 0.975,
+      "bh_q_value": 0.975,
+      "significant_raw_0_05": false,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": ""
+    },
+    {
+      "target": "A_oracle",
+      "scenario": "S4",
+      "conditioning": "Mspace",
+      "n": 200,
+      "k": 20,
+      "knn_fraction": 0.1,
+      "shuffle_neighbors": 5,
+      "sig_samples": 199,
+      "seed": 3,
+      "raw_score": -0.007067114935099816,
+      "null_mean": 0.0007095213459649732,
+      "null_q95": 0.014295920126317299,
+      "p_value": 0.795,
+      "bh_q_value": 0.975,
+      "significant_raw_0_05": false,
+      "significant_bh_0_05": false,
+      "monte_carlo_flag": ""
+    }
+  ],
+  "elapsed_time_seconds": 10.056521100050304
+}

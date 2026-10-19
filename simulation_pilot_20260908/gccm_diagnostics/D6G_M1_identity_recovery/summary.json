@@ -1,0 +1,16 @@
+{
+  "status":"PASS",
+  "D6G_estimator_classification":"D",
+  "D6G_identity":"still unresolved",
+  "D6G_feature_set":"not recovered",
+  "D6G_target":"not recovered",
+  "D6G_training_source":"not recovered",
+  "D6G_fit_status":"UNCERTAIN",
+  "D6D_dependency":"HGBR-D6C-DERIVED",
+  "D6E_dependency":"HGBR-D6C-DERIVED",
+  "D6F_dependency":"HGBR-D6C-DERIVED",
+  "D6A_D6F_coherent_HGBR_chain":"D6A, D6C, D6D, D6E, D6F",
+  "D6G_scientifically_usable_as_HGBR":"UNCERTAIN",
+  "D6H_protocol_deviation":true,
+  "reason":"No D6G runner, notebook cell, execution log, serialized M1 artifact, or command record establishing the estimator was found in the targeted search."
+}

@@ -1,0 +1,1114 @@
+{
+  "overall_status": "PASS",
+  "rscript_status": "PASS",
+  "package_status": "PASS",
+  "historical_core_status": "PASS",
+  "point_graph_wrapper_status": "PASS",
+  "library_grid_frozen_before_execution": true,
+  "smoke_test_status": "PASS",
+  "deterministic_reproduction_status": "PASS",
+  "scale_fit_only_status": "PASS",
+  "tuning_calibration_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false,
+  "oracle_files_read_or_hashed": false,
+  "primary_validation_comparison_executed": false,
+  "per_scenario_GCCM_execution_status": {
+    "S1": {
+      "execution_status": "PASS",
+      "weights_status": "WEIGHTS_AVAILABLE",
+      "valid_embeddings": 200,
+      "library_grid": [
+        10,
+        18,
+        33,
+        60,
+        109,
+        198
+      ],
+      "runtime_seconds": 37.453467000013916,
+      "returncode": 0,
+      "hashes": {
+        "convergence.csv": "2cb75c40cb958dabbe2d690995f7982099ba08e0ab75596c684a43051e1c446b",
+        "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+        "embedding.csv": "bacdd0d40f1ce7294be600f1bf04e2f7ba0b13ad55a002c210f784af581f0e39",
+        "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+        "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+        "mean_curves.csv": "f39424fc57335b3064c55a0f3f257706a7e0c1a8b20afa72d7bde9f07738e58c",
+        "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+        "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+        "raw_curves.csv": "5945c4af512fda2696e5541bf0620233478aab058243ace9a262027788d4d70f",
+        "restricted_input.csv": "823f4696405b2725507bd10efb224d31f535e710b6a1434288f7c5d34851aebf",
+        "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+        "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+        "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+        "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+        "weights.csv": "ea62c8ff973bb17c472cc4f0efae594ce54ab87204cbcf35d7bc59b1acb66d18"
+      },
+      "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+      "weights": [
+        {
+          "feature": "s_x",
+          "strength": 0.300127677343247,
+          "weight": 0.52431164285102,
+          "converged": true,
+          "gamma": 3.14586985710612,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "s_y",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x1",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x2",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "g_proxy",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x_noise",
+          "strength": 0.272294624231556,
+          "weight": 0.47568835714898,
+          "converged": true,
+          "gamma": 2.85413014289388,
+          "status": "WEIGHTS_AVAILABLE"
+        }
+      ]
+    },
+    "S2": {
+      "execution_status": "PASS",
+      "weights_status": "WEIGHTS_AVAILABLE",
+      "valid_embeddings": 200,
+      "library_grid": [
+        10,
+        18,
+        33,
+        60,
+        109,
+        198
+      ],
+      "runtime_seconds": 37.56407490000129,
+      "returncode": 0,
+      "hashes": {
+        "convergence.csv": "00a24dde6afaf32b8578c2820442f5a6bba284acae51aff0d4b4d8c0b8961e7e",
+        "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+        "embedding.csv": "9ce7b864f6aaa5d3d4bb0d6ecac6961a3807ab3cc13b21e45fcd4fbb77cd7f3a",
+        "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+        "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+        "mean_curves.csv": "e5e130e587d91d173f6b962a40e2c0b42a05cc8bbef4f88e9fdfb8fd1ce8720a",
+        "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+        "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+        "raw_curves.csv": "020e9b50bd713cc136818dd360d5b1a14db6ef5b4722f33ba3973589e2e6419a",
+        "restricted_input.csv": "0e854749503d6a800fb2dc2473673aaf72d7ffa05549a613933a32855e552d74",
+        "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+        "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+        "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+        "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+        "weights.csv": "b049e7655590439e62d6ba44f9dfddb55fef58f746f52a07680ea0317ae16c17"
+      },
+      "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+      "weights": [
+        {
+          "feature": "s_x",
+          "strength": 0.396977515327863,
+          "weight": 0.477051328779018,
+          "converged": true,
+          "gamma": 2.86230797267411,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "s_y",
+          "strength": 0.239470148392865,
+          "weight": 0.287773357640608,
+          "converged": true,
+          "gamma": 1.72664014584365,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x1",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x2",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "g_proxy",
+          "strength": 0.195700768490752,
+          "weight": 0.235175313580374,
+          "converged": true,
+          "gamma": 1.41105188148225,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x_noise",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        }
+      ]
+    },
+    "S3": {
+      "execution_status": "PASS",
+      "weights_status": "WEIGHTS_AVAILABLE",
+      "valid_embeddings": 200,
+      "library_grid": [
+        10,
+        18,
+        33,
+        60,
+        109,
+        198
+      ],
+      "runtime_seconds": 37.006474199995864,
+      "returncode": 0,
+      "hashes": {
+        "convergence.csv": "7f33a7cd24e8a8b5d08279a222901a1b17603b501401992a4c7f3b4e17cd77ae",
+        "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+        "embedding.csv": "a6a9191aeb56107b1bf52fdbda8f2a0dce161fa1e91d4dac96dd657bcc0433dc",
+        "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+        "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+        "mean_curves.csv": "f8688fb49d8566eed722f22d2a0aedb9cda0498ca5c3504456620b1e0b00f3e6",
+        "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+        "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+        "raw_curves.csv": "899f23e983e541d1cebe1922755fbc18c5ef3b3a55c2da9060ef08298d882972",
+        "restricted_input.csv": "2672be8cd4c86054dcc8ee1cd117de1e4b47c15ba6c8bc352143df053239b75f",
+        "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+        "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+        "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+        "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+        "weights.csv": "9803084bf8b833ed6facc6a0cee2e33007e4959369c541101f83913c0525ea51"
+      },
+      "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+      "weights": [
+        {
+          "feature": "s_x",
+          "strength": 0.241882015386658,
+          "weight": 0.235153397480536,
+          "converged": true,
+          "gamma": 1.41092038488322,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "s_y",
+          "strength": 0.32909421092214,
+          "weight": 0.319939544351035,
+          "converged": true,
+          "gamma": 1.91963726610621,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x1",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x2",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "g_proxy",
+          "strength": 0.457637512545129,
+          "weight": 0.444907058168429,
+          "converged": true,
+          "gamma": 2.66944234901057,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x_noise",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        }
+      ]
+    },
+    "S4": {
+      "execution_status": "PASS",
+      "weights_status": "WEIGHTS_AVAILABLE",
+      "valid_embeddings": 200,
+      "library_grid": [
+        10,
+        18,
+        33,
+        60,
+        109,
+        198
+      ],
+      "runtime_seconds": 37.3722456000105,
+      "returncode": 0,
+      "hashes": {
+        "convergence.csv": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+        "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+        "embedding.csv": "1e58d1a74e053da47719defe1c1b651911a003cb8343c007e6085b7ddd8bec86",
+        "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+        "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+        "mean_curves.csv": "4a28aa51d85c284a947fe1753144502d9537501ec6dd94b6092e34fc49ae8d04",
+        "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+        "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+        "raw_curves.csv": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+        "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+        "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+        "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+        "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+        "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+        "weights.csv": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab"
+      },
+      "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+      "weights": [
+        {
+          "feature": "s_x",
+          "strength": 0.246623560555136,
+          "weight": 0.454343104953863,
+          "converged": true,
+          "gamma": 2.72605862972318,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "s_y",
+          "strength": 0.296189916454007,
+          "weight": 0.545656895046137,
+          "converged": true,
+          "gamma": 3.27394137027682,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x1",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x2",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "g_proxy",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        },
+        {
+          "feature": "x_noise",
+          "strength": 0.0,
+          "weight": 0.0,
+          "converged": false,
+          "gamma": 0.0,
+          "status": "WEIGHTS_AVAILABLE"
+        }
+      ]
+    }
+  },
+  "reproducibility_hash_matches": {
+    "S1": {
+      "restricted_input.csv": true,
+      "edges.csv": true,
+      "historical_core.r": true,
+      "parameters.csv": true,
+      "execution_config.json": true,
+      "embedding.csv": true,
+      "raw_curves.csv": true,
+      "mean_curves.csv": true,
+      "convergence.csv": true,
+      "weights.csv": true
+    },
+    "S2": {
+      "restricted_input.csv": true,
+      "edges.csv": true,
+      "historical_core.r": true,
+      "parameters.csv": true,
+      "execution_config.json": true,
+      "embedding.csv": true,
+      "raw_curves.csv": true,
+      "mean_curves.csv": true,
+      "convergence.csv": true,
+      "weights.csv": true
+    },
+    "S3": {
+      "restricted_input.csv": true,
+      "edges.csv": true,
+      "historical_core.r": true,
+      "parameters.csv": true,
+      "execution_config.json": true,
+      "embedding.csv": true,
+      "raw_curves.csv": true,
+      "mean_curves.csv": true,
+      "convergence.csv": true,
+      "weights.csv": true
+    },
+    "S4": {
+      "restricted_input.csv": true,
+      "edges.csv": true,
+      "historical_core.r": true,
+      "parameters.csv": true,
+      "execution_config.json": true,
+      "embedding.csv": true,
+      "raw_curves.csv": true,
+      "mean_curves.csv": true,
+      "convergence.csv": true,
+      "weights.csv": true
+    }
+  },
+  "independent_temporary_runs": {
+    "a": {
+      "S1": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 37.345711899979506,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "2cb75c40cb958dabbe2d690995f7982099ba08e0ab75596c684a43051e1c446b",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "bacdd0d40f1ce7294be600f1bf04e2f7ba0b13ad55a002c210f784af581f0e39",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "f39424fc57335b3064c55a0f3f257706a7e0c1a8b20afa72d7bde9f07738e58c",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "5945c4af512fda2696e5541bf0620233478aab058243ace9a262027788d4d70f",
+          "restricted_input.csv": "823f4696405b2725507bd10efb224d31f535e710b6a1434288f7c5d34851aebf",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "ea62c8ff973bb17c472cc4f0efae594ce54ab87204cbcf35d7bc59b1acb66d18"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.300127677343247,
+            "weight": 0.52431164285102,
+            "converged": true,
+            "gamma": 3.14586985710612,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.272294624231556,
+            "weight": 0.47568835714898,
+            "converged": true,
+            "gamma": 2.85413014289388,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      },
+      "S2": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 36.89518400002271,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "00a24dde6afaf32b8578c2820442f5a6bba284acae51aff0d4b4d8c0b8961e7e",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "9ce7b864f6aaa5d3d4bb0d6ecac6961a3807ab3cc13b21e45fcd4fbb77cd7f3a",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "e5e130e587d91d173f6b962a40e2c0b42a05cc8bbef4f88e9fdfb8fd1ce8720a",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "020e9b50bd713cc136818dd360d5b1a14db6ef5b4722f33ba3973589e2e6419a",
+          "restricted_input.csv": "0e854749503d6a800fb2dc2473673aaf72d7ffa05549a613933a32855e552d74",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "b049e7655590439e62d6ba44f9dfddb55fef58f746f52a07680ea0317ae16c17"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.396977515327863,
+            "weight": 0.477051328779018,
+            "converged": true,
+            "gamma": 2.86230797267411,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.239470148392865,
+            "weight": 0.287773357640608,
+            "converged": true,
+            "gamma": 1.72664014584365,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.195700768490752,
+            "weight": 0.235175313580374,
+            "converged": true,
+            "gamma": 1.41105188148225,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      },
+      "S3": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 36.87858379998943,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "7f33a7cd24e8a8b5d08279a222901a1b17603b501401992a4c7f3b4e17cd77ae",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "a6a9191aeb56107b1bf52fdbda8f2a0dce161fa1e91d4dac96dd657bcc0433dc",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "f8688fb49d8566eed722f22d2a0aedb9cda0498ca5c3504456620b1e0b00f3e6",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "899f23e983e541d1cebe1922755fbc18c5ef3b3a55c2da9060ef08298d882972",
+          "restricted_input.csv": "2672be8cd4c86054dcc8ee1cd117de1e4b47c15ba6c8bc352143df053239b75f",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "9803084bf8b833ed6facc6a0cee2e33007e4959369c541101f83913c0525ea51"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.241882015386658,
+            "weight": 0.235153397480536,
+            "converged": true,
+            "gamma": 1.41092038488322,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.32909421092214,
+            "weight": 0.319939544351035,
+            "converged": true,
+            "gamma": 1.91963726610621,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.457637512545129,
+            "weight": 0.444907058168429,
+            "converged": true,
+            "gamma": 2.66944234901057,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      },
+      "S4": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 36.63712149998173,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "1e58d1a74e053da47719defe1c1b651911a003cb8343c007e6085b7ddd8bec86",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "4a28aa51d85c284a947fe1753144502d9537501ec6dd94b6092e34fc49ae8d04",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+          "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.246623560555136,
+            "weight": 0.454343104953863,
+            "converged": true,
+            "gamma": 2.72605862972318,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.296189916454007,
+            "weight": 0.545656895046137,
+            "converged": true,
+            "gamma": 3.27394137027682,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      }
+    },
+    "b": {
+      "S1": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 38.47902020000038,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "2cb75c40cb958dabbe2d690995f7982099ba08e0ab75596c684a43051e1c446b",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "bacdd0d40f1ce7294be600f1bf04e2f7ba0b13ad55a002c210f784af581f0e39",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "f39424fc57335b3064c55a0f3f257706a7e0c1a8b20afa72d7bde9f07738e58c",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "5945c4af512fda2696e5541bf0620233478aab058243ace9a262027788d4d70f",
+          "restricted_input.csv": "823f4696405b2725507bd10efb224d31f535e710b6a1434288f7c5d34851aebf",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "ea62c8ff973bb17c472cc4f0efae594ce54ab87204cbcf35d7bc59b1acb66d18"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.300127677343247,
+            "weight": 0.52431164285102,
+            "converged": true,
+            "gamma": 3.14586985710612,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.272294624231556,
+            "weight": 0.47568835714898,
+            "converged": true,
+            "gamma": 2.85413014289388,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      },
+      "S2": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 36.30471580001176,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "00a24dde6afaf32b8578c2820442f5a6bba284acae51aff0d4b4d8c0b8961e7e",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "9ce7b864f6aaa5d3d4bb0d6ecac6961a3807ab3cc13b21e45fcd4fbb77cd7f3a",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "e5e130e587d91d173f6b962a40e2c0b42a05cc8bbef4f88e9fdfb8fd1ce8720a",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "020e9b50bd713cc136818dd360d5b1a14db6ef5b4722f33ba3973589e2e6419a",
+          "restricted_input.csv": "0e854749503d6a800fb2dc2473673aaf72d7ffa05549a613933a32855e552d74",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "b049e7655590439e62d6ba44f9dfddb55fef58f746f52a07680ea0317ae16c17"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.396977515327863,
+            "weight": 0.477051328779018,
+            "converged": true,
+            "gamma": 2.86230797267411,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.239470148392865,
+            "weight": 0.287773357640608,
+            "converged": true,
+            "gamma": 1.72664014584365,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.195700768490752,
+            "weight": 0.235175313580374,
+            "converged": true,
+            "gamma": 1.41105188148225,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      },
+      "S3": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 36.37860650001676,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "7f33a7cd24e8a8b5d08279a222901a1b17603b501401992a4c7f3b4e17cd77ae",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "a6a9191aeb56107b1bf52fdbda8f2a0dce161fa1e91d4dac96dd657bcc0433dc",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "f8688fb49d8566eed722f22d2a0aedb9cda0498ca5c3504456620b1e0b00f3e6",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "899f23e983e541d1cebe1922755fbc18c5ef3b3a55c2da9060ef08298d882972",
+          "restricted_input.csv": "2672be8cd4c86054dcc8ee1cd117de1e4b47c15ba6c8bc352143df053239b75f",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "9803084bf8b833ed6facc6a0cee2e33007e4959369c541101f83913c0525ea51"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.241882015386658,
+            "weight": 0.235153397480536,
+            "converged": true,
+            "gamma": 1.41092038488322,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.32909421092214,
+            "weight": 0.319939544351035,
+            "converged": true,
+            "gamma": 1.91963726610621,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.457637512545129,
+            "weight": 0.444907058168429,
+            "converged": true,
+            "gamma": 2.66944234901057,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      },
+      "S4": {
+        "execution_status": "PASS",
+        "weights_status": "WEIGHTS_AVAILABLE",
+        "valid_embeddings": 200,
+        "library_grid": [
+          10,
+          18,
+          33,
+          60,
+          109,
+          198
+        ],
+        "runtime_seconds": 36.02619590001996,
+        "returncode": 0,
+        "hashes": {
+          "convergence.csv": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+          "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+          "embedding.csv": "1e58d1a74e053da47719defe1c1b651911a003cb8343c007e6085b7ddd8bec86",
+          "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+          "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+          "mean_curves.csv": "4a28aa51d85c284a947fe1753144502d9537501ec6dd94b6092e34fc49ae8d04",
+          "parameters.csv": "d1c421924d907f18ae27938e213489d2b023fccab294f182ba4b07097cce7723",
+          "preflight.csv": "2ee1b32ab6c32360700b2c69110bf9aaaf8d4eb10e45f9746fe8e0c76d0b1aa6",
+          "raw_curves.csv": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+          "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+          "ring_counts.csv": "eb3b527b5c8392b480333583716e77ccf41af835b015954ff5965fd3e6b182b8",
+          "sessionInfo.txt": "ac9bb1c88425adf6b4e45aa35a065a8f630f5ab722e5c7e5e9e7cbcfe21686fd",
+          "stderr.log": "600ff973c8bda6e25a05c072d790182b7e4c0bee40b12a3ae2f3731ebcbe7802",
+          "stdout.log": "d7047608d421444774455af0c3e5aab7164d5d04316d4c395bcb9edea5d15ddd",
+          "weights.csv": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab"
+        },
+        "warnings": "Loading required package: iterators\nLoading required package: parallel\n",
+        "weights": [
+          {
+            "feature": "s_x",
+            "strength": 0.246623560555136,
+            "weight": 0.454343104953863,
+            "converged": true,
+            "gamma": 2.72605862972318,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "s_y",
+            "strength": 0.296189916454007,
+            "weight": 0.545656895046137,
+            "converged": true,
+            "gamma": 3.27394137027682,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x1",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x2",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "g_proxy",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          },
+          {
+            "feature": "x_noise",
+            "strength": 0.0,
+            "weight": 0.0,
+            "converged": false,
+            "gamma": 0.0,
+            "status": "WEIGHTS_AVAILABLE"
+          }
+        ]
+      }
+    }
+  },
+  "execution_config_sha256": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+  "warnings": [],
+  "data_access_allowlist": [
+    "scale_outputs/S*_scale_fit_preparation.csv",
+    "scale_outputs/S*_standard_scaler.joblib",
+    "scale_comparison_check_v1.json"
+  ],
+  "access_flag_scope": "current runtime stage only",
+  "automated_tests": {
+    "status": "PASS",
+    "count": 7,
+    "file": "gccm_runtime/test_gccm_runtime_stage.py",
+    "record": "six independent tests passed before the final reproduction, followed by the hash-integrity test after completion"
+  },
+  "scientific_warnings": [
+    "S1 x_noise passes the historical convergence criterion; S4 coordinates pass; causal identification not established.",
+    "No validation or interval performance has been evaluated."
+  ],
+  "package_installation": {
+    "returncode": 0,
+    "repository": "https://cloud.r-project.org",
+    "installed": {
+      "foreach": "1.5.2",
+      "doParallel": "1.0.17",
+      "iterators": "1.0.14"
+    },
+    "existing": {
+      "parallel": "4.6.1",
+      "codetools": "0.2-20"
+    },
+    "library": "C:/Users/12068/AppData/Local/R/win-library/4.6",
+    "log": "gccm_runtime/package_install_v1.log"
+  },
+  "new_record_sha256": {
+    "05_gccm_runtime_and_weights_report.md": "20695d28f4732a6483af44465b8f49f04a21cef7b7e472fb2d341004f8404b1c",
+    "gccm_runtime/01_r_environment_audit.md": "73869507ff9f868a1c54b0d25b6c4782093bcc1a98e13e45d9b792e496e26435",
+    "gccm_runtime/02_historical_gccm_source_audit.md": "a012fe664b3e6aee0df9d6b4f6fd67d228667857fc3c26bd368808de92e28b7c",
+    "gccm_runtime/03_library_size_preregistration.md": "6ff0fc898db967736aa545d01af8fbf3be47ef710dcec5f2e8e9a865ee27e7ae",
+    "gccm_runtime/README.md": "1f21e13d1e4542f7062c463759a416cfdefca08953744f81e78629151343d6f8",
+    "gccm_runtime/test_gccm_runtime_stage.py": "516ab57812a009fd8cc4d2faa30c7763e7a251c5a5ff94b7451b06bb445c47a0",
+    "gccm_runtime/r_environment_v1.log": "7423a35cdef5ee5da3d0cb80ea52e012c922dfd10cf1d5826d329b879e937c7b",
+    "gccm_runtime/smoke_check_v1.json": "d5194e724a07470d6b8ae422082d569b3006f1bb7b37a40818c12e48e9cf8996"
+  }
+}

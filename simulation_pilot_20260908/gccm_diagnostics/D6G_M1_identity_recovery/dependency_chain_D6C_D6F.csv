@@ -1,0 +1,4 @@
+stage,classification,evidence
+D6D,HGBR-D6C-DERIVED,new_model_fits=0; M1 quantile and scale outputs match D6C summary
+D6E,HGBR-D6C-DERIVED,new_model_fits=0; identity_verified=true; operates on D6C score outputs
+D6F,HGBR-D6C-DERIVED,new_model_fits=0; bootstrap uses D6E/D6C derived score files

@@ -1,0 +1,13 @@
+{
+  "diagnostic": "D7A",
+  "alpha": 0.1,
+  "n_cal": 100,
+  "replicates": 20,
+  "scale_learners": [
+    "HGBR",
+    "KNN"
+  ],
+  "knn_k": 20,
+  "knn_weighting": "distance",
+  "D6H_used_as_evidence": false
+}

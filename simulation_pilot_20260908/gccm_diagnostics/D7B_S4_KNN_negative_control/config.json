@@ -1,0 +1,14 @@
+{
+  "diagnostic": "D7B_S4_KNN_negative_control",
+  "alpha": 0.1,
+  "n_cal": 100,
+  "replicates": 20,
+  "methods": [
+    "CP",
+    "KNN-NCP",
+    "Oracle-NCP"
+  ],
+  "knn_k": 20,
+  "knn_weighting": "distance",
+  "D7A_k_frozen_before_results": true
+}

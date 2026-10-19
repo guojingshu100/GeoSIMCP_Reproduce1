@@ -1,0 +1,46 @@
+{
+  "overall_status": "PASS",
+  "new_gccm_runs": 5,
+  "run_limit_respected": true,
+  "only_candidate_evaluated": "s_x spatial surrogates 1-5",
+  "d4a_surrogates_exactly_reconstructed_from_manifest": true,
+  "d4a_moran_values_match_saved_validation": true,
+  "frozen_graph_hash": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+  "frozen_core_hash": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+  "frozen_execution_config_hash": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+  "historical_libpred_behavior": "GCCMLattice with c(1,200), E=3,tau=1; effective rows 3:200",
+  "library_grid": [
+    10,
+    18,
+    33,
+    60,
+    109,
+    198
+  ],
+  "blinded_labels_accessed": false,
+  "tuning_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "oracle_files_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false,
+  "original_sx_rerun": false,
+  "permutations_rerun": false,
+  "real_sx": {
+    "terminal_rho": 0.246623560555136,
+    "gain": 0.169812973377813,
+    "pass_flag": true,
+    "raw_strength": 0.246623560555136
+  },
+  "surrogate_pass_count": 3,
+  "terminal_rho_range": [
+    0.0542661274074776,
+    0.215334397802167
+  ],
+  "terminal_rho_median": 0.172615630393601,
+  "terminal_rho_ge_real_count": 0,
+  "gain_range": [
+    0.052480511214390714,
+    0.1931532742086683
+  ],
+  "raw_strength_ge_real_count": 0
+}

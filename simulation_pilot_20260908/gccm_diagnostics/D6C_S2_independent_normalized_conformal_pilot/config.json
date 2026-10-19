@@ -1,0 +1,18 @@
+{
+  "diagnostic": "D6C_S2_independent_normalized_conformal_pilot",
+  "alpha": 0.1,
+  "scale_features": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "estimator": "HistGradientBoostingRegressor(loss=quantile,quantile=0.5,early_stopping=False)",
+  "scale_fit_n": 200,
+  "pilot_calibration": "tuning_calibration",
+  "validation_n": 200,
+  "final_calibration_accessed": false,
+  "test_accessed": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "gate_decision": "B",
+  "scenario_classifications": {
+    "S2": "SCALE NOT ESTABLISHED",
+    "S4": "SCALE NOT ESTABLISHED"
+  },
+  "total_knn_fits": 10,
+  "S1_S3_accessed": false,
+  "validation_accessed": false,
+  "final_calibration_accessed": false,
+  "test_accessed": false
+}

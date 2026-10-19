@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080">
+  <defs>
+    <linearGradient id="topFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd45a"/>
+      <stop offset="1" stop-color="#f5b91d"/>
+    </linearGradient>
+    <linearGradient id="sectionFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#356fb5"/>
+      <stop offset="1" stop-color="#24558f"/>
+    </linearGradient>
+    <linearGradient id="outFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9dfa0"/>
+      <stop offset="1" stop-color="#8fc77c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#6b7280" flood-opacity="0.28"/>
+    </filter>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e18a35"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3c78b5"/>
+    </marker>
+    <style>
+      .title { font-family: "Microsoft YaHei", "Noto Sans CJK SC", SimHei, sans-serif; font-size: 30px; font-weight: 700; fill: #183b63; }
+      .topText { font-family: "Microsoft YaHei", "Noto Sans CJK SC", SimHei, sans-serif; font-size: 24px; font-weight: 700; fill: #332300; text-anchor: middle; }
+      .sectionTitle { font-family: "Microsoft YaHei", "Noto Sans CJK SC", SimHei, sans-serif; font-size: 25px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .cardText { font-family: "Microsoft YaHei", "Noto Sans CJK SC", SimHei, sans-serif; font-size: 19px; font-weight: 500; fill: #344454; text-anchor: middle; }
+      .smallText { font-family: "Microsoft YaHei", "Noto Sans CJK SC", SimHei, sans-serif; font-size: 16px; font-weight: 500; fill: #344454; text-anchor: middle; }
+      .outText { font-family: "Microsoft YaHei", "Noto Sans CJK SC", SimHei, sans-serif; font-size: 24px; font-weight: 700; fill: #143817; text-anchor: middle; }
+      .flow { stroke: #e18a35; stroke-width: 3; fill: none; marker-end: url(#arrowOrange); }
+      .down { stroke: #3c78b5; stroke-width: 3; fill: none; marker-end: url(#arrowBlue); }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="1568" height="1048" rx="14" fill="#ffffff" stroke="#b8c2cc" stroke-width="2"/>
+  <text x="800" y="48" class="title" text-anchor="middle">GCCP：融合地理邻近与因果信息的空间预测不确定性量化</text>
+
+  <!-- Top input layer -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="75" width="400" height="72" rx="13" fill="url(#topFill)" stroke="#986d13" stroke-width="2"/>
+    <rect x="600" y="75" width="400" height="72" rx="13" fill="url(#topFill)" stroke="#986d13" stroke-width="2"/>
+    <rect x="1110" y="75" width="400" height="72" rx="13" fill="url(#topFill)" stroke="#986d13" stroke-width="2"/>
+  </g>
+  <text x="290" y="119" class="topText">空间预测任务</text>
+  <text x="800" y="119" class="topText">多源属性变量与地理位置</text>
+  <text x="1310" y="109" class="topText"><tspan x="1310" dy="0">空间异质性 /</tspan><tspan x="1310" dy="29">局部预测可靠性差异</tspan></text>
+
+  <path d="M290 147 L290 176" class="down"/>
+  <path d="M800 147 L800 176" class="down"/>
+  <path d="M1310 147 L1310 176" class="down"/>
+
+  <!-- Section 1 -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="178" width="1400" height="174" rx="12" fill="#f8fafc" stroke="#7898b8" stroke-width="2" stroke-dasharray="7 5"/>
+    <rect x="100" y="178" width="1400" height="48" rx="10" fill="url(#sectionFill)"/>
+  </g>
+  <text x="800" y="210" class="sectionTitle">研究基础</text>
+  <g>
+    <rect x="135" y="250" width="300" height="66" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="465" y="250" width="300" height="66" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="795" y="250" width="300" height="66" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="1125" y="250" width="300" height="66" fill="#ffffff" stroke="#c9d0d7"/>
+  </g>
+  <text x="285" y="277" class="cardText"><tspan x="285" dy="0">传统机器学习</tspan><tspan x="285" dy="25">通常给出点预测</tspan></text>
+  <text x="615" y="277" class="cardText"><tspan x="615" dy="0">实际应用还需要</tspan><tspan x="615" dy="25">预测不确定性量化</tspan></text>
+  <text x="945" y="277" class="cardText"><tspan x="945" dy="0">共形预测（CP）</tspan><tspan x="945" dy="25">提供覆盖率保证</tspan></text>
+  <text x="1275" y="277" class="cardText"><tspan x="1275" dy="0">GeoCP / GeoSIMCP</tspan><tspan x="1275" dy="25">提供空间局部校准基础</tspan></text>
+  <path d="M435 283 L460 283" class="flow"/><path d="M765 283 L790 283" class="flow"/><path d="M1095 283 L1120 283" class="flow"/>
+  <path d="M800 352 L800 382" class="down"/>
+
+  <!-- Section 2 -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="384" width="1400" height="310" rx="12" fill="#f8fafc" stroke="#7898b8" stroke-width="2" stroke-dasharray="7 5"/>
+    <rect x="100" y="384" width="1400" height="48" rx="10" fill="url(#sectionFill)"/>
+  </g>
+  <text x="800" y="416" class="sectionTitle">GCCP方法构建</text>
+
+  <g>
+    <rect x="135" y="455" width="300" height="58" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="465" y="455" width="300" height="58" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="795" y="455" width="300" height="58" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="1125" y="455" width="300" height="58" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="220" y="548" width="320" height="62" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="640" y="548" width="320" height="62" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="1060" y="548" width="320" height="62" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="585" y="632" width="430" height="48" rx="8" fill="#e8f1fb" stroke="#6d97bd" stroke-width="2"/>
+  </g>
+  <text x="285" y="490" class="cardText">随机森林基线预测</text>
+  <text x="615" y="490" class="cardText">共形预测区间构建</text>
+  <text x="945" y="490" class="cardText">空间局部校准</text>
+  <text x="1275" y="479" class="smallText"><tspan x="1275" dy="0">因果信息估计</tspan><tspan x="1275" dy="22">（变量因果相关性）</tspan></text>
+  <text x="380" y="574" class="smallText"><tspan x="380" dy="0">因果相关属性加权</tspan><tspan x="380" dy="22">识别更值得关注的差异</tspan></text>
+  <text x="800" y="574" class="smallText"><tspan x="800" dy="0">地理相似性 + 因果加权</tspan><tspan x="800" dy="22">的属性相似性</tspan></text>
+  <text x="1220" y="574" class="smallText"><tspan x="1220" dy="0">局部校准权重设计</tspan><tspan x="1220" dy="22">与稳定性约束</tspan></text>
+  <text x="800" y="662" class="cardText">GCCP预测区间构建</text>
+
+  <path d="M435 484 L460 484" class="flow"/><path d="M765 484 L790 484" class="flow"/>
+  <path d="M1095 484 L1120 484" class="flow"/>
+  <path d="M1275 513 L1275 542" class="flow"/>
+  <path d="M1275 610 C1275 623 1220 627 1015 654" class="flow"/>
+  <path d="M1125 579 L965 579" class="flow"/><path d="M640 579 L545 579" class="flow"/>
+  <path d="M540 579 C560 579 570 579 585 656" class="flow"/>
+  <path d="M800 610 L800 627" class="down"/>
+
+  <path d="M800 694 L800 723" class="down"/>
+
+  <!-- Section 3 -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="725" width="1400" height="212" rx="12" fill="#f8fafc" stroke="#7898b8" stroke-width="2" stroke-dasharray="7 5"/>
+    <rect x="100" y="725" width="1400" height="48" rx="10" fill="url(#sectionFill)"/>
+  </g>
+  <text x="800" y="757" class="sectionTitle">实验验证与分析</text>
+  <g>
+    <rect x="135" y="796" width="400" height="55" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="600" y="796" width="400" height="55" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="1065" y="796" width="400" height="55" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="135" y="867" width="400" height="55" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="600" y="867" width="400" height="55" fill="#ffffff" stroke="#c9d0d7"/>
+    <rect x="1065" y="867" width="400" height="55" fill="#ffffff" stroke="#c9d0d7"/>
+  </g>
+  <text x="335" y="830" class="smallText">基线对比：RF / CP / GeoCP / GeoSIMCP</text>
+  <text x="800" y="830" class="cardText">参数实验与敏感性分析</text>
+  <text x="1265" y="830" class="cardText">消融实验</text>
+  <text x="335" y="901" class="cardText">多随机种子重复实验</text>
+  <text x="800" y="890" class="smallText"><tspan x="800" dy="0">指标评估：</tspan><tspan x="800" dy="22">覆盖率 / 区间宽度 / 区间评分</tspan></text>
+  <text x="1265" y="890" class="smallText"><tspan x="1265" dy="0">异常结果检查</tspan><tspan x="1265" dy="22">与方法有效性分析</tspan></text>
+  <path d="M535 823 L595 823" class="flow"/><path d="M1000 823 L1060 823" class="flow"/>
+  <path d="M1265 851 L1265 862" class="flow"/><path d="M1065 894 L1005 894" class="flow"/><path d="M600 894 L540 894" class="flow"/>
+
+  <!-- Bottom output -->
+  <path d="M800 937 L800 965" class="down"/>
+  <g filter="url(#shadow)">
+    <rect x="220" y="970" width="1160" height="66" rx="13" fill="url(#outFill)" stroke="#568e4f" stroke-width="2"/>
+  </g>
+  <text x="800" y="1011" class="outText">融合地理邻近与因果信息的空间预测不确定性量化方法</text>
+</svg>

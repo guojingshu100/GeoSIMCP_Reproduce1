@@ -1,0 +1,11 @@
+.git-before-size-cleanup/
+tools/
+environment/
+**/.venv/
+**/cache/
+**/runtime_cache/
+**/ShaderCache/
+experiments/*
+!experiments/
+!experiments/gccp_stage4c_selector_confirmation_20261019_v1/
+!experiments/gccp_stage4c_selector_confirmation_20261019_v1/**

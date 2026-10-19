@@ -1,0 +1,6 @@
+{
+  "stage": "Stage 3",
+  "execution_status": "BLOCKED_TIGRAMITE_UNAVAILABLE",
+  "master_seed": 20260910,
+  "reason": "The earlier project-local environment could not import Tigramite after the single targeted installation attempt."
+}

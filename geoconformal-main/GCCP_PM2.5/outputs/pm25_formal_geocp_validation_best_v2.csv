@@ -1,0 +1,2 @@
+﻿bandwidth_km,coverage,mean_half_width,mean_width,interval_score,median_n_eff,p10_n_eff,p90_n_eff,tau_local,conformal_k,coverage_constraint_feasible,selection_rule
+690.7945369945043,0.8450704225352113,8.872442550995446,17.744885101990892,32.534133770524164,83.87260769622442,43.03234112761093,100.64586229443813,0.9078014184397163,128,False,fallback_global_min_interval_score

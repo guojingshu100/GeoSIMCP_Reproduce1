@@ -1,0 +1,36 @@
+{
+  "n_variables": 6,
+  "correlation_moransI_passrate": {
+    "pearson_r": 0.9860300849644469,
+    "pearson_p_descriptive": 0.0002913746151368105,
+    "spearman_rho": 0.8285714285714287,
+    "spearman_p_descriptive": 0.04156268221574334
+  },
+  "simultaneously_high_spatial_and_high_falsepass": [
+    "s_x",
+    "s_y",
+    "g_proxy"
+  ],
+  "group_summary": [
+    {
+      "candidate_group": "spatially_structured",
+      "mean_morans_I": 0.9184686129837121,
+      "mean_pass_rate": 0.6464646464646465,
+      "variables": "s_x;s_y;g_proxy"
+    },
+    {
+      "candidate_group": "approximately_nonspatial_random",
+      "mean_morans_I": -0.03167908984286578,
+      "mean_pass_rate": 0.06397306397306397,
+      "variables": "x1;x2;x_noise"
+    }
+  ],
+  "interpretation": "Descriptive n=6 diagnostic; no strong inferential claim. Spatially smooth candidates align with higher permutation false-pass rates in this fixed graph/reference, consistent with candidate spatial reconstructability contributing to false convergence, not proof of causal bias.",
+  "source_hashes": {
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+    "summary.json": "0ca3cbfbe462ab33b180027d11654be72ac6327e4d78f57762d6827de42077a7",
+    "variable_distribution_summary.csv": "2a7b3795b6e99dd9f2a809d843546cfb4e6f7ad5df177c4e9e688f781bfc1dfa",
+    "original_observed_statistics.csv": "42ebe0cb7146d4dea5cafee9497cb9d565046f7ddfe076c893f2470a4ccd5a83"
+  }
+}

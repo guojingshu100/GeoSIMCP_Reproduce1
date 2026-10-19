@@ -1,0 +1,12 @@
+{
+  "diagnostic": "D6G_S2_repeated_fresh_sample_stability",
+  "DGP": "S2 frozen",
+  "replicates": 20,
+  "calibration_n": 100,
+  "evaluation_n": 1000,
+  "alpha": 0.1,
+  "k": 91,
+  "new_m1_fits": 1,
+  "point_predictor_reused": true,
+  "seed_start": 20260909
+}

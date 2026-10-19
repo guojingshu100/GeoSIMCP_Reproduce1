@@ -1,0 +1,9 @@
+{
+  "overall_status": "PASS",
+  "new_model_fits": 0,
+  "oof_rows": 200,
+  "all_scales_finite_positive": true,
+  "fixed_quintiles_reused": true,
+  "blinded_data_accessed": false,
+  "conformal_run": false
+}

@@ -1,0 +1,10 @@
+{
+  "overall_status": "PASS",
+  "new_scale_model_fits": 1,
+  "splits_disjoint": true,
+  "positive_scale_predictions": true,
+  "validation_accessed": true,
+  "final_calibration_accessed": false,
+  "test_accessed": false,
+  "gccm_run": false
+}

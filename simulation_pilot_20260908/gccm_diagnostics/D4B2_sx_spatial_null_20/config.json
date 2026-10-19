@@ -1,0 +1,48 @@
+{
+  "diagnostic": "D4B2_sx_spatial_null_20",
+  "candidate": "s_x",
+  "effect": "abs_residual",
+  "total_planned_surrogates": 20,
+  "existing_completed_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "executed_ids": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "future_unexecuted_ids": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "seed_manifest_file": "preregistered_seed_manifest_6_20.json",
+  "seed_manifest_sha256": "7f4f9d2ec8004c47b7730abd1f0e2f3feeb73097ce51cb01475ac798282c2f07",
+  "library_sizes": [
+    10,
+    18,
+    33,
+    60,
+    109,
+    198
+  ],
+  "E": 3,
+  "tau": 1,
+  "b": 4,
+  "libpred": "historical frozen GCCMLattice, effective rows 3:200",
+  "rho_clipping": "max(0, mean rho)",
+  "convergence": "frozen D4B-1 thresholds"
+}

@@ -1,0 +1,27 @@
+{
+  "diagnostic": "D4B1_sx_spatial_null_smoke",
+  "surrogates": "existing D4A s_x surrogates deterministically reconstructed from saved manifest",
+  "d4a_seed_manifest_hash": "a818e111e7b553e28b2ca79fbded682f89669efb116aa3d3707f922fe6d2caa3",
+  "d4a_validation_hash": "07a24ccd2da75ab3f0ff5c409f800dcff115fc8f3f7d6e8f777c3885cb0814d3",
+  "effect": "abs_residual",
+  "candidate": "s_x only",
+  "E": 3,
+  "tau": 1,
+  "b": 4,
+  "library_sizes": [
+    10,
+    18,
+    33,
+    60,
+    109,
+    198
+  ],
+  "libpred": "frozen historical GCCMLattice behavior",
+  "new_gccm_runs": 5,
+  "source_hashes": {
+    "restricted_input": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "edges": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+    "historical_core": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+    "convergence": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e"
+  }
+}

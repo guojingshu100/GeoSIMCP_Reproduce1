@@ -1,0 +1,108 @@
+{
+  "alpha": 0.1,
+  "conformal": {
+    "k": 128,
+    "tau": 0.9078014184397163
+  },
+  "experiment": "PM2.5 formal frozen test v1",
+  "gccm": {
+    "E": 3,
+    "b": 4,
+    "data": "Formal Train only",
+    "direction_for_weight": "effect_xmap_cause",
+    "library_sizes": [
+      10,
+      50,
+      100,
+      200,
+      400,
+      988
+    ],
+    "tau": 1,
+    "weights": {
+      "aod_sat": {
+        "causal_weight": 0.2871805419338487,
+        "gamma": 2.0102637935369407
+      },
+      "blh": {
+        "causal_weight": 0.1244931398131229,
+        "gamma": 0.8714519786918608
+      },
+      "dem": {
+        "causal_weight": 0.143548406179416,
+        "gamma": 1.004838843255912
+      },
+      "ndvi": {
+        "causal_weight": 0.0483756068779746,
+        "gamma": 0.3386292481458224
+      },
+      "r": {
+        "causal_weight": 0.1358851102072924,
+        "gamma": 0.9511957714510472
+      },
+      "sp": {
+        "causal_weight": 0.1551764977670386,
+        "gamma": 1.0862354843692703
+      },
+      "tp": {
+        "causal_weight": 0.1053406972213065,
+        "gamma": 0.7373848805491456
+      }
+    },
+    "weights_file_sha256": "11818df3c0aba9010b9b6eb17f0be7b05cd17c99533ff3d2b6e4c53f6fdaeccf"
+  },
+  "methods": {
+    "Additive-EUC": {
+      "fusion": "lambda*K_geo+(1-lambda)*K_feat",
+      "h_feat": 1.6382459437843868,
+      "h_geo_km": 150.9941416740361,
+      "lambda": 0.2
+    },
+    "CP": {
+      "q": 9.133607116712255
+    },
+    "GCCP-B": {
+      "fusion": "lambda*K_geo+(1-lambda)*K_causal",
+      "h_causal": 1.233068680242374,
+      "h_geo_km": 690.7945369945043,
+      "lambda": 0.1
+    },
+    "GeoCP": {
+      "h_geo_km": 690.7945369945043
+    },
+    "GeoSIMCP-EUC": {
+      "bandwidth": 1.6473684210526318,
+      "feature_distance": "standardized_Euclidean",
+      "geo_distance": "raw_lon_lat_Euclidean_degree",
+      "lambda": 0.0
+    },
+    "GeoSIMCP-MND": {
+      "bandwidth": 2.421052631578948,
+      "feature_distance": "MND_calibration_range",
+      "geo_distance": "raw_lon_lat_Euclidean_degree",
+      "lambda": 0.1578947368421052
+    },
+    "Joint-HAV-EUC": {
+      "bandwidth": 1.6382459437843868,
+      "feature_distance": "standardized_Euclidean",
+      "geo_distance": "Haversine_km",
+      "lambda": 0.0
+    }
+  },
+  "n": {
+    "calibration": 141,
+    "frozen_test": 142,
+    "train": 990,
+    "validation": 142
+  },
+  "predictor": {
+    "max_depth": null,
+    "model": "RandomForestRegressor",
+    "n_estimators": 300,
+    "random_state": 42,
+    "selection": "Formal Train-only 3-fold CV"
+  },
+  "selection_rule": "If Validation coverage >= 0.90 is feasible, choose minimum Interval Score among feasible settings; otherwise choose global minimum Validation Interval Score.",
+  "split_sha256": "785436f18bcc08a5a6b94916d3e544af0e0706e959b7c930300f7a91bddf04f3",
+  "test_policy": "Frozen Test labels have not been used for model selection or UQ parameter selection. After this manifest is created, no parameter may be changed based on Frozen Test results."
+}

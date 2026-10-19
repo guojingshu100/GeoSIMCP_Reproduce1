@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: geoconformal
+Version: 0.3.0
+Summary: Geographically Weighted Conformal Prediction Methods (finite-sample-valid GeoCP & Bayesian GeoBCP)
+Home-page: https://github.com/pengtum/geoconformal
+Author: Peng Luo
+Author-email: pengluo@mit.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: geopandas
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

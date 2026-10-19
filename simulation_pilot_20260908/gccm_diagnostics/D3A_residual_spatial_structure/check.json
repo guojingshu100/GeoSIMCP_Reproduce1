@@ -1,0 +1,22 @@
+{
+  "overall_status": "PASS",
+  "input_rows": 200,
+  "scale_fit_only": true,
+  "same_sample_order_as_restricted_input": true,
+  "abs_residual_join_exact": true,
+  "graph_edges_hash": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+  "raw_input_hashes": {
+    "scale_fit_preparation.csv": "5269d84a6ea06893e95b2557eb8c3176536a2751b94352e52ce9a869a4dd13a3",
+    "authorized_residuals.csv": "e4ba363e066953bccf60a912ebe87d65596f6b753ca936749b293f83a4938afc",
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397"
+  },
+  "esda_available": false,
+  "libpysal_available": false,
+  "moran_implementation": "binary frozen Delaunay adjacency, row-standardized analytical normal approximation; no permutation test",
+  "blinded_labels_accessed": false,
+  "tuning_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "oracle_files_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "final_diagnosis": "E",
+  "pipeline_consistency": "UNCERTAIN",
+  "m1_model_consistency": "UNCERTAIN",
+  "D6A": "HistGradientBoostingRegressor(loss=quantile, quantile=0.5, early_stopping=False)",
+  "D6C": "HistGradientBoostingRegressor(loss=quantile, quantile=0.5, early_stopping=False), separate fit=1",
+  "D6G": "cannot determine",
+  "D6H": "KNeighborsRegressor, n_neighbors=20, weights=distance",
+  "same_scale_fit_200_all_stages": "UNCERTAIN",
+  "protocol_validity": {"D6A":"VALID AS INTENDED","D6C":"VALID BUT SEPARATE EQUIVALENT REFIT","D6G":"UNCERTAIN","D6H":"PROTOCOL DEVIATION"},
+  "D6H_reason": "cannot determine from permitted outputs; config records construction but no runner/source or provenance",
+  "pooling": "D6A/D6C interpretable under intended HGBR; D6G uncertain; D6H must not be pooled as same M1"
+}

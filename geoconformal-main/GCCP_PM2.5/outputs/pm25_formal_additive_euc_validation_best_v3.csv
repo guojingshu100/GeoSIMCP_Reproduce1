@@ -1,0 +1,2 @@
+﻿method,h_geo_km,h_feat,lambda,coverage,mean_width,interval_score,median_n_eff,p10_n_eff,p90_n_eff,coverage_constraint_feasible,selection_rule,geo_distance,feature_distance,fusion
+Additive-EUC,150.9941416740361,1.6382459437843868,0.2,0.823943661971831,17.02788839591849,31.899938464728415,83.25320450289948,43.54875564605717,96.26166545152356,False,fallback_global_min_interval_score,Haversine_km,standardized_Euclidean,lambda*K_geo+(1-lambda)*K_feat

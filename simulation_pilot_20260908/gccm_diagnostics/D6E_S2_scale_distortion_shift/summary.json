@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "new_model_fits": 0,
+  "identity_max_abs_error": 8.881784197001252e-16,
+  "shift": {
+    "median_difference_validation_minus_calibration": -0.0001985479448594063,
+    "cv_ratio_validation_over_calibration": 1.2225822438104248,
+    "p90_ratio": 1.0050162272382939,
+    "p95_ratio": 0.9904721095385122,
+    "ks_statistic": 0.07,
+    "ks_pvalue_descriptive": 0.8933338427537486
+  },
+  "relations": {
+    "calibration": {
+      "spearman_distortion_x2": 0.15427542754275428,
+      "spearman_distortion_true_sigma": 0.15427542754275428,
+      "spearman_distortion_Z_oracle": -0.0938013801380138,
+      "q90_Z_oracle": 1.6760809200698004,
+      "q90_distortion": 1.8588550966729074,
+      "q90_Z_M1": 2.357162072171158,
+      "q90_M1_over_oracle": 1.406353383029379
+    },
+    "validation": {
+      "spearman_distortion_x2": 0.07184579614490365,
+      "spearman_distortion_true_sigma": 0.07184579614490365,
+      "spearman_distortion_Z_oracle": 0.10952523813095327,
+      "q90_Z_oracle": 1.8405720042994422,
+      "q90_distortion": 1.8681795362408793,
+      "q90_Z_M1": 2.7466764855131696,
+      "q90_M1_over_oracle": 1.492295046918639
+    }
+  },
+  "classification": "A_MOSTLY_GLOBAL_SCALE_BIAS",
+  "blinded_data_accessed": false,
+  "interpretation_note": "Distortion medians and upper quantiles are stable across splits, KS is non-significant descriptively, and top-10% oracle difficulty does not show larger validation distortion; remaining coverage issue is more consistent with calibration/validation behavior than tail-specific scale failure."
+}

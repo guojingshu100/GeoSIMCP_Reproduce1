@@ -1,0 +1,11 @@
+scenario,fold,status,reason
+S2,1,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S2,2,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S2,3,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S2,4,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S2,5,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S4,1,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S4,2,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S4,3,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S4,4,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed
+S4,5,NOT AVAILABLE,saved fold manifest lacks held-out row IDs; folds not reconstructed

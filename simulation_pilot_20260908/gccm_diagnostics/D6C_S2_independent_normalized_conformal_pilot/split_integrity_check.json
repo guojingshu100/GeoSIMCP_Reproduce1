@@ -1,0 +1,8 @@
+{
+  "scale_fit_n": 200,
+  "pilot_calibration_n": 100,
+  "validation_n": 200,
+  "disjoint": true,
+  "final_calibration_accessed": false,
+  "test_accessed": false
+}

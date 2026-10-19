@@ -1,0 +1,5 @@
+item,finding
+failure,after 10 fold fits during output assembly; no scientific result saved/printed before retry
+change,implementation-only output assembly correction
+configuration,same retained runner configuration and data inputs
+folds,same fixed KFold declaration; row assignments not retained

@@ -1,0 +1,20 @@
+{
+  "overall_status": "PASS",
+  "n_variables": 6,
+  "graph_convention": "binary frozen Delaunay adjacency, row-standardized; reused D3A formula",
+  "permutation_results_recomputed": false,
+  "gccm_rerun": false,
+  "blinded_labels_accessed": false,
+  "tuning_labels_accessed": false,
+  "validation_labels_accessed": false,
+  "oracle_files_accessed": false,
+  "final_calibration_labels_accessed": false,
+  "test_labels_accessed": false,
+  "source_hashes": {
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+    "summary.json": "0ca3cbfbe462ab33b180027d11654be72ac6327e4d78f57762d6827de42077a7",
+    "variable_distribution_summary.csv": "2a7b3795b6e99dd9f2a809d843546cfb4e6f7ad5df177c4e9e688f781bfc1dfa",
+    "original_observed_statistics.csv": "42ebe0cb7146d4dea5cafee9497cb9d565046f7ddfe076c893f2470a4ccd5a83"
+  }
+}

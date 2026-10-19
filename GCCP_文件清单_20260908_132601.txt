@@ -1,0 +1,217 @@
+﻿
+RelativePath                                                                                                                     Length LastWriteTime      
+------------                                                                                                                     ------ -------------      
+geoconformal-main\GCCP_Simulation\00_design\simulation_design.ipynb                                                                 628 2026/9/4 20:16:58  
+geoconformal-main\GCCP_PM2.5\04_gccp\pm25_gccp_b.ipynb                                                                           182404 2026/9/4 20:09:54  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_gccp_score_gain_concentration_v1.csv                                                    60492 2026/9/4 20:09:10  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_gccp_score_trimmed_sensitivity_v1.csv                                                     198 2026/9/4 20:09:10  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_gccp_vs_additive_test_decomposition_v1.csv                                              52697 2026/9/4 19:56:26  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_frozen_test_summary_v1.csv                                                        1106 2026/9/4 19:52:30  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_frozen_test_completion_v1.json                                                     498 2026/9/4 19:52:30  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_frozen_test_rf_metrics_v1.csv                                                      153 2026/9/4 19:52:30  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_frozen_test_per_sample_v1.csv                                                   166110 2026/9/4 19:52:30  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_frozen_test_manifest_v1.json                                                      3108 2026/9/4 19:49:48  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_b_validation_best_v1.csv                                                        508 2026/9/4 19:43:04  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_b_validation_per_sample_v1.csv                                                22654 2026/9/4 19:43:04  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_b_vs_additive_validation_v1.csv                                                 241 2026/9/4 19:43:04  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_h_causal_grid_v1.csv                                                            410 2026/9/4 19:43:04  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_b_validation_grid_v1.csv                                                     948046 2026/9/4 19:43:04  
+geoconformal-main\GCCP_PM2.5\03_gccm\pm25_gccm_causal.ipynb                                                                       93645 2026/9/4 16:42:08  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_distance_summary_v1.csv                                                         327 2026/9/4 16:41:44  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_neighbor_overlap_v1.csv                                                         297 2026/9/4 16:41:44  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_per_validation_rank_correlation_v1.csv                                         3486 2026/9/4 16:41:44  
+geoconformal-main\GCCP_PM2.5\outputs\gccp\pm25_gccp_causal_weight_check_v1.csv                                                      332 2026/9/4 16:41:44  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_causal_diagnostics_v1.csv                                                      1630 2026/9/4 16:30:02  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_causal_weights_v1.csv                                                           677 2026/9/4 16:30:02  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_direction_terminal_rho_v1.csv                                                   503 2026/9/4 16:30:02  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_raw_rho_v1.csv                                                              3404354 2026/9/4 16:21:00  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_mean_curves_v1.csv                                                             4142 2026/9/4 16:21:00  
+geoconformal-main\GCCP_PM2.5\03_gccm\run_pm25_gccm_train_only_v1.R                                                                 9684 2026/9/4 16:02:18  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_train_detrended_v1.csv                                                       322289 2026/9/4 15:53:20  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_ring_diagnostics_v1.csv                                                         161 2026/9/4 15:53:20  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_detrend_diagnostics_v1.csv                                                     1442 2026/9/4 15:53:20  
+geoconformal-main\GCCP_PM2.5\outputs\gccm\pm25_gccm_delaunay_edges_v1.csv                                                         84274 2026/9/4 15:53:20  
+geoconformal-main\GCCP_PM2.5\02_baselines\pm2.5_formal_baselines.ipynb                                                           276471 2026/9/4 15:47:44  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_architecture_comparison_validation_v1.csv                                          234 2026/9/4 15:46:58  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_geosimcp_mnd_validation_best_v1.csv                                                494 2026/9/4 15:02:50  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_geosimcp_mnd_validation_grid_v1.csv                                              65646 2026/9/4 15:02:50  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_geosimcp_euc_validation_best_v1.csv                                                488 2026/9/4 14:59:02  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_geosimcp_euc_validation_grid_v1.csv                                              65400 2026/9/4 14:59:02  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_geocp_validation_best_v2.csv                                                       380 2026/9/4 14:55:56  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_geocp_validation_grid_v2.csv                                                      3547 2026/9/4 14:55:56  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_cp_validation_summary_v1.csv                                                       203 2026/9/4 14:47:06  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_rf_non_test_metrics_v2.csv                                                         234 2026/9/4 14:42:58  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_rf_non_test_metrics_v1.csv                                                         234 2026/9/4 14:41:08  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_spatial_distance_summary_v1.csv                                                           415 2026/9/4 14:38:34  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_split_assignment_v1.csv                                                          55050 2026/9/4 14:35:32  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_formal_protocol_v1.json                                                                   630 2026/9/4 14:35:32  
+geoconformal-main\GCCP_PM2.5\01_author_reproduction\pm25_author_reproduction.ipynb                                               165824 2026/9/4 13:59:54  
+geoconformal-main\GCCP_PM2.5\00_data_audit\pm25_data_audit.ipynb                                                                 165824 2026/9/4 13:59:54  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_author_geocp_grid.csv                                                                    2067 2026/9/4 13:58:50  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_author_uq_reference_comparison.csv                                                        820 2026/9/4 13:58:50  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_author_uq_summary.csv                                                                     401 2026/9/4 13:58:50  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_author_geosimcp_mnd_grid.csv                                                            49495 2026/9/4 13:58:50  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_author_geosimcp_euc_grid.csv                                                            49320 2026/9/4 13:58:50  
+geoconformal-main\GCCP_PM2.5\outputs\pm25_author_rf_summary.csv                                                                     294 2026/9/4 13:48:06  
+geoconformal-main\GCCP_Seattle\04_gccp\04_Seattle_GCCP_author_aligned_check.ipynb.ipynb                                          969242 2026/8/29 20:55:38 
+geoconformal-main\GCCP_Seattle\outputs\seattle_author_aligned_final_test_summary_v1.csv                                             941 2026/8/29 20:55:16 
+geoconformal-main\GCCP_Seattle\outputs\additive_gccp_validation_v1.csv                                                            54560 2026/8/29 20:40:30 
+geoconformal-main\GCCP_Seattle\outputs\additive_euc_vs_gccp_validation_summary_v1.csv                                               406 2026/8/29 20:40:30 
+geoconformal-main\GCCP_Seattle\outputs\seattle_author_aligned_validation_summary_v1.csv                                            1136 2026/8/29 20:28:36 
+geoconformal-main\GCCP_Seattle\outputs\geosimcp_mnd_filtered_validation_v1.csv                                                    26186 2026/8/29 20:24:04 
+geoconformal-main\GCCP_Seattle\outputs\geosimcp_mnd_filtered_best_by_lambda_v1.csv                                                 1342 2026/8/29 20:24:04 
+geoconformal-main\GCCP_Seattle\outputs\geosimcp_mnd_author_aligned_best_by_lambda_v1.csv                                           1039 2026/8/29 20:17:48 
+geoconformal-main\GCCP_Seattle\outputs\geosimcp_mnd_author_aligned_validation_v1.csv                                              18880 2026/8/29 20:17:48 
+geoconformal-main\GCCP_Seattle\outputs\gccp_author_aligned_original_best_by_lambda_v1.csv                                          1345 2026/8/29 19:41:46 
+geoconformal-main\GCCP_Seattle\outputs\gccp_author_aligned_original_validation_v1.csv                                             26117 2026/8/29 19:41:46 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_convergence_diagnostics_v1.csv              1536 2026/8/29 19:17:40 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_price_vs_logprice_comparison_v1.csv                        1544 2026/8/29 19:17:40 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_causal_weights_v1.csv                        387 2026/8/29 19:17:40 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_age_convergence_raw_v1.csv           248929 2026/8/29 18:06:28 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_runtime_summary_v1.csv                       466 2026/8/29 18:06:28 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_view_convergence_raw_v1.csv          236220 2026/8/29 18:01:06 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_waterfront_convergence_raw_v1.csv    252213 2026/8/29 17:55:46 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_condition_convergence_raw_v1.csv     248302 2026/8/29 17:50:26 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_grade_convergence_raw_v1.csv         235082 2026/8/29 17:45:04 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_sqft_lot_convergence_raw_v1.csv      237970 2026/8/29 17:39:40 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_sqft_living_convergence_raw_v1.csv   235596 2026/8/29 17:34:06 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_xmap_bathrooms_convergence_raw_v1.csv     236991 2026/8/29 17:28:36 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\run_seattle_logprice_gccm_v1_fix1.R                                     7575 2026/8/29 17:21:26 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\run_seattle_logprice_gccm_v1.R                                          7631 2026/8/29 17:20:20 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\smoke_test\reproduce_old_price_xmap_sqft_living_full.R                  3086 2026/8/29 17:10:10 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\smoke_test\reproduce_old_price_xmap_sqft_living_Lmax.R                  2525 2026/8/29 17:02:14 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_detrend_diagnostics_v1.csv                  1058 2026/8/29 16:46:22 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_delaunay_edges_v1.csv                              124341 2026/8/29 16:46:22 
+geoconformal-main\GCCP_Seattle\outputs\gccm_author_aligned\seattle_gccm_train_logprice_sites_v1.csv                              579366 2026/8/29 16:46:22 
+geoconformal-main\GCCP_Seattle\03_gccp\03_Seattle_GCCP_causal_similarity.ipynb                                                   123116 2026/8/29 14:40:00 
+geoconformal-main\GCCP_Seattle\outputs\gccp\seattle_gccp_delaunay_vs_knn8_sensitivity_v1.csv                                        233 2026/8/11 14:17:14 
+geoconformal-main\GCCP_Seattle\02_gccm\02_Seattle_GCCM_causal_structure.ipynb                                                    557232 2026/8/11 13:58:50 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_delaunay_vs_knn8_weights_v1.csv                                            917 2026/8/11 13:10:54 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_causal_weights_outer_train_knn8_v1.csv                                    1333 2026/8/11 13:10:54 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_convergence_summary_partial.csv                          4364 2026/8/10 19:46:30 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_age_convergence_raw.csv                     245221 2026/8/10 19:46:30 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_convergence_diagnostics.csv                              1022 2026/8/10 19:46:30 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_convergence_summary.csv                                  4364 2026/8/10 19:46:30 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_view_convergence_raw.csv                    237178 2026/8/10 19:41:24 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_waterfront_convergence_raw.csv              252281 2026/8/10 19:36:14 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_condition_convergence_raw.csv               250043 2026/8/10 19:31:12 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_grade_convergence_raw.csv                   235083 2026/8/10 19:26:06 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_sqft_lot_convergence_raw.csv                237602 2026/8/10 19:21:00 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_sqft_living_convergence_raw.csv             235535 2026/8/10 19:15:54 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_knn8_outer_train_price_xmap_bathrooms_convergence_raw.csv               236996 2026/8/10 19:10:46 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_knn_topology_scan.csv                                          891 2026/8/10 18:57:06 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_knn8_edges.csv                                              201389 2026/8/10 18:57:06 
+geoconformal-main\GCCP_Seattle\outputs\gccp\seattle_gccp_weight_vectors_ablation_v1.csv                                             550 2026/8/10 18:40:50 
+geoconformal-main\GCCP_Seattle\outputs\gccp\seattle_gccp_weight_stability_ablation_v1.csv                                           687 2026/8/10 18:40:50 
+geoconformal-main\GCCP_Seattle\outputs\gccp\seattle_gccp_relative_performance_v1.csv                                                343 2026/8/10 18:35:00 
+geoconformal-main\GCCP_Seattle\outputs\gccp\seattle_main_experiment_comparison_v1.csv                                               235 2026/8/10 18:34:46 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_causal_weights_outer_train_v1.csv                                         1437 2026/8/10 18:26:04 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_convergence_diagnostics.csv                                   1153 2026/8/10 16:27:54 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_convergence_summary_partial.csv                               4357 2026/8/10 16:27:54 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_convergence_summary.csv                                       4357 2026/8/10 16:27:54 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_age_convergence_raw.csv                          250220 2026/8/10 16:27:52 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_view_convergence_raw.csv                         236314 2026/8/10 16:22:12 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_waterfront_convergence_raw.csv                   249740 2026/8/10 16:16:28 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_condition_convergence_raw.csv                    248471 2026/8/10 16:10:44 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_grade_convergence_raw.csv                        235117 2026/8/10 16:05:00 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_sqft_lot_convergence_raw.csv                     238808 2026/8/10 15:59:30 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_sqft_living_convergence_raw.csv                  235485 2026/8/10 15:54:28 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_price_xmap_bathrooms_convergence_raw.csv                    237388 2026/8/10 15:49:24 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_detrend_diagnostics.csv                                       1050 2026/8/10 15:33:12 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_ring_diagnostics.csv                                           251 2026/8/10 15:33:12 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_delaunay_edges.csv                                          124341 2026/8/10 15:33:00 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_outer_train_sites.csv                                                   575809 2026/8/10 15:32:44 
+geoconformal-main\GCCP_Seattle\outputs\gccp\seattle_gccp_inner_best_params_v1.csv                                                   170 2026/8/10 15:06:38 
+geoconformal-main\GCCP_Seattle\outputs\gccp\seattle_gccp_inner_grid_v1.csv                                                        37533 2026/8/10 15:06:38 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_causal_weights_inner_fit_v1.csv                                           1364 2026/8/10 14:35:00 
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_feature_to_price_convergence_summary_partial.csv                          4368 2026/8/8 21:37:02  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_feature_to_price_convergence_summary.csv                                  4368 2026/8/8 21:37:02  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_feature_to_price_convergence_diagnostics.csv                              1108 2026/8/8 21:37:02  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_age_convergence_raw.csv                                      174625 2026/8/8 21:37:02  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_view_convergence_raw.csv                                     166154 2026/8/8 21:33:36  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_waterfront_convergence_raw.csv                               176247 2026/8/8 21:30:18  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_condition_convergence_raw.csv                                173493 2026/8/8 21:27:08  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_grade_convergence_raw.csv                                    164853 2026/8/8 21:23:34  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_sqft_lot_convergence_raw.csv                                 167164 2026/8/8 21:19:58  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_sqft_living_convergence_raw.csv                              165398 2026/8/8 21:16:28  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_bathrooms_convergence_raw.csv                                166435 2026/8/8 21:12:58  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_terminal_direction_scan_inner_fit.csv                                     1686 2026/8/8 21:04:02  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_sqft_living_L100_benchmark.csv                                33534 2026/8/8 20:56:44  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_price_xmap_sqft_living_benchmark.csv                                     32709 2026/8/8 20:48:26  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_sqft_living_price_benchmark_summary.csv                                    136 2026/8/8 20:48:26  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_sqft_living_xmap_price_benchmark.csv                                     32169 2026/8/8 20:48:26  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_detrend_diagnostics.csv                                                   1039 2026/8/8 20:42:42  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_ring_diagnostics.csv                                                       133 2026/8/8 20:42:42  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_delaunay_edges.csv                                                       83185 2026/8/8 20:42:30  
+geoconformal-main\GCCP_Seattle\outputs\gccm\seattle_gccm_inner_fit_sites.csv                                                     403658 2026/8/8 20:42:18  
+geoconformal-main\GCCP_Seattle\01_baselines\01_Seattle_baselines_three_split.ipynb                                               272968 2026/8/6 15:57:26  
+geoconformal-main\GCCP_Seattle\outputs\geosimcp_mnd_inner_search_seed42.csv                                                       49273 2026/8/6 15:43:22  
+geoconformal-main\GCCP_Seattle\outputs\geosimcp_euc_inner_search_seed42.csv                                                       48753 2026/8/6 15:27:36  
+geoconformal-main\GCCP_Seattle\outputs\geocp_inner_search_seed42.csv                                                               2036 2026/8/5 23:20:54  
+geoconformal-main\GCCP_Seattle\outputs\seattle_inner_split_seed42.npz                                                             17914 2026/8/4 17:41:20  
+geoconformal-main\GCCP_Seattle\outputs\seattle_split_seed42.npz                                                                   25070 2026/8/4 17:39:40  
+geoconformal-main\GCCP_Seattle\01_baselines\Untitled.ipynb                                                                          618 2026/7/31 12:14:52 
+geoconformal-main\GeosimCP_housing_price_strict_clean.ipynb                                                                       63524 2026/7/27 15:46:28 
+geoconformal-main\GeosimCP_housing_price_messy_backup.ipynb                                                                      643612 2026/7/27 13:58:44 
+geoconformal-main\GeosimCP_housing_price_strict.ipynb                                                                            643612 2026/7/26 10:36:24 
+geoconformal-main\GeosimCP_housing_price_original_reproduction.ipynb                                                             637277 2026/7/25 13:54:44 
+geoconformal-main\example\geoconformal_tutorial.ipynb                                                                           1163635 2026/7/24 19:46:36 
+geoconformal-main\geoconformal\geocp\__init__.py                                                                                   1859 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\geocp\weights.py                                                                                   15196 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\geocp\estimators.py                                                                                 4344 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\geocp\core.py                                                                                      12543 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\geocp\utils.py                                                                                     11626 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\geocp\results.py                                                                                    4678 2026/6/20 11:28:40 
+geoconformal-main\tests\test_atom.py                                                                                               3467 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\utils.py                                                                                            1857 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\GeoSIMConformalSpatialRegression.py                                                                 6559 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\GeoConformalSpatialRegression.py                                                                    4905 2026/6/20 11:28:40 
+geoconformal-main\tests\test_unified.py                                                                                            4295 2026/6/20 11:28:40 
+geoconformal-main\tests\test_variants.py                                                                                           4097 2026/6/20 11:28:40 
+geoconformal-main\geoconformal\__init__.py                                                                                         2777 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\GeoSIMCP.py                                                5469 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\GeoSIMCPzhao.py                                            5196 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\GeoConformalSpatialRegression.py                           5692 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeosimCP_real_world_all.ipynb                                        2055664 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoSIMCP_simulation.ipynb                                           22057038 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\GWQRBasedGeoCP.py                                         12140 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\LSCP.py                                                    7011 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\geo_cp_vs_simcp_batch_metrics.csv                          5484 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\GeoSIMCP_non_zero.py                                       5282 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\GeoSIMCP_test.py                                           4995 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\GeoSIMCP可视化.ipynb                                                                    830877 2026/6/20 11:28:40 
+geoconformal-main\.github\workflows\publish.yml                                                                                    1516 2026/6/20 11:28:40 
+geoconformal-main\.github\workflows\tests.yml                                                                                       601 2026/6/20 11:28:40 
+geoconformal-main\.claude\settings.local.json                                                                                      3694 2026/6/20 11:28:40 
+geoconformal-main\README.md                                                                                                       30756 2026/6/20 11:28:40 
+geoconformal-main\setup.py                                                                                                          701 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\GeoSIMCP_simulation_0425.ipynb                                                      5337525 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\GeoSIMCP_synthetic_data_validation.ipynb.ipynb                                      2914407 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\GeosimCP_life.ipynb                                                                  306255 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\GeosimCP_all.ipynb                                                                   521452 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\GeosimCP_housing price.ipynb                                                         301733 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\utils.py                                                   1857 2026/6/20 11:28:40 
+geoconformal-main\experiments\seattle_hist.py                                                                                      3917 2026/6/20 11:28:40 
+geoconformal-main\experiments\seattle_smalln.py                                                                                    7130 2026/6/20 11:28:40 
+geoconformal-main\CHANGELOG.md                                                                                                     3231 2026/6/20 11:28:40 
+geoconformal-main\Codes_Manuscript_GeoSIMCP\Codes_GeoSIMCP\GeoConformal\__init__.py                                                 163 2026/6/20 11:28:40 
+geoconformal-main\example\geobcp_tutorial.ipynb                                                                                  283325 2026/6/20 11:28:40 
+geoconformal-main\example\seattle_house_price_prediction_uncertainty.ipynb                                                       383202 2026/6/20 11:28:40 
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\codeshp\DeletethelinearityofYshpdetrendwithX.r                24701 2024/12/13 20:00:08
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\codeshp\DeletethelinearityofXandYshp.r                        24602 2024/12/13 18:21:42
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\codeshp\DeletethelinearityofXshpdetrendwithY.r                24855 2024/12/13 18:21:08
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\codeshp\Noneedtodeletelinearizeshp.r                          24597 2024/12/13 18:02:54
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\coderaster\DeletethelinearityofYdetrendwithX.r                28056 2024/12/11 23:28:44
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\coderaster\DeletethelinearityofXdetrendwithY.r                28079 2024/12/11 23:26:52
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\coderaster\Noneedtodeletelinearize.r                          27894 2024/12/11 23:21:14
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\GUI\GCCMRcode\coderaster\DeletethelinearityofXandY.r                        27856 2024/12/11 23:21:06
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\R\Cases\raster\NPP\GCCMNPPPre.r                                              4688 2024/12/2 22:20:02 
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\R\Cases\raster\NPP\GCCMNPPTem.r                                              4629 2024/12/2 22:19:20 
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\R\Cases\polygon\CountyPopBatch.r                                             5002 2024/12/2 17:30:42 
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\R\Cases\raster\Heavymetal\GCCMCu.R                                           2969 2024/12/2 17:29:02 
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\R\GCCM\GCCM.r                                                               11033 2024/12/2 7:12:24  
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\R\GCCM\GCCM4Lattice.r                                                        9317 2024/12/2 6:59:50  
+geoconformal-main\GCCP_Seattle\02_gccm\GCCM_updated 2\R\GCCM\basic.r                                                              10951 2024/11/24 22:55:24
+
+
+

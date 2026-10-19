@@ -1,0 +1,2 @@
+﻿bandwidth,lambda,coverage,mean_half_width,mean_width,interval_score,median_n_eff,p10_n_eff,p90_n_eff,tau_local,coverage_constraint_feasible,selection_rule,geo_distance,feature_distance,feature_scaler_fit
+1.6473684210526318,0.0,0.823943661971831,8.584839699139446,17.16967939827889,32.01275498918794,85.09985180688224,46.590322317699815,98.04393583878453,0.9078014184397163,False,fallback_global_min_interval_score,raw_lon_lat_euclidean_degree,standardized_euclidean,calibration_only

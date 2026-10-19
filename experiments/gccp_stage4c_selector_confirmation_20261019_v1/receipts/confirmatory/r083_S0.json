@@ -1,0 +1,87 @@
+{
+  "phase": "confirmatory",
+  "replicate": 83,
+  "scenario": "S0",
+  "roles": {
+    "D_fit": {
+      "n": 1600,
+      "id_hash": "5abb251b897ebf8e7be351889d9d0b7254f97ccc32824ada2d9d63cf658c0fe2"
+    },
+    "D_loc": {
+      "n": 800,
+      "id_hash": "00708659738ae81f55186061e73738492cd0fbda096f40fcba39a532920e39f0"
+    },
+    "D_cal": {
+      "n": 800,
+      "id_hash": "4f0e43d89ce3efbd92cffae803e4853af88f261871d9b24e2dff0a2f8fa4cdc4"
+    },
+    "D_eval": {
+      "n": 800,
+      "id_hash": "e525ed86a125bd20c964ddb91f1c687b9fe467be42642f93402ca55822971e90"
+    }
+  },
+  "feature_hash": "b57c50bcd10611b7c21d506c8cbe106c4d1f349fb96c964221fa69b218d6efae",
+  "selected_masks": {
+    "0": []
+  },
+  "ranking_hash": "4302c90fd552cb85bca74ed20b72735be8e9f358ca5270a51ba2c03f1fed68ac",
+  "selector_target": "Y_0.9_QUANTILE",
+  "selector_roles": [
+    "D_fit",
+    "D_loc"
+  ],
+  "q0_frozen_before_Dcal": true,
+  "truth_in_predictor": false,
+  "q0_hashes": {
+    "GeoSIMCP-RC": "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+    "GCCP-OracleParent-RC": "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+    "GCCP-ResidualParent-RC": "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+    "SupervisedSelector-k0-RC": "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203"
+  },
+  "random_q0_hashes": {
+    "0": [
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203",
+      "4cdf828eb1f71e8ea3a164ce85d93ad3fde37c479bb099e634bdc030668f6203"
+    ]
+  },
+  "interval_hashes": {
+    "GeoSIMCP-RC": "5d11051e7bb5289254dc3ebe3e2a9ac587f2dca0e78708eebf22c6e28a345446",
+    "GCCP-OracleParent-RC": "5d11051e7bb5289254dc3ebe3e2a9ac587f2dca0e78708eebf22c6e28a345446",
+    "GCCP-ResidualParent-RC": "5d11051e7bb5289254dc3ebe3e2a9ac587f2dca0e78708eebf22c6e28a345446",
+    "SupervisedSelector-k0-RC": "5d11051e7bb5289254dc3ebe3e2a9ac587f2dca0e78708eebf22c6e28a345446"
+  },
+  "intervals_frozen_before_Deval": true,
+  "completed": true,
+  "label_access": [
+    [
+      "D_fit",
+      "training"
+    ],
+    [
+      "D_fit",
+      "training"
+    ],
+    [
+      "D_loc",
+      "training"
+    ],
+    [
+      "D_cal",
+      "q0_frozen"
+    ],
+    [
+      "D_eval",
+      "intervals_frozen"
+    ]
+  ],
+  "seconds": 9.048829199746251,
+  "ranking_rows": 1
+}

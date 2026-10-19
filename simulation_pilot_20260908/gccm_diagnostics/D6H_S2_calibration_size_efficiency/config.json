@@ -1,0 +1,24 @@
+{
+  "diagnostic": "D6H_S2_calibration_size_efficiency",
+  "DGP": "S2 frozen",
+  "replicates": 20,
+  "calibration_pool_n": 400,
+  "evaluation_n": 1000,
+  "n_cal": [
+    50,
+    100,
+    200,
+    400
+  ],
+  "alpha": 0.1,
+  "methods": [
+    "CP",
+    "M1-NCP",
+    "Oracle-NCP"
+  ],
+  "new_m1_fits": 1,
+  "point_predictor_reused": true,
+  "original_final_calibration_test_accessed": false,
+  "gccm_run": false,
+  "m1_refit": "authorized S2 scale_fit=200; KNN k=20 distance-weighted on frozen scale-fit preparation"
+}

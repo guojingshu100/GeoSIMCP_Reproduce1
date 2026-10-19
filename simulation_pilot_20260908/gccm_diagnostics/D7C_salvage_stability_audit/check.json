@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_simulations": 0,
+  "bootstrap_rerun": false,
+  "folds_reconstructed": false,
+  "S1": false,
+  "S3": false,
+  "validation": false,
+  "final_calibration": false,
+  "test": false
+}

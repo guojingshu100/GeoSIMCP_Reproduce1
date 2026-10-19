@@ -1,0 +1,39 @@
+{
+  "diagnostic": "D1_libpred_198_vs_200",
+  "purpose": "Source-alignment unit diagnostic only",
+  "condition_A": "historical GCCMLattice indexing rows 3:200",
+  "condition_B": "same core GCCMSingle4Lattice with lib/pred rows 1:200",
+  "common_libsizes": [
+    10,
+    18,
+    33,
+    60,
+    109,
+    198
+  ],
+  "supplementary_full_only_libsize": 200,
+  "E": 3,
+  "tau": 1,
+  "b": 4,
+  "effect": "abs_residual",
+  "features": [
+    "s_x",
+    "s_y",
+    "x1",
+    "x2",
+    "g_proxy",
+    "x_noise"
+  ],
+  "source_hashes": {
+    "restricted_input.csv": "f25e4f1cecea7eac38b39719b4dda9e2a47a3ba1ba463eb9c01ee3cf4f0ba397",
+    "edges.csv": "faca5e016e1569e7f123917f023d252637b569199bbb0a6f9bc0fa8bb0c15ed5",
+    "historical_core.r": "3552d871539dc682519da04d07306a97e9138f30b22ecdbfcc2cf61efa38b12d",
+    "execution_config.json": "f784931a979336712f86ccc01f9e08fd066be113a3ee38e3d7f00bf131729baf",
+    "raw_curves.csv": "c95bf6bb6f852fe7dab0073383b0cfb6d7978254609e7ecd022b25fa90f4df2f",
+    "mean_curves.csv": "4a28aa51d85c284a947fe1753144502d9537501ec6dd94b6092e34fc49ae8d04",
+    "convergence.csv": "b6460c823a4025507be682bf0016f99f9fe371c89838258790da9e55dbc2566e",
+    "weights.csv": "7b93f7e71c66557dab78fe3e7c89ec61156c47996d04b48e166ab9e3ffba8dab"
+  },
+  "rscript": "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe",
+  "created_at_utc": "2026-09-09T08:51:20.695761+00:00"
+}

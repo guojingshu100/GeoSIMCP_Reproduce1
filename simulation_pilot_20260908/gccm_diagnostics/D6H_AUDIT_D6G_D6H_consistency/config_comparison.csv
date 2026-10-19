@@ -1,0 +1,19 @@
+item,D6G,D6H,difference
+frozen S2 point predictor,reused,reused,False
+point-predictor artifact/path/config,not specified,not specified,False
+original scale_fit=200 rows,not specified,authorized S2 scale_fit=200,True
+M1 estimator class,not specified,KNNRegressor,True
+M1 hyperparameters,not specified,"k=20, distance-weighted",True
+M1 predictor feature set,not specified,not specified,False
+target abs_residual,not specified,not specified,False
+S2 generator,S2 frozen,S2 frozen,False
+feature distributions,not specified,not specified,False
+noise distribution,not specified,not specified,False
+sigma formula,not specified,not specified,False
+alpha,0.1,0.1,False
+order-statistic rule,k=91,k=91,False
+n_cal=100,100,100,False
+evaluation n=1000,1000,1000,False
+interval-score formula,not specified,not specified,False
+x2 quintile construction,not specified,not specified,False
+coverage calculation,not specified,not specified,False

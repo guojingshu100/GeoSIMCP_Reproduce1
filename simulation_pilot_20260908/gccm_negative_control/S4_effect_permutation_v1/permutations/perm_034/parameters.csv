@@ -1,0 +1,7 @@
+name,value
+E,3
+tau,1
+b,4
+seed,42
+direction,effect_xmap_cause
+library_sizes,10;18;33;60;109;198

@@ -1,0 +1,143 @@
+{
+  "permutations_completed": 99,
+  "per_variable_pass_counts": {
+    "s_x": 64,
+    "s_y": 70,
+    "x1": 2,
+    "x2": 7,
+    "g_proxy": 58,
+    "x_noise": 10
+  },
+  "per_variable_pass_fractions": {
+    "s_x": 0.6464646464646465,
+    "s_y": 0.7070707070707071,
+    "x1": 0.020202020202020204,
+    "x2": 0.0707070707070707,
+    "g_proxy": 0.5858585858585859,
+    "x_noise": 0.10101010101010101
+  },
+  "number_converged_distribution": {
+    "0": 3,
+    "1": 21,
+    "2": 39,
+    "3": 33,
+    "4": 2,
+    "5": 1
+  },
+  "any_coordinate_converged_n": 90,
+  "both_coordinates_converged_n": 44,
+  "no_converged_feature_n": 3,
+  "maximum_normalized_weight_distribution": {
+    "n_available": 96,
+    "mean": 0.6333734700669565,
+    "sd": 0.2133899202389069,
+    "min": 0.373168101076219,
+    "p05": 0.3979588886114225,
+    "p25": 0.46436397738325724,
+    "median": 0.552152057477781,
+    "p75": 0.7219385184391343,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "observed_maximum_terminal_rho": 0.296189916454007,
+  "maximum_terminal_rho_negative_control_tail_probability": 0.65,
+  "spatial_tail_probabilities": [
+    {
+      "variable": "s_x",
+      "statistic": "terminal_rho",
+      "observed": 0.246623560555136,
+      "n_permutations_available": 99,
+      "count_ge_observed": 44,
+      "fraction_strictly_below_observed": 0.555555555555556,
+      "negative_control_tail_probability": 0.45,
+      "conditional_on_available_weights": false,
+      "null_median": 0.223952234952743,
+      "null_p95": 0.571020532299998
+    },
+    {
+      "variable": "s_x",
+      "statistic": "gain",
+      "observed": 0.169812973377813,
+      "n_permutations_available": 99,
+      "count_ge_observed": 32,
+      "fraction_strictly_below_observed": 0.676767676767677,
+      "negative_control_tail_probability": 0.33,
+      "conditional_on_available_weights": false,
+      "null_median": 0.124212949175952,
+      "null_p95": 0.237113894600857
+    },
+    {
+      "variable": "s_x",
+      "statistic": "strength",
+      "observed": 0.246623560555136,
+      "n_permutations_available": 99,
+      "count_ge_observed": 43,
+      "fraction_strictly_below_observed": 0.565656565656566,
+      "negative_control_tail_probability": 0.44,
+      "conditional_on_available_weights": false,
+      "null_median": 0.220243476759461,
+      "null_p95": 0.571020532299998
+    },
+    {
+      "variable": "s_x",
+      "statistic": "normalized_weight",
+      "observed": 0.454343104953863,
+      "n_permutations_available": 96,
+      "count_ge_observed": 33,
+      "fraction_strictly_below_observed": 0.65625,
+      "negative_control_tail_probability": 0.350515463917526,
+      "conditional_on_available_weights": true,
+      "null_median": 0.357490125131574,
+      "null_p95": 0.795981047362441
+    },
+    {
+      "variable": "s_y",
+      "statistic": "terminal_rho",
+      "observed": 0.296189916454007,
+      "n_permutations_available": 99,
+      "count_ge_observed": 32,
+      "fraction_strictly_below_observed": 0.676767676767677,
+      "negative_control_tail_probability": 0.33,
+      "conditional_on_available_weights": false,
+      "null_median": 0.204709550516648,
+      "null_p95": 0.54262674695104
+    },
+    {
+      "variable": "s_y",
+      "statistic": "gain",
+      "observed": 0.177534325155533,
+      "n_permutations_available": 99,
+      "count_ge_observed": 26,
+      "fraction_strictly_below_observed": 0.737373737373737,
+      "negative_control_tail_probability": 0.27,
+      "conditional_on_available_weights": false,
+      "null_median": 0.131650579478292,
+      "null_p95": 0.253964554247151
+    },
+    {
+      "variable": "s_y",
+      "statistic": "strength",
+      "observed": 0.296189916454007,
+      "n_permutations_available": 99,
+      "count_ge_observed": 32,
+      "fraction_strictly_below_observed": 0.676767676767677,
+      "negative_control_tail_probability": 0.33,
+      "conditional_on_available_weights": false,
+      "null_median": 0.204709550516648,
+      "null_p95": 0.54262674695104
+    },
+    {
+      "variable": "s_y",
+      "statistic": "normalized_weight",
+      "observed": 0.545656895046137,
+      "n_permutations_available": 96,
+      "count_ge_observed": 23,
+      "fraction_strictly_below_observed": 0.760416666666667,
+      "negative_control_tail_probability": 0.247422680412371,
+      "conditional_on_available_weights": true,
+      "null_median": 0.376880807491708,
+      "null_p95": 1.0
+    }
+  ],
+  "interpretation_scope": "Negative-control reference, not a formal causal p-value or interval-performance result."
+}

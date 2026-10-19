@@ -1,0 +1,9 @@
+{
+  "overall_status": "PASS",
+  "rows": 200,
+  "model_fits": 10,
+  "fixed_cv": true,
+  "no_tuning": true,
+  "blinded_data_accessed": false,
+  "conformal_run": false
+}

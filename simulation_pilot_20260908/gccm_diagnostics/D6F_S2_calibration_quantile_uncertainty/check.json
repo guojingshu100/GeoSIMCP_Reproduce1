@@ -1,0 +1,11 @@
+{
+  "overall_status": "PASS",
+  "new_model_fits": 0,
+  "calibration_n": 100,
+  "validation_n": 200,
+  "B": 2000,
+  "seed": 20260909,
+  "k": 91,
+  "final_calibration_accessed": false,
+  "test_accessed": false
+}

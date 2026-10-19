@@ -1,0 +1,107 @@
+{
+  "phase": "confirmatory",
+  "replicate": 60,
+  "scenario": "S2",
+  "roles": {
+    "D_fit": {
+      "n": 1600,
+      "id_hash": "55d088d3fb10a1109342e9fa771304a3d40d2e0cdf839bf8f980489b545a5968"
+    },
+    "D_loc": {
+      "n": 800,
+      "id_hash": "8b1c13a6265a515224b1b8fd1785bcea6ead1201eb5c6a81ee2c6633e81c7836"
+    },
+    "D_cal": {
+      "n": 800,
+      "id_hash": "c4d0bc4adbbec29d257495266e3bf6864df0fb0271bcb71545a8acc04a502c66"
+    },
+    "D_eval": {
+      "n": 800,
+      "id_hash": "41833f600302993482ac37824000a3b02a713441853c12aa513474ded9994c0b"
+    }
+  },
+  "feature_hash": "b15f821dcdd91bf41eedc99e0d3400992bdac57c706c94a58e7050688646f0f9",
+  "selected_masks": {
+    "1": [
+      "X1"
+    ],
+    "2": [
+      "X1",
+      "X2"
+    ]
+  },
+  "ranking_hash": "a80d777106a90f9a5e85d9db9e5cd21cab3479952f32dab40546f3b10bbd078c",
+  "selector_target": "Y_0.9_QUANTILE",
+  "selector_roles": [
+    "D_fit",
+    "D_loc"
+  ],
+  "q0_frozen_before_Dcal": true,
+  "truth_in_predictor": false,
+  "q0_hashes": {
+    "GeoSIMCP-RC": "995c137d7b2e8bc8e0f8514aac4ba4dee61688e857b0d764680b361ecd8e6b12",
+    "GCCP-OracleParent-RC": "ff70c7e80d76743eb2624dc5c77ea00cad67b848b1eaf212f354fc07e59bece6",
+    "GCCP-ResidualParent-RC": "94797901ee522c65da8547c257f6ac086fec26e1bd6ac5875f1b369ccbec43d0",
+    "SupervisedSelector-k1-RC": "99c533460626d93bf266dd08180a25099759f0b8ee8f94d6f9f7fb8bd0ddd3d7",
+    "SupervisedSelector-k2-RC": "ff70c7e80d76743eb2624dc5c77ea00cad67b848b1eaf212f354fc07e59bece6"
+  },
+  "random_q0_hashes": {
+    "1": [
+      "eb078f10c7bad41e7cd7a329460e616ce59b857efc608ef1946cfb9df11ba178",
+      "f4bb75a55c6069c9158a6dd4364f77161bdf53cc3a2420dc9c6dd704e744bf74",
+      "9d7fe4f0f1b0e2d6474dd3f226c4b11f4d6ff007f0f2d818ce25ec093aecd1cd",
+      "790f95141b946d604250b97c225bae00b5e4d52ca95b3043a4988fb000949ebf",
+      "4c1b73b25dcd0364f557735e234acb5ed0f1b728889e78d5123752f41acf6aa7",
+      "790f95141b946d604250b97c225bae00b5e4d52ca95b3043a4988fb000949ebf",
+      "069c4c976fe7251732bb237e5da85eea80b1eeeb5276186bbc88f640847d5df5",
+      "f9a4f8a752f23ca20604731e5a7a420f62c7f8ab4f009e562a42b235d6cfc5f4",
+      "6bf73b5c7db8baadb2185fd5bc8e2ee9f837e74bfdf9c3305218cecd28402186",
+      "eb078f10c7bad41e7cd7a329460e616ce59b857efc608ef1946cfb9df11ba178"
+    ],
+    "2": [
+      "9e62db140efa46bb4069b2157c1e2446022c5765404503e1cadfd483730a3112",
+      "ff285d9820734b02332f23fb2477bd4d957625a2233c424133aff32bc40d2212",
+      "d5a4169c952aa8e1cc42dba96f27b48ef17aecb0b08fa369fab3f136f95897fe",
+      "d6d0142304d048a94212485b7fe32afd9e3bfb10c3ac643726c6ced9e5d1d758",
+      "6ee0cb8f9a552a22f7683a5818c68e1c268df82fb3e17351163cad14c38ce087",
+      "07474493ad3d2d9375e8c8ed948b67dcda145a161eea9484d25e0a40104bd247",
+      "353906d4de3457611f2846aefd93f58af8da2c2b9fc007cf36472ff044cd9071",
+      "1d568a42b9ee026355875d2aed3444d83c4250364dc89c2705579bff9f451eb5",
+      "961ce9b54df286663d1be5c44d4114869d6fc6c3dcf566fb3db3cd3f5020bebd",
+      "e0edcfc5d0de5f0915b653310b0f621f712699fce1a3e0407144a961c8c300fd"
+    ]
+  },
+  "interval_hashes": {
+    "GeoSIMCP-RC": "6051434bde257cfcbfb0a14356666d1f6d35d7e2f88e9e70e6087c225493828b",
+    "GCCP-OracleParent-RC": "6c8fdda9c7fa66e4185233092c7a46726ecf74a1f7c9e8f794e9da6b0865c7dc",
+    "GCCP-ResidualParent-RC": "33861bcbb143c4a7f593b79ced2bdfee78f680e8f144cb71bd1b09e7166ff967",
+    "SupervisedSelector-k1-RC": "2ca8d95fe24fa8808b85a36352e7e50cb3111ae3614493489612d4495b3376d4",
+    "SupervisedSelector-k2-RC": "6c8fdda9c7fa66e4185233092c7a46726ecf74a1f7c9e8f794e9da6b0865c7dc"
+  },
+  "intervals_frozen_before_Deval": true,
+  "completed": true,
+  "label_access": [
+    [
+      "D_fit",
+      "training"
+    ],
+    [
+      "D_fit",
+      "training"
+    ],
+    [
+      "D_loc",
+      "training"
+    ],
+    [
+      "D_cal",
+      "q0_frozen"
+    ],
+    [
+      "D_eval",
+      "intervals_frozen"
+    ]
+  ],
+  "seconds": 12.523927299771458,
+  "ranking_rows": 20
+}

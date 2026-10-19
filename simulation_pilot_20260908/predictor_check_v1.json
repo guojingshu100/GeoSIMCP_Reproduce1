@@ -1,0 +1,633 @@
+{
+  "checks": {
+    "feature_authorization": {
+      "authorized_features": [
+        "s_x",
+        "s_y",
+        "x1",
+        "x2",
+        "g_proxy",
+        "x_noise"
+      ],
+      "exact_match": true,
+      "predictor_scaler_used": false,
+      "status": "PASS"
+    },
+    "input_hash_verification": {
+      "generator_check_sha256": "6dd905abf8b0dbd70d3d41c48d8d9206a1c0c5c6ac2e7b27d323644ed97ba867",
+      "generator_config_sha256": "fb35d5ff4e9310cae5407a1fa272dac7e3c9102a11ad136a2e04dab23b8d9e41",
+      "generator_overall_status": "PASS",
+      "generator_version": "gccp_sim_s1_s4_v1",
+      "recomputed_input_hashes": {
+        "data/S1_observed.csv": "dd6c88d611a95de6aeaa107c22d65c289f1a9fa5011a9f94a77244ca2180dff9",
+        "data/S1_truth.csv": "a8da31ea28173737c5aab448a44470c6e5b9d383dd8b51774bc4ade8c7ef73b1",
+        "data/S2_observed.csv": "9abe6271f7812bc83093a2af13d541d5aa18c0b65b2ff776332508c360ad293f",
+        "data/S2_truth.csv": "b3cd07deb85aa703b2fde53cca8f60d84785c250e2d2b575bffc763d3d8d25dc",
+        "data/S3_observed.csv": "406562c668675536665608b9bff2650f83b10ddf988e962eb8eed7f1f8998048",
+        "data/S3_truth.csv": "a016a51f285c27cffb4480d373470df697828638c09595d7cbb92018cecfb56c",
+        "data/S4_observed.csv": "1e0819fcbc6d639d2b7c13c17cf3b748e50746f6a5719057293886b3511f9b32",
+        "data/S4_truth.csv": "893cd7849cc8624ebdb1e6e7bc133f3dbbb36f64d76689026aaeb6174e25ead8"
+      },
+      "status": "PASS",
+      "truth_files_hashed_but_not_parsed": true
+    },
+    "joblib_reproducibility": {
+      "all_identical": true,
+      "hash_match": {
+        "S1_model.joblib": true,
+        "S2_model.joblib": true,
+        "S3_model.joblib": true,
+        "S4_model.joblib": true
+      },
+      "nonidentical_joblib_bytes_are_warning_only": true,
+      "status": "PASS"
+    },
+    "leakage_guards": {
+      "fit_split_only": "train",
+      "label_access_log": [
+        {
+          "file": "S1_observed.csv",
+          "loaded_splits": [
+            "train"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "train"
+          ],
+          "row_count": 1000
+        },
+        {
+          "file": "S1_observed.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        },
+        {
+          "file": "S2_observed.csv",
+          "loaded_splits": [
+            "train"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "train"
+          ],
+          "row_count": 1000
+        },
+        {
+          "file": "S2_observed.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        },
+        {
+          "file": "S3_observed.csv",
+          "loaded_splits": [
+            "train"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "train"
+          ],
+          "row_count": 1000
+        },
+        {
+          "file": "S3_observed.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        },
+        {
+          "file": "S4_observed.csv",
+          "loaded_splits": [
+            "train"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "train"
+          ],
+          "row_count": 1000
+        },
+        {
+          "file": "S4_observed.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "prohibited_splits_loaded": [],
+          "requested_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        }
+      ],
+      "prediction_files_exclude_y_and_oracle": true,
+      "prohibited_label_splits_loaded": [],
+      "residual_files_exclude_final_calibration_and_test": true,
+      "residual_files_exclude_y_and_oracle": true,
+      "status": "PASS",
+      "truth_access_log": [
+        {
+          "accessed_after_output_hash_freeze": true,
+          "file": "S1_truth.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        },
+        {
+          "accessed_after_output_hash_freeze": true,
+          "file": "S2_truth.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        },
+        {
+          "accessed_after_output_hash_freeze": true,
+          "file": "S3_truth.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        },
+        {
+          "accessed_after_output_hash_freeze": true,
+          "file": "S4_truth.csv",
+          "loaded_splits": [
+            "local_calibration",
+            "validation"
+          ],
+          "row_count": 500
+        }
+      ],
+      "truth_parsed_before_output_freeze": false
+    },
+    "model_configuration_verification": {
+      "configuration": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 5,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 300,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": 420907,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "identical_across_scenarios": true,
+      "status": "PASS",
+      "validation_metrics_changed_configuration": false
+    },
+    "model_reload_prediction_check": {
+      "per_scenario": {
+        "S1": true,
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "status": "PASS",
+      "strict_tolerance": {
+        "atol": 1e-12,
+        "rtol": 0.0
+      }
+    },
+    "oracle_isolation": {
+      "allowed_splits": [
+        "local_calibration",
+        "validation"
+      ],
+      "run_after_outputs_saved_and_hashed": true,
+      "status": "PASS",
+      "used_for_fitting_or_selection": false
+    },
+    "prediction_reproducibility": {
+      "hash_match": {
+        "S1_predictions.csv": true,
+        "S2_predictions.csv": true,
+        "S3_predictions.csv": true,
+        "S4_predictions.csv": true
+      },
+      "status": "PASS"
+    },
+    "residual_reproducibility": {
+      "hash_match": {
+        "S1_authorized_residuals.csv": true,
+        "S2_authorized_residuals.csv": true,
+        "S3_authorized_residuals.csv": true,
+        "S4_authorized_residuals.csv": true
+      },
+      "status": "PASS"
+    },
+    "scenario_consistency": {
+      "distinct_model_objects": true,
+      "observed_predictor_matrices_identical": true,
+      "outputs_are_reusable_without_refit": true,
+      "prediction_order_aligned_by_sample_id": true,
+      "status": "PASS",
+      "train_responses_differ": {
+        "S1_vs_S2": true,
+        "S1_vs_S3": true,
+        "S1_vs_S4": true,
+        "S2_vs_S3": true,
+        "S2_vs_S4": true,
+        "S3_vs_S4": true
+      }
+    },
+    "split_and_row_counts": {
+      "per_scenario": {
+        "S1": {
+          "authorized_residual_rows": 1500,
+          "local_calibration_role_counts": {
+            "scale_fit": 200,
+            "tuning_calibration": 100
+          },
+          "prediction_rows": 2000,
+          "split_counts": {
+            "final_calibration": 200,
+            "local_calibration": 300,
+            "test": 300,
+            "train": 1000,
+            "validation": 200
+          },
+          "train_rows_passed_to_fit": 1000
+        },
+        "S2": {
+          "authorized_residual_rows": 1500,
+          "local_calibration_role_counts": {
+            "scale_fit": 200,
+            "tuning_calibration": 100
+          },
+          "prediction_rows": 2000,
+          "split_counts": {
+            "final_calibration": 200,
+            "local_calibration": 300,
+            "test": 300,
+            "train": 1000,
+            "validation": 200
+          },
+          "train_rows_passed_to_fit": 1000
+        },
+        "S3": {
+          "authorized_residual_rows": 1500,
+          "local_calibration_role_counts": {
+            "scale_fit": 200,
+            "tuning_calibration": 100
+          },
+          "prediction_rows": 2000,
+          "split_counts": {
+            "final_calibration": 200,
+            "local_calibration": 300,
+            "test": 300,
+            "train": 1000,
+            "validation": 200
+          },
+          "train_rows_passed_to_fit": 1000
+        },
+        "S4": {
+          "authorized_residual_rows": 1500,
+          "local_calibration_role_counts": {
+            "scale_fit": 200,
+            "tuning_calibration": 100
+          },
+          "prediction_rows": 2000,
+          "split_counts": {
+            "final_calibration": 200,
+            "local_calibration": 300,
+            "test": 300,
+            "train": 1000,
+            "validation": 200
+          },
+          "train_rows_passed_to_fit": 1000
+        }
+      },
+      "status": "PASS"
+    }
+  },
+  "final_calibration_labels_accessed": false,
+  "generator_version": "gccp_sim_s1_s4_v1",
+  "isolated_oracle_diagnostics": [
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.3035954489268354,
+      "oracle_diagnostic_n": 300,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": 0.36186854513438094,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": 0.3543131174135372,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": 0.3535628691779599,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.4101305185558793,
+      "oracle_diagnostic_scenario": "S1",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": 0.28450405004500046,
+      "oracle_diagnostic_subset": "local_calibration"
+    },
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.34262823843157164,
+      "oracle_diagnostic_n": 200,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": 0.08533847446398582,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": 0.21308038570300109,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": 0.16574759497507896,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.5402272840230316,
+      "oracle_diagnostic_scenario": "S1",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": 0.23803195079877,
+      "oracle_diagnostic_subset": "validation"
+    },
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.3210701125006841,
+      "oracle_diagnostic_n": 300,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": 0.22546822957765372,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": 0.27212220089099876,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": 0.2834897413874657,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.41747822776291166,
+      "oracle_diagnostic_scenario": "S2",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": 0.21998377759752885,
+      "oracle_diagnostic_subset": "local_calibration"
+    },
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.3749748486274144,
+      "oracle_diagnostic_n": 200,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": 0.15203176037164345,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": 0.24494909917003632,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": 0.23758895566251378,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.5692352626210785,
+      "oracle_diagnostic_scenario": "S2",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": 0.2106172654316358,
+      "oracle_diagnostic_subset": "validation"
+    },
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.5204718955883422,
+      "oracle_diagnostic_n": 300,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": 0.059856603564622156,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": 0.2607877539797665,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": 0.23236379859782738,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.6405029990447509,
+      "oracle_diagnostic_scenario": "S3",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": 0.24067734085934286,
+      "oracle_diagnostic_subset": "local_calibration"
+    },
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.5305163515120015,
+      "oracle_diagnostic_n": 200,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": -0.014723610264577884,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": 0.2513503311974698,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": 0.20008587217616436,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.7366675491356027,
+      "oracle_diagnostic_scenario": "S3",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": 0.2510777769444236,
+      "oracle_diagnostic_subset": "validation"
+    },
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.3091202816756335,
+      "oracle_diagnostic_n": 300,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": null,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": null,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": null,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.39451877411396175,
+      "oracle_diagnostic_scenario": "S4",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": null,
+      "oracle_diagnostic_subset": "local_calibration"
+    },
+    {
+      "oracle_diagnostic_mean_abs_prediction_bias": 0.35754262310938784,
+      "oracle_diagnostic_n": 200,
+      "oracle_diagnostic_pearson_abs_prediction_bias_sigma_true": null,
+      "oracle_diagnostic_pearson_abs_residual_sigma_true": null,
+      "oracle_diagnostic_pearson_squared_residual_sigma_true_squared": null,
+      "oracle_diagnostic_rmse_y_pred_mu_true": 0.5515728309636683,
+      "oracle_diagnostic_scenario": "S4",
+      "oracle_diagnostic_spearman_abs_residual_sigma_true": null,
+      "oracle_diagnostic_subset": "validation"
+    }
+  ],
+  "model_file_hashes": {
+    "S1_model.joblib": "31e1b6b43683b5e9dbf465c593e23fe111488baa2aa38c50dc1ea3cb95891352",
+    "S2_model.joblib": "64aadf7684e2d5d3965e5bd7e5fc340fbc73496f265b8b1f62c1b773df3800bd",
+    "S3_model.joblib": "214999673c2723635dbac0436b84969f8eb5e9b6bbf0d4c279a380ebdddfc996",
+    "S4_model.joblib": "c4b8fe64cf4f0a398cd72d915839136596cd919ff2d4e9021f28df6eb9f188d1"
+  },
+  "non_oracle_diagnostics": [
+    {
+      "mae": 0.7245578689181535,
+      "mean_abs_residual": 0.7245578689181535,
+      "median_abs_residual": 0.5539884424143829,
+      "n": 1000,
+      "p90_abs_residual": 1.5644057339170456,
+      "r2": 0.8513760207820399,
+      "rmse": 0.9560158233724979,
+      "scenario": "S1",
+      "subset": "train"
+    },
+    {
+      "mae": 1.1371312650223084,
+      "mean_abs_residual": 1.1371312650223084,
+      "median_abs_residual": 0.9049247816273585,
+      "n": 200,
+      "p90_abs_residual": 2.4901404368326787,
+      "r2": 0.5963699171881018,
+      "rmse": 1.512027678768147,
+      "scenario": "S1",
+      "subset": "scale_fit"
+    },
+    {
+      "mae": 1.032727674683441,
+      "mean_abs_residual": 1.032727674683441,
+      "median_abs_residual": 0.8988384064796067,
+      "n": 100,
+      "p90_abs_residual": 1.9294401265591898,
+      "r2": 0.6167348517795674,
+      "rmse": 1.3105890680747065,
+      "scenario": "S1",
+      "subset": "tuning_calibration"
+    },
+    {
+      "mae": 1.1364371654982963,
+      "mean_abs_residual": 1.1364371654982963,
+      "median_abs_residual": 0.9693872512696317,
+      "n": 200,
+      "p90_abs_residual": 2.395203970970578,
+      "r2": 0.6934061820335032,
+      "rmse": 1.4488027273287776,
+      "scenario": "S1",
+      "subset": "validation"
+    },
+    {
+      "mae": 0.7320878589113571,
+      "mean_abs_residual": 0.7320878589113571,
+      "median_abs_residual": 0.5665672717271854,
+      "n": 1000,
+      "p90_abs_residual": 1.5681360035133498,
+      "r2": 0.8495928836336434,
+      "rmse": 0.9676228526446938,
+      "scenario": "S2",
+      "subset": "train"
+    },
+    {
+      "mae": 1.1346435591475097,
+      "mean_abs_residual": 1.1346435591475097,
+      "median_abs_residual": 0.9217847599459402,
+      "n": 200,
+      "p90_abs_residual": 2.3184610625418123,
+      "r2": 0.6392095863272607,
+      "rmse": 1.4563128948495845,
+      "scenario": "S2",
+      "subset": "scale_fit"
+    },
+    {
+      "mae": 1.0093439642285336,
+      "mean_abs_residual": 1.0093439642285336,
+      "median_abs_residual": 0.8324398932799222,
+      "n": 100,
+      "p90_abs_residual": 1.9261311910672,
+      "r2": 0.5962979930901069,
+      "rmse": 1.291582227797852,
+      "scenario": "S2",
+      "subset": "tuning_calibration"
+    },
+    {
+      "mae": 1.1188140019379174,
+      "mean_abs_residual": 1.1188140019379174,
+      "median_abs_residual": 0.9830134901512232,
+      "n": 200,
+      "p90_abs_residual": 2.111191768215778,
+      "r2": 0.6993060208484614,
+      "rmse": 1.454986387112144,
+      "scenario": "S2",
+      "subset": "validation"
+    },
+    {
+      "mae": 0.7886786905429987,
+      "mean_abs_residual": 0.7886786905429987,
+      "median_abs_residual": 0.6270860045261704,
+      "n": 1000,
+      "p90_abs_residual": 1.6934773541478287,
+      "r2": 0.8702019547415225,
+      "rmse": 1.0287826006550105,
+      "scenario": "S3",
+      "subset": "train"
+    },
+    {
+      "mae": 1.1352534665370502,
+      "mean_abs_residual": 1.1352534665370502,
+      "median_abs_residual": 0.897406453486308,
+      "n": 200,
+      "p90_abs_residual": 2.282490638809605,
+      "r2": 0.7185216232443603,
+      "rmse": 1.4762728399329343,
+      "scenario": "S3",
+      "subset": "scale_fit"
+    },
+    {
+      "mae": 1.1309462129976373,
+      "mean_abs_residual": 1.1309462129976373,
+      "median_abs_residual": 0.8526745094894674,
+      "n": 100,
+      "p90_abs_residual": 2.5455781450801918,
+      "r2": 0.6748287676056189,
+      "rmse": 1.4845956152585167,
+      "scenario": "S3",
+      "subset": "tuning_calibration"
+    },
+    {
+      "mae": 1.1969369310648796,
+      "mean_abs_residual": 1.1969369310648796,
+      "median_abs_residual": 0.9040913553408386,
+      "n": 200,
+      "p90_abs_residual": 2.622805184974187,
+      "r2": 0.7451787715582735,
+      "rmse": 1.5744963902800677,
+      "scenario": "S3",
+      "subset": "validation"
+    },
+    {
+      "mae": 0.7201550355865364,
+      "mean_abs_residual": 0.7201550355865364,
+      "median_abs_residual": 0.5813830114872595,
+      "n": 1000,
+      "p90_abs_residual": 1.521492942755693,
+      "r2": 0.8592479716750111,
+      "rmse": 0.9191555326277367,
+      "scenario": "S4",
+      "subset": "train"
+    },
+    {
+      "mae": 1.1348990345978327,
+      "mean_abs_residual": 1.1348990345978327,
+      "median_abs_residual": 0.9804733886480501,
+      "n": 200,
+      "p90_abs_residual": 2.374553671708805,
+      "r2": 0.6262885847632902,
+      "rmse": 1.4453901868460703,
+      "scenario": "S4",
+      "subset": "scale_fit"
+    },
+    {
+      "mae": 1.0711637605371231,
+      "mean_abs_residual": 1.0711637605371231,
+      "median_abs_residual": 0.9447439485594591,
+      "n": 100,
+      "p90_abs_residual": 2.090294864186528,
+      "r2": 0.6103303375879854,
+      "rmse": 1.3015728207222026,
+      "scenario": "S4",
+      "subset": "tuning_calibration"
+    },
+    {
+      "mae": 1.148528347238105,
+      "mean_abs_residual": 1.148528347238105,
+      "median_abs_residual": 0.9516181729884612,
+      "n": 200,
+      "p90_abs_residual": 2.2425799755682694,
+      "r2": 0.6911025781615371,
+      "rmse": 1.4576616478257425,
+      "scenario": "S4",
+      "subset": "validation"
+    }
+  ],
+  "output_file_hashes": {
+    "S1_authorized_residuals.csv": "1e736e80784fa6698caadc4116d4b3e72a6e0302b30177e1c40bcd3e6183874e",
+    "S1_predictions.csv": "05c038723a7d5c59d6b777210b2c70da3499d5d63feda29b4d712d514bab9669",
+    "S2_authorized_residuals.csv": "9d07f68c55689fe185c37f8091aa7072c7f4b4eaafb7d1fb772134481e734ade",
+    "S2_predictions.csv": "37d892ac9c7f4b0896370744664b107d3d22b14bbf18a16cd26598b40791b1aa",
+    "S3_authorized_residuals.csv": "18e2e1faf470ed4183e2e35d289fdf04da4527ad2cbd1fd6d917edf1f85235bc",
+    "S3_predictions.csv": "6b85f5d14407127b75997f5fb1848a0488d28b51a765ce5b8e5a9c7c88a5baf8",
+    "S4_authorized_residuals.csv": "e4ba363e066953bccf60a912ebe87d65596f6b753ca936749b293f83a4938afc",
+    "S4_predictions.csv": "d5f0ce193e673807add5b448f3dd516ff5bab243b23c972a8cc2d3b68b3b73bd"
+  },
+  "overall_status": "PASS",
+  "predictor_stage_version": "gccp_rf_predictor_v1",
+  "stage_timestamp": "2026-09-08T20:43:26+08:00",
+  "test_labels_accessed": false,
+  "warnings": [
+    "S4 local_calibration: sigma_true is constant, so sigma-based oracle correlations are undefined and recorded as null."
+  ]
+}

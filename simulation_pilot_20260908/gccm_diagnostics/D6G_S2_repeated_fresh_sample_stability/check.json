@@ -1,0 +1,10 @@
+{
+  "overall_status": "PASS",
+  "replicates_completed": 20,
+  "new_m1_fits": 1,
+  "seeds_frozen_before_results": true,
+  "fresh_samples_independent": true,
+  "final_calibration_accessed": false,
+  "test_accessed": false,
+  "gccm_run": false
+}

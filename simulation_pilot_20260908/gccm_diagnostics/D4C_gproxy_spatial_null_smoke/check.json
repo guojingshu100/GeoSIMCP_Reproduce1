@@ -1,0 +1,22 @@
+{
+  "overall_status": "PASS",
+  "new_gccm_runs": 5,
+  "surrogates_finite_length_200": true,
+  "graph_unchanged": true,
+  "blinded_data_accessed": false,
+  "real_gproxy_rerun": false,
+  "summary": {
+    "real_terminal_rho": 0.0956278662173307,
+    "real_gain": 0.0956278662173307,
+    "real_pass": false,
+    "real_raw_strength": 0.0,
+    "surrogate_pass_count": 3,
+    "surrogate_terminal_ge_real_count": 3,
+    "surrogate_terminal_range": [
+      0.0,
+      0.222555188090119
+    ],
+    "surrogate_terminal_median": 0.15427809410428,
+    "surrogate_raw_strength_ge_real_count": 5
+  }
+}
